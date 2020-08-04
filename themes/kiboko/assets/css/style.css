@@ -829,6 +829,9 @@ p a:empty {
   margin-bottom: 0 !important;
 }
 
+.content {
+    padding-top: 1rem;
+}
 pre {
   display: block;
   padding: 9.5px;
@@ -838,6 +841,7 @@ pre {
 code {
   margin-bottom: 0 !important;
   font-size: 100%;
+  color: #CD0001;
 }
 
 .code-tabs {
