@@ -159,7 +159,7 @@ a:focus {
 
 a:hover,
 a:focus {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 a,
@@ -288,12 +288,16 @@ pre {
 }
 
 .navbar-brand  {
-  font-size: 4rem !important;
+  font-size: 2rem !important;
 }
 
 .navbar-brand img {
   max-width: 100px;
   margin-bottom: 0;
+}
+
+.navbar-brand .title {
+  padding: 2rem 1rem;
 }
 
 .navbar .nav-item .nav-link {

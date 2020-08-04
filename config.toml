@@ -1,62 +1,75 @@
+################################# Default configuration ###################
+# provide your domain here
 baseURL = "http://tech.kiboko.fr/"
 languageCode = "fr-fr"
 DefaultContentLanguage = "fr"
 # theme
 theme = "kiboko"
 # site title
-title = "Kiboko"
+title = "Tech.Kiboko.fr"
 # disable language
 disableLanguages = []
 # google analytics
 googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 
+# unsafe html
+[markup.goldmark.renderer]
+unsafe= true
+
+################################# navigation ################################
 [[menu.main]]
 name = "Kibokast"
 url = "/kibokast"
 weight = 1
 
+# Dropdown menu
+#[[menu.main]]
+#weight = 2
+#name = "docs"
+#hasChildren = true
+#
+#    [[menu.main]]
+#    parent = "docs"
+#    name = "OroCRM"
+#    url = "OroCRM"
+#    weight = 1
+#
+#    [[menu.main]]
+#    parent = "docs"
+#    name = "OroCommerce"
+#    url = "OroCommerce"
+#    weight = 2
+#
+#    [[menu.main]]
+#    parent = "docs"
+#    name = "Marello"
+#    url = "Marello"
+#    weight = 3
+
 [[menu.main]]
 name = "Contactez-nous"
 url = "http://kiboko.fr/fr/contactez-nous/"
-weight = 2
+weight = 3
 
+############################# Default Parameters ##########################
 [params]
+# logo is for all page
 logo = "images/logo.png"
+# logo white is for homepage logo, you can use colorful logo too...
 logo_white = "images/logo.png"
-primary_color = "#22014f"
-light_color = "#ddd"
-dark_color = "#22014f"
+# when logo is empty, it will shown your site title
+
+# customize color
+primary_color = "#222"
 body_color = "#ddd"
 text_color = "#666"
 text_color_dark = "#333"
 white_color = "#eee"
-font_family = "lato"
+light_color = "#ddd"
+dark_color = "#000"
 
-################################ French Language ######################
-[Languages.fr]
-languageName = "Français"
-languageCode = "fr-fr"
-weight = 1
-home = "Accueil"
-copyright = "Thème Hugo Dot personnalisé © [gethugothemes](https://gethugothemes.com/) 2020."
-
-# banner
-[Languages.fr.params.banner]
-title = "Documentation Kiboko"
-subtitle = "Parcourez la documentation pour apprendre à utiliser nos méthodes de travail"
-placeholder = "Rechercher une documentation"
-
-# call to action
-[Languages.fr.params.cta]
-enable = true
-title = "Vous n'avez pas trouvé une réponse ?"
-
-# call to action button
-[Languages.fr.params.cta.button]
-enable = true
-label = "Contactez-nous"
-link = "http://kiboko.fr/fr/contactez-nous/"
-
+# font family
+font_family = "lato" # Choose font family from : https://fonts.google.com/
 
 ############################## social links ##############################
 [[params.social]]
@@ -74,3 +87,30 @@ link = "https://www.linkedin.com/company/kiboko-sas"
 [[params.social]]
 icon = "ti-wordpress" # themify icon pack : https://themify.me/themify-icons
 link = "http://kiboko.fr/fr/"
+
+################################ French Language ######################
+[Languages.fr]
+languageName = "Français"
+languageCode = "fr-fr"
+weight = 1
+home = "Accueil"
+copyright = "Thème Hugo Dot personnalisé © [gethugothemes](https://gethugothemes.com/) 2020."
+
+# banner
+[Languages.fr.params.banner]
+title = "Documentation Kiboko"
+subtitle = "Parcourir la documentation technique pour apprendre à utiliser nos méthodes de travail"
+placeholder = "Rechercher une documentation"
+
+# call to action
+[Languages.fr.params.cta]
+enable = true
+title = "Vous avez une question ?"
+
+# call to action button
+[Languages.fr.params.cta.button]
+enable = true
+label = "Contactez-nous"
+link = "http://kiboko.fr/fr/contactez-nous/"
+
+
