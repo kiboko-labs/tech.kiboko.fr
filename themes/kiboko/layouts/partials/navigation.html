@@ -11,7 +11,8 @@
       </div>
       {{ else }}
       <div class="navbar-brand">
-        <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ site.Title }}">
+          <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ site.Title }}">
+          <span class="title">{{ site.Title }}</span>
       </div>
       {{ end }}
       {{ else }}
