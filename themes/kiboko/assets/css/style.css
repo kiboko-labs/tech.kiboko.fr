@@ -536,6 +536,10 @@ textarea.form-control {
 
 /* single page */
 
+.content {
+    padding-top: 1rem;
+}
+
 .content * {
   margin-bottom: 20px;
 }
@@ -829,9 +833,6 @@ p a:empty {
   margin-bottom: 0 !important;
 }
 
-.content {
-    padding-top: 1rem;
-}
 pre {
   display: block;
   padding: 9.5px;
@@ -867,6 +868,15 @@ code {
   border: 1px solid rgb(212, 212, 212);
   border-radius: 4px 4px 0 0;
   border-bottom: 0;
+}
+
+.list-social [class^="ti-"],
+.list-social [class*=" ti-"] {
+    color: #cd0001;
+}
+.list-social a:hover [class^="ti-"],
+.list-social a:hover [class*=" ti-"] {
+    color: black;
 }
 
 .tab-pane {

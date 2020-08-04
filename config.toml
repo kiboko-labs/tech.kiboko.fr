@@ -98,8 +98,8 @@ copyright = "Thème Hugo Dot personnalisé © [gethugothemes](https://gethugothe
 
 # banner
 [Languages.fr.params.banner]
-title = "Documentation Kiboko"
-subtitle = "Parcourir la documentation technique pour apprendre à utiliser nos méthodes de travail"
+title = "Tech.Kiboko.fr"
+subtitle = "Parcourir la documentation technique pour découvrir et utiliser nos méthodes de travail"
 placeholder = "Rechercher une documentation"
 
 # call to action
