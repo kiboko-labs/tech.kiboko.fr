@@ -4,27 +4,27 @@ DefaultContentLanguage = "fr"
 # theme
 theme = "kiboko"
 # site title
-title = "Accueil - Kiboko"
+title = "Kiboko"
 # disable language
 disableLanguages = []
 # google analytics
 googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 
 [[menu.main]]
-name = "Contactez-nous"
-url = "http://kiboko.fr/fr/contactez-nous/"
+name = "Kibokast"
+url = "/kibokast"
 weight = 1
 
 [[menu.main]]
-name = "Kibokasts"
-url = "/kibokasts"
+name = "Contactez-nous"
+url = "http://kiboko.fr/fr/contactez-nous/"
 weight = 2
 
 [params]
 logo = "images/logo.png"
 logo_white = "images/logo.png"
 primary_color = "#22014f"
-light_color = "#fe8507"
+light_color = "#ddd"
 dark_color = "#22014f"
 body_color = "#ddd"
 text_color = "#666"
@@ -56,3 +56,21 @@ title = "Vous n'avez pas trouvé une réponse ?"
 enable = true
 label = "Contactez-nous"
 link = "http://kiboko.fr/fr/contactez-nous/"
+
+
+############################## social links ##############################
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+link = "https://twitter.com/kibokolabs"
+
+[[params.social]]
+icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
+link = "https://github.com/kiboko-labs"
+
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
+link = "https://www.linkedin.com/company/kiboko-sas"
+
+[[params.social]]
+icon = "ti-wordpress" # themify icon pack : https://themify.me/themify-icons
+link = "http://kiboko.fr/fr/"
