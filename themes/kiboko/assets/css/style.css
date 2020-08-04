@@ -159,7 +159,7 @@ a:focus {
 
 a:hover,
 a:focus {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 a,
@@ -288,12 +288,16 @@ pre {
 }
 
 .navbar-brand  {
-  font-size: 4rem !important;
+  font-size: 2rem !important;
 }
 
 .navbar-brand img {
   max-width: 100px;
   margin-bottom: 0;
+}
+
+.navbar-brand .title {
+  padding: 2rem 1rem;
 }
 
 .navbar .nav-item .nav-link {
@@ -531,6 +535,10 @@ textarea.form-control {
 }
 
 /* single page */
+
+.content {
+    padding-top: 1rem;
+}
 
 .content * {
   margin-bottom: 20px;
@@ -834,6 +842,7 @@ pre {
 code {
   margin-bottom: 0 !important;
   font-size: 100%;
+  color: #CD0001;
 }
 
 .code-tabs {
@@ -859,6 +868,15 @@ code {
   border: 1px solid rgb(212, 212, 212);
   border-radius: 4px 4px 0 0;
   border-bottom: 0;
+}
+
+.list-social [class^="ti-"],
+.list-social [class*=" ti-"] {
+    color: #cd0001;
+}
+.list-social a:hover [class^="ti-"],
+.list-social a:hover [class*=" ti-"] {
+    color: black;
 }
 
 .tab-pane {

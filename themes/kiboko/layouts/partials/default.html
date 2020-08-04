@@ -18,13 +18,13 @@
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">{{ .Title }}</h2>
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on {{ .Lastmod.Format "02 Jan 2006" }}</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ .Lastmod.Format "02 Jan 2006" }}</p>
           {{ if .Content }}
           <div class="content">{{.Content}}</div>
           {{ else }}
-          <div class="bg-light p-4">
+          <div class="p-4">
             <ul class="page-list">
-              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+              {{ template "section-tree-nav-inner" dict "sect" . "currentnode" $currentNode }}
             </ul>
           </div>
           {{ end }}
@@ -102,4 +102,34 @@
   {{ end }}
 </li>
 {{ end }}
+{{ end }}
+
+<!-- templates -->
+{{ define "section-tree-nav-inner" }}
+    {{ $showvisitedlinks := .showvisitedlinks }}
+    {{ $currentNode := .currentnode }}
+    {{with .sect}}
+    {{safeHTML .Params.head}}
+    {{ $fileUniqueID := "" }}
+    {{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
+    {{ $currentNodeFileUniqueID := "" }}
+    {{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
+    <li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="sidelist
+      {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
+      <a href="{{.Permalink}}">
+        {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}} <span class="post-meta">{{ .Lastmod.Format "02 Jan 2006" }}</span>
+      </a>
+      {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
+      {{ if ne $numberOfPages 0 }}
+        <ul>
+          {{ range .Pages.ByWeight }}
+            {{ if and .Params.hidden (not $.showhidden) }}
+            {{else}}
+              {{ template "section-tree-nav-inner" dict "sect" . "currentnode" $currentNode }}
+            {{end}}
+          {{end}}
+        </ul>
+      {{ end }}
+    </li>
+    {{ end }}
 {{ end }}
