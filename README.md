@@ -11,4 +11,4 @@
 > Env. local : `hugo server -D`
 
 ## Theme
-- Customize from Dot theme https://github.com/themefisher/dot
+- Customized from Dot theme https://github.com/themefisher/dot
