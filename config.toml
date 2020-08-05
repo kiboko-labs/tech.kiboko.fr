@@ -23,28 +23,28 @@ url = "/kibokast"
 weight = 1
 
 # Dropdown menu
-#[[menu.main]]
-#weight = 2
-#name = "docs"
-#hasChildren = true
-#
-#    [[menu.main]]
-#    parent = "docs"
-#    name = "OroCRM"
-#    url = "OroCRM"
-#    weight = 1
-#
-#    [[menu.main]]
-#    parent = "docs"
-#    name = "OroCommerce"
-#    url = "OroCommerce"
-#    weight = 2
-#
-#    [[menu.main]]
-#    parent = "docs"
-#    name = "Marello"
-#    url = "Marello"
-#    weight = 3
+[[menu.main]]
+weight = 2
+name = "docs"
+hasChildren = true
+
+    [[menu.main]]
+    parent = "docs"
+    name = "Oro"
+    url = "oro"
+    weight = 1
+
+    [[menu.main]]
+    parent = "docs"
+    name = "Docker"
+    url = "docker"
+    weight = 2
+
+    [[menu.main]]
+    parent = "docs"
+    name = "Autre"
+    url = "autre"
+    weight = 3
 
 [[menu.main]]
 name = "Contactez-nous"

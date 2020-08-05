@@ -2,7 +2,6 @@
 
 ## Technologies
 - Hugo framework [docs](https://gohugo.io/documentation/)
--
 
 ## How to use ?
 - Edit Markdown files in `/content/` folder

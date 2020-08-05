@@ -18,7 +18,10 @@
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">{{ .Title }}</h2>
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ .Lastmod.Format "02 Jan 2006" }}</p>
+          <p>{{ .Description }}</p>
+          {{ if and (ne .Type "category") (ne .Type "legal-notice") }}
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ .Lastmod.Format "02/01/2006" }}</p>
+          {{ end }}
           {{ if .Content }}
           <div class="content">{{.Content}}</div>
           {{ else }}
