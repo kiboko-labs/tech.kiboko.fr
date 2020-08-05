@@ -94,7 +94,6 @@ languageName = "Français"
 languageCode = "fr-fr"
 weight = 1
 home = "Accueil"
-copyright = "Thème Hugo Dot personnalisé © [gethugothemes](https://gethugothemes.com/) 2020."
 
 # banner
 [Languages.fr.params.banner]
@@ -113,4 +112,9 @@ enable = true
 label = "Contactez-nous"
 link = "http://kiboko.fr/fr/contactez-nous/"
 
+# legal notice
+[Languages.fr.params.legal_notice]
+enable = true
+title = "Mentions légales"
+link = "/legal-notice"
 

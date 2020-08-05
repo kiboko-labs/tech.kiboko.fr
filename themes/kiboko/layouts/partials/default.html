@@ -18,7 +18,9 @@
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">{{ .Title }}</h2>
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ .Lastmod.Format "02 Jan 2006" }}</p>
+          {{ if ne .Type "legal-notice" }}
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ .Lastmod.Format "02/01/2006" }}</p>
+          {{ end }}
           {{ if .Content }}
           <div class="content">{{.Content}}</div>
           {{ else }}
@@ -86,9 +88,15 @@
 {{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
 <li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="sidelist
   {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
+  {{ if eq .Type "docs" }}
+    <a href="{{.Permalink}}">
+      {{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}
+    </a>
+  {{ else }}
   <a href="{{.Permalink}}">
-    {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
+    {{safeHTML .Params.Pre}}{{.LinkTitle}}{{safeHTML .Params.Post}}
   </a>
+  {{ end }}
   {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
   {{ if ne $numberOfPages 0 }}
     <ul>
