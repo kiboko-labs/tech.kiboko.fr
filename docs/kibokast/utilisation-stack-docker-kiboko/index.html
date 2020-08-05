@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Utilisation stack Docker Kiboko</title>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/">
+    Kibokast
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+    Code review
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+    Commandes Debug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+    Collections Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+    Principes SOLID
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+    Utilisation des commandes Kloud
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+    Utilisation Tmetric
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+    Migrations Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+    Usage Github
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+    Utilisation stack Docker Kiboko
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Utilisation stack Docker Kiboko
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">24/01/2020</p>
+          
+          
+          <div class="content"><h2 id="1-initialisation-dun-projet-sur-dev0-avec-cette-stack">1. Initialisation d’un projet sur dev0 avec cette stack</h2>
+<h3 id="11-initialisation-du-projet">1.1. Initialisation du projet</h3>
+<ul>
+<li>cloner le projet application en local <code>git clone git@github.com:kiboko-labs/{nom-du-projet}.git</code></li>
+<li>connexion ssh sur dev0</li>
+</ul>
+<blockquote>
+<p><code>ssh kiboko@dev0.kiboko.io</code></p>
+</blockquote>
+<ul>
+<li>se rendre dans le répertoire <code>www/</code></li>
+</ul>
+<blockquote>
+<p>cd www/</p>
+</blockquote>
+<ul>
+<li>cloner le projet dans un répertoire nominatif tel que :</li>
+</ul>
+<blockquote>
+<p><code>git clone git@github.com:kiboko-labs/{nom-du-projet}.git {nom-du-projet}-{NOM-DU-DEV}</code></p>
+</blockquote>
+<ul>
+<li>se rendre dans le répertoire créé</li>
+</ul>
+<blockquote>
+<p>cd {nom-du-projet}-{NOM-DU-DEV}</p>
+</blockquote>
+<ul>
+<li>créer ma configuration phpstorm pour le déploiement sur dev0 (remote host)
+<ul>
+<li>dans l&rsquo;onglet <code>Mapping</code>, dans le champs <code>Deployment path</code>, mettre un <code>/</code></li>
+<li>définir le remote en sftp et <code>par défaut</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>si vous aviez déjà au moins 1 remote paramétré et <code>par defaut</code>, il faut forcer le remote dev0 <code>par defaut</code> car c&rsquo;est le remote <code>par defaut</code> qui sera automatiquement synchronisé depuis votre local
+DANGER : si <code>par defaut</code> est une prod</p>
+</blockquote>
+<ul>
+<li>
+<p>activer le déploiement automatique : <code>Tools/Déployment/Automatic upload</code> (les modif. locales à l’enregistrement seront deployées automatiquement)</p>
+</li>
+<li>
+<p>creation du fichier .env à partir du fichier .env.dist</p>
+<ul>
+<li>avec des ports uniques (published port)</li>
+<li>ajout du token Github</li>
+<li>ajout des tokens Blackfire ou supprimer les valeurs</li>
+</ul>
+</li>
+</ul>
+<h4 id="111-installation-vierge">1.1.1. Installation vierge</h4>
+<ul>
+<li><code>make start</code> (lance tous les services sauf WS et MQ)</li>
+<li><code>make install</code> (ne pas remplir le parameters.yml à la main attendre que l’installeur le demande)</li>
+</ul>
+<h4 id="112-installation-avec-un-dump">1.1.2. Installation avec un dump</h4>
+<ul>
+<li><code>make start</code></li>
+<li>importer son dump dans le service sql</li>
+<li><code>make vendor platform-update</code></li>
+</ul>
+<h3 id="12-lancement-du-mq-et-ws-avant-exploitation">1.2. Lancement du MQ et WS avant exploitation</h3>
+<ul>
+<li><code>make start-{mq,ws}</code></li>
+</ul>
+<h3 id="13exploitation">1.3.Exploitation</h3>
+<ul>
+<li>voir la consommation des messages : docker-compose logs -f amqp`</li>
+<li>accès à RabbitMQManagement ex : <a href="http://dev0.kiboko.io">http://dev0.kiboko.io</a>:10006/</li>
+<li>accès au mailcatcher ex :  <a href="http://dev0.kiboko.io">http://dev0.kiboko.io</a>:10004/</li>
+<li>accès à ElasticSearch via DejaVu ex : <a href="http://dev0.kiboko.io">http://dev0.kiboko.io</a>:10009/</li>
+</ul>
+<p>Pratique : quand vous n’utilisez plus l’environnement, make stop</p>
+<h3 id="14-vider-le-cache">1.4. Vider le cache</h3>
+<ul>
+<li><code>make cache-clear</code> pour le cache de l&rsquo;envirnonnement <code>prod</code></li>
+<li><code>make cache-clear-dev</code> pour le cache de l&rsquo;environnement <code>dev</code></li>
+</ul>
+<h3 id="15-changer-de-branche">1.5 Changer de branche</h3>
+<p>Il est impératif de faire changer de branche sur l&rsquo;environnement local <em>et</em> l&rsquo;environnement distant. L&rsquo;environnement distant réclamera d&rsquo;être committé ou remis à l&rsquo;état original.</p>
+<p><strong>⚠️ Aucun commit ne doit être fait depuis l&rsquo;environnement distant</strong></p>
+<ul>
+<li>Pour remettre les fichiers à leur état original : <code>git reset --hard</code></li>
+<li>Pour checkout la nouvelle version de travail : <code>git checkout &lt;branch&gt;</code></li>
+</ul>
+<h2 id="2-usages-particuliers">2. Usages particuliers</h2>
+<ul>
+<li>utilisation xdebug via le service DBGp (à venir)</li>
+</ul>
+<h2 id="3-ressources-tiers">3. Ressources tiers</h2>
+<ul>
+<li>extension navigateur qui permet de switcher en mode dev, prod et debug:
+<a href="https://github.com/kiboko-labs/kiboko-symfony-env">https://github.com/kiboko-labs/kiboko-symfony-env</a></li>
+</ul>
+<blockquote>
+<p>sur Chrome :</p>
+<ul>
+<li>ajout extensions <a href="chrome://extensions/">chrome://extensions/</a></li>
+<li>activer le mode développeur</li>
+<li>charger l&rsquo;extension non empaquetée</li>
+</ul>
+</blockquote>
+<ul>
+<li>images docker :
+<a href="https://github.com/kiboko-labs/docker-images">https://github.com/kiboko-labs/docker-images</a></li>
+</ul>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/usage-github/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Usage Github</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/oro/"> <span class="d-none d-md-block">Oro</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Utilisation Tmetric</title>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/">
+    Kibokast
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+    Code review
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+    Commandes Debug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+    Collections Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+    Principes SOLID
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+    Utilisation des commandes Kloud
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+    Utilisation Tmetric
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+    Migrations Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+    Usage Github
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+    Utilisation stack Docker Kiboko
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Utilisation Tmetric
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">06/03/2020</p>
+          
+          
+          <div class="content"><p>Support officiel : <a href="https://tmetric.com/support/">https://tmetric.com/support/</a></p>
+<h2 id="1-outils">1. Outils</h2>
+<ul>
+<li>
+<p>web app : <a href="https://app.tmetric.com/">https://app.tmetric.com/</a></p>
+</li>
+<li>
+<p>extension navigateur  (indispensable)</p>
+</li>
+</ul>
+<p>Google Chrome : <a href="https://chrome.google.com/webstore/detail/tmetric-%E2%80%93-time-tracker-pr/ffijoclmniipjbhecddgkfpdafpbdnen">https://chrome.google.com/webstore/detail/tmetric-%E2%80%93-time-tracker-pr/ffijoclmniipjbhecddgkfpdafpbdnen</a></p>
+<p>Mozilla Firefox : <a href="https://addons.mozilla.org/fr/firefox/addon/tmetric-extension/">https://addons.mozilla.org/fr/firefox/addon/tmetric-extension/</a></p>
+<p>=&gt; permet d&rsquo;ajouter un bouton &ldquo;start timer&rdquo; sur le ticket (Jira/Github)</p>
+<ul>
+<li>desktop app : <a href="https://tmetric.com/download">https://tmetric.com/download</a></li>
+</ul>
+<h2 id="2-saisie-de-temps">2. Saisie de temps</h2>
+<h4 id="21-depuis-un-ticket">2.1. Depuis un ticket</h4>
+<p>Dès que lon commence une tache, on déclenche l&rsquo;enregistrement du temps via le bouton &ldquo;Start timer&rdquo; présent sur le ticket (ou la PR), une modal s&rsquo;ouvre :</p>
+<ul>
+<li><strong>task</strong> : correspond au nom du ticket (avec son numéro)</li>
+<li><strong>notes</strong> : surcharge le nom du ticket si modifié</li>
+<li><strong>project</strong> : :warning: bien vérifier que le projet dans la liste déourlante est bien le bon :warning:</li>
+<li><strong>tags</strong> : non utilisé dans Tmetric, il est préférable de les retirer à ce jour</li>
+</ul>
+<p>(changement à prévoir lors de l&rsquo;utilisation de la version )</p>
+<h4 id="22-tache-interne">2.2. Tache interne</h4>
+<p>Si la tache effectuée n&rsquo;a pas de ticket, c&rsquo;est une tache interne (sinon on créé le ticket manquant sur le projet)</p>
+<p>On peut donc ajouter un &ldquo;Time entry&rdquo; depuis l&rsquo;application web <a href="https://app.tmetric.com/">https://app.tmetric.com/</a> ou desktop.</p>
+<p>Dans la description, utiliser l&rsquo;auto-complete si la mission existe déjà et ajouter dans Project &ldquo;Kiboko interne&rdquo;.</p>
+<p>Sinon on peut renseigner l&rsquo;information.</p>
+<h2 id="3-autres-vues">3. Autres vues</h2>
+<h3 id="31-vue-my-time">3.1. Vue &ldquo;My time&rdquo;</h3>
+<p>=&gt; <a href="https://app.tmetric.com/">https://app.tmetric.com/</a></p>
+<p>Sur cette vue, on peut suivre et vérifier sa saisie de temps et la modifier simplement si il y a des erreurs.</p>
+<h3 id="32-vue-projects">3.2. Vue &ldquo;Projects&rdquo;</h3>
+<p>Liste les différents projets disponibles, si il en manque merci de prévenir Xavier (admin) ou Dimitri (owner).</p>
+<h3 id="33-vue-reports">3.3. Vue &ldquo;Reports&rdquo;</h3>
+<p>Permet d&rsquo;analyser le temps saisie par projet, tache ou équipe.
+Cette fonctionnalité permet d&rsquo;exporter les données de l&rsquo;équipe au format .csv afin de créer les CRA par client.</p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Utilisation des commandes Kloud</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/kibokast/migrations-oro/"> <span class="d-none d-md-block">Migrations Oro</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

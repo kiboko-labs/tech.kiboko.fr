@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Tech.Kiboko.fr</title>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="banner bg-white" data-background="http://tech.kiboko.fr/">
+      <nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+        <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png "
+          alt="Tech.Kiboko.fr">
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <!-- banner -->
+<div class="container section">
+  <div class="row">
+    <div class="col-lg-8 text-center mx-auto">
+      <h1 class="text-dark mb-3">Tech.Kiboko.fr</h1>
+      <p class="text-dark mb-4">Parcourir la documentation technique pour découvrir et utiliser nos méthodes de travail</p>
+      <div class="position-relative">
+        <input id="search" class="form-control" placeholder="Rechercher une documentation">
+        <i class="ti-search search-icon"></i>
+        
+        
+        
+        
+        <script>
+          $(function () {
+          var projects = [
+            
+            {
+              value: "Créer une application frontend sur OroPlatform",
+              label: "<p>OroPlatform fournit un environnement complet pour créér des applications métier dédiées à une équipe interne d\u0026rsquo;une entreprise. Il ne fournit cependant pas d\u0026rsquo;interface pubique à destination de tiers, à l\u0026rsquo;exception notable de l\u0026rsquo;interface OroCommerce Store Front.\nNous allons créer un socle d\u0026rsquo;application OroPlatform qui disposera d\u0026rsquo;un accès client. Par défaut, une application OroPlatform dispose d\u0026rsquo;une seule application déclarée, nommée default. C\u0026rsquo;est sur cette application que l\u0026rsquo;on développe des interfaces métier, nous allons chercher à créer une seconde application nommée helpdesk_portal\nArchitecture Nous allons nous appliquer à créer cette application sur OroPlatform 4.1 Community Edition et Symfony 4.4.\nNous tenterons de respecter une organisation de notre code en DDD - Domain Driven Development\nsrc\/ └ HelpDeskPortal\/ ├\tBundle\/ │ ├ DependencyInjection\/ │ │ │ Configuration.php │ │ └ KibokoHelpDeskPortalExtension.php │ ├ Resources\/ │ │ └ config\/ │ │ └ oro\/ │ └ KibokoHelpDeskPortalBundle.php ├ Domain\/ │ └ Frontend\/ └ Infrastructure\/ ├ Persistence\/ │ └ Doctrine\/ │ └ Repository\/ └ Symfony\/ ├ DependencyInjection\/ ├ Request\/ ├ Router\/ └ Session\/ Créer le projet Nous allons partir d\u0026rsquo;un projet OroPlatform CE 4.1 vierge.\ngit clone git@github.com:oroinc\/platform-application.git helpdesk-application cd helpdesk-application git checkout 4.1.2 rm -rf .git git init git add -A . git commit -m \u0026quot;Initial commit from git@github.com:oroinc\/platform-application.git atr version 4.1.2\u0026quot; composer install Routage Dans le but de simplification, nous allons activer l\u0026rsquo;auto-wiring sur notre composant de routage :\nAutowiring services: Kiboko\\HelpDeskPortal\\Infrastructure\\Symfony\\Router\\: resource: \u0026#39;..\/src\/HelpDeskPortal\/Infrastructure\/Router\u0026#39; autowire: true autoconfigure: true Ajouter un préfixe aux routes OroPlatform Pour la première étape, nous allons ajouter un préfixe admin\/ à nos routes standard OroPlatform, comme le fait OroCommerce.\nNous utiliserons le paramètre de configuration %web_backend_prefix% pour définir facilement cette valeur. Nous profiterons que OroCommerce ait déjà défini ce paramètre.\nNous alons utiliser un event listener qui va retraiter les déclarations de routes, tel que :\n\u0026lt;?php declare(strict_types=1); namespace Kiboko\\HelpDeskPortal\\Infrastructure\\Symfony\\Router\\EventListener; use Oro\\Bundle\\ApiBundle\\ApiDoc\\RestRouteOptionsResolver; use Oro\\Bundle\\DistributionBundle\\Event\\RouteCollectionEvent; use Symfony\\Component\\Routing\\Route; class RouteCollectionListener { const OPTION_FRONTEND = \u0026#39;helpdesk_portal\u0026#39;; private string $prefix; public function __construct(string $prefix) { $this-\u0026gt;prefix = trim(trim($prefix), \u0026#39;\/\u0026#39;); } public function onCollectionAutoload(RouteCollectionEvent $event): void { if (\u0026#39;\u0026#39; === $this-\u0026gt;prefix) { return; } \/** @var Route $route *\/ foreach ($event-\u0026gt;getCollection()-\u0026gt;getIterator() as $route) { if ($route-\u0026gt;hasOption(self::OPTION_FRONTEND) \u0026amp;\u0026amp; $route-\u0026gt;getOption(self::OPTION_FRONTEND)) { continue; } if (!$this-\u0026gt;hasPrefix($route-\u0026gt;getPath())) { $route-\u0026gt;setPath($this-\u0026gt;prefix . $route-\u0026gt;getPath()); } if ($route-\u0026gt;hasOption(RestRouteOptionsResolver::OVERRIDE_PATH_OPTION)) { $overridePath = $route-\u0026gt;getOption(RestRouteOptionsResolver::OVERRIDE_PATH_OPTION); if (!$this-\u0026gt;hasPrefix($overridePath)) { $route-\u0026gt;setOption( RestRouteOptionsResolver::OVERRIDE_PATH_OPTION, $this-\u0026gt;addPrefix($overridePath) ); } } } } private function hasPrefix(string $path): bool { $prefix = $this-\u0026gt;prefix . \u0026#39;\/\u0026#39;; return 0 === strpos($path, $prefix) || 0 === strpos($path, \u0026#39;\/\u0026#39; . $prefix); } private function addPrefix(string $path): string { if (0 === strpos($path, \u0026#39;\/\u0026#39;)) { return \u0026#39;\/\u0026#39; . $this-\u0026gt;prefix . $path; } return $this-\u0026gt;prefix . \u0026#39;\/\u0026#39; . $path; } } Et la déclaration de service qui lui correspond :\nservices: Kiboko\\HelpDeskPortal\\Infrastructure\\Symfony\\Router\\EventListener\\RouteCollectionListener: arguments: - \u0026#39;%web_backend_prefix%\u0026#39; tags: - { name: kernel.event_listener, event: oro_distribution.route_collection.expose, method: onCollectionAutoload, priority: 120 } - { name: kernel.event_listener, event: oro_distribution.route_collection.autoload, method: onCollectionAutoload, priority: 120 } lazy: true Extracteur de routes frontend Pour pouvoir exporter les routes javascript, nous avons besoin d\u0026rsquo;extraire les routes du portail Helpdesk.\n\u0026lt;?php namespace Kiboko\\HelpDeskPortal\\Infrastructure\\Symfony\\Router; use FOS\\JsRoutingBundle\\Extractor\\ExposedRoutesExtractor; use Symfony\\Component\\Routing\\Route; \/** * Expose routes which marked with option `helpdesk_portal: true`. *\/ class PortalExposedRoutesExtractor extends ExposedRoutesExtractor { \/** * {@inheritdoc} *\/ public function isRouteExposed(Route $route, $name) { return parent::isRouteExposed($route, $name) \u0026amp;\u0026amp; $route-\u0026gt;hasOption(\u0026#39;helpdesk_portal\u0026#39;) \u0026amp;\u0026amp; $route-\u0026gt;getOption(\u0026#39;helpdesk_portal\u0026#39;); } \/** * {@inheritdoc} *\/ public function getCachePath($locale) { $path = parent::getCachePath($locale); $fileName = basename($path); $fileName = \u0026#39;helpdesk_portal_\u0026#39;.$fileName; return dirname($path) . DIRECTORY_SEPARATOR . $fileName; } } Ainsi que les services nécessaires à l\u0026rsquo;extraction de ces routes Javascript :\nservices: Kiboko\\HelpDeskPortal\\Infrastructure\\Symfony\\Router\\PortalExposedRoutesExtractor: arguments: - \u0026#39;@router\u0026#39; - [] - \u0026#39;%kernel.cache_dir%\/oro_data\u0026#39; - \u0026#39;%kernel.bundles%\u0026#39; kiboko_help_desk_portal.js_routing_controller: class: \u0026#39;%fos_js_routing.controller.class%\u0026#39; public: true arguments: - \u0026#39;@fos_js_routing.serializer\u0026#39; - \u0026#39;@Kiboko\\HelpDeskPortal\\Infrastructure\\Symfony\\Router\\PortalExposedRoutesExtractor\u0026#39; - \u0026#39;%fos_js_routing.cache_control%\u0026#39; - \u0026#39;%kernel.debug%\u0026#39; Nous aurons également besoin d\u0026rsquo;exposer une route supplémentaire pour le service de contrôleur kiboko_help_desk_portal.js_routing_controller que nous avons créé plus haut :\nkiboko_help_desk_portal_js_routing_js: path: \u0026#34;\/media\/js\/frontend_routes.{_format}\u0026#34; defaults: { _controller: kiboko_help_desk_porta.js_routing_controller:indexAction } requirements: _format: json options: helpdesk_portal: true </p>",
+              url: "http:\/\/tech.kiboko.fr\/oro\/creer-une-application-frontend-sur-oroplatform\/"
+            },
+            
+            {
+              value: "Git flow",
+              label: "<p>Spécificités Kiboko pour la mise en place de git flow\nEnvironnements et branches    Environnement Branche     Production master   Staging staging   . develop    Branches Branche master  nombre : unique durée de vie : permanente responsabilité : Lead dev et DT création : démarrage du projet  Code stable, testé et validé. Ce code doit être validé en staging par le client.\n⚠️ Sera déployé sur l’environnement de production\nLes PR à destination de la branche Master sont validées par les personnes ayant la main sur les déploiements sur l’environnement de production\nBranche staging  nombre : unique durée de vie : permanente responsabilité : Lead dev et DT création : démarrage du projet  Code stable, testé et validé en environnement de dev\/test. Permet de valider le fonctionnement d’une nouvelle fonctionnalité sur une environnement identique à la production. Permet au client d’effectuer sa recette.\nLes PR à destination de la branche staging sont validées par les personnes ayant la main sur les déploiements sur l’environnement de staging après le code review validé.\n⚠️ Sera déployé sur l’environnement de staging\nBranches « feature »  nombre : au moins une par fonctionnalité à développer durée de vie : quelques jours responsabilité : Développeur création : démarrage du développement d’un ticket, par fork de la branche develop nommage : feature\/\u0026lt;numéro de ticket\u0026gt;-ex : feature\/103-news-bundle Code review : Lead dev et DT  Code en cours de développement qui implémente une fonctionnalité à embarquer dans la prochaine version de l’application.\nUne fois le développement sur cette branche terminé :\n création d’une PR depuis cette branche vers develop assignation de la responsabilité au Lead dev ou DT validation de la PR par le reviewer ou le lead-dev  Branches « hotfix »  nombre : au moins une par bug à corriger en production durée de vie : quelques heures, le temps de passer le correctif en production responsabilité : Développeur création : par fork de la branche master nommage : hotfix\/\u0026lt;numéro de ticket\u0026gt;-ex : hotfix\/103-category-import Code review : Lead dev et DT  </p>",
+              url: "http:\/\/tech.kiboko.fr\/autre\/git-flow\/"
+            },
+            
+            {
+              value: "Regex",
+              label: "<p>Expressions régulières Doc. php : https:\/\/www.php.net\/manual\/fr\/pcre.pattern.php\nAlternatives  (abc|def) alternative avec capture : recherche abc ou def et fournira le résultat trouvé (?:abc|def) alternative sans capture : recherche abc ou def, mais ne fournira pas le résultat trouvé (?:(Lun|Mar)di) alternative avec capture interne : recherche Lun ou Mar et fournira le résultat trouvé respectivement dans les positions 1 et 2 (?|(Lun|Mar)di) alternative avec capture interne : recherche Lun ou Mar et fournira toujours le résultat trouvé dans la position 1 (\u0026lt;(?:span|div)\u0026gt;Lorem Ipsum\u0026lt;\/\\\\1\u0026gt;) alternative sans capture et référence arrière  Classes de caractères Plages de caractères  . recherche tout caractère \\d recherche un des caractères entre 0 et 9 \\. recherche le caractère . [2-6] recherche un des caractères entre 2 et 6 [a-z] recherche un des caractères entre a et z [A-Z] recherche un des caractères entre A et Z [a-zA-Z] recherche un des caractères entre a et z et entre A et Z [a-zA-Z0-9] recherche un des caractères entre a et z, entre A et Z et entre 0 et 9  Répétitions  [a-z0-9-]\u002b recherche les caractères 1 fois ou plus [a-z0-9-]* recherche des caractères 0 fois ou plus [a-z0-9-]? crecherche des caractères 0 fois ou 1 fois  Recherche inversée  [^,]* recherche tout caractère différent de , [^a-z]* recherche tout caractère différent de la plage entre a et z  Ancres  ^\/catalog\/ (importance du ^) recherche toute chaine qui commence par \/catalog\/ \\\\.html$ (importance du $) recherche toute chaine qui termine par .html ^(?:\/.*|)(\/[a-z0-9-]\u002b)\\.html$ recherche toute chaine qui termine par .html et ne capture que la dernière partie, ex :  \/lorem-ipsum.html deviendra \/lorem-ipsum \/lorem-ipsum\/dolor-sit-amet.html deviendra \/dolor-sit-amet    </p>",
+              url: "http:\/\/tech.kiboko.fr\/autre\/regex\/"
+            },
+            
+            {
+              value: "Tech.Kiboko.fr",
+              label: "<p></p>",
+              url: "http:\/\/tech.kiboko.fr\/"
+            },
+            
+            {
+              value: "Commandes utiles",
+              label: "<p>Generic Install\ncomposer install --prefer-dist --no-dev bin\/console oro:install --timeout=0 Start message queue consume\nbin\/console oro:message-queue:consume with less or more informations\nbin\/console oro:message-queue:consume -v bin\/console oro:message-queue:consume -vv bin\/console oro:message-queue:consume -vvv Remove cache\nrm -rf var\/cache\/* Indexation Search\nbin\/console oro:search:index bin\/console oro:search:reindex Website\nbin\/console oro:website-search:reindex bin\/console oro:website-search:reindex --website-id=2 Update entities bin\/console oro:entity-extend:cache:check Makes sure that extended entity configs are ready to be processed by other commands. This is an internal command. Please do not run it manually. bin\/console oro:entity-extend:cache:clear Clears extended entity cache. bin\/console oro:entity-extend:cache:warmup Warms up extended entity cache. bin\/console oro:entity-extend:migration:update-config Updates extended entities configuration during a database structure migration process. This is an internal command. Please do not run it manually. bin\/console oro:entity-extend:update-config Prepare entity config bin\/console oro:entity-extend:update-schema Synchronize extended and custom entities metadata with a database schema Assets Install assets\n3.0 (with assetic)\nbin\/console oro:asset:install \u0026amp;\u0026amp; bin\/console assetic:dump bin\/console oro:assets:install -e dev \u0026amp;\u0026amp; bin\/console assetic:dump -e dev 3.1 (with webpack)\nbin\/console asset:install \u0026amp;\u0026amp; bin\/console oro:asset:build bin\/console asset:install --env=dev \u0026amp;\u0026amp; bin\/console oro:asset:build --env=dev with symlink (without new file creation)\nbin\/console oro:asset:install --symlink Migrations Schema migrations\nbin\/console oro:migration:load Data migrations\nbin\/console oro:migration:data:load Data migrations dump\nbin\/console oro:migration:dump more : https:\/\/github.com\/oroinc\/platform\/tree\/master\/src\/Oro\/Bundle\/MigrationBundle\nUsers Password changing\nbin\/console oro:user:update nomUser --user-password=root Create a limited access token over time\nbin\/console oro:user:impersonate user ElasticSearch En cas d\u0026rsquo;erreur d\u0026rsquo;indexation :\nbin\/console oro:website-elasticsearch:create-website-indexes Others Translations\nbin\/console oro:translation:load bin\/console oro:translation:dump bin\/console oro:translation:dump \u0026amp;\u0026amp; bin\/console oro:localization:dump Load with parameters :\nbin\/console oro:translation:load --languages=en --languages=fr --rebuild-cache Détails : https:\/\/github.com\/oroinc\/platform\/blob\/master\/src\/Oro\/Bundle\/TranslationBundle\/Resources\/doc\/reference\/commands.md\nGenerate JS routing (Api\/Components)\nbin\/console fos:js-routing:dump --target web\/js\/routes.js Worflows \u0026amp; Processes\nbin\/console oro:workflow:definitions:load bin\/console oro:process:configuration:load And more If you need Bruce\u0026rsquo;s power : https:\/\/github.com\/kiboko-labs\/KibokoArmageddonBundle\n</p>",
+              url: "http:\/\/tech.kiboko.fr\/oro\/commandes-utiles\/"
+            },
+            
+            {
+              value: "Code review",
+              label: "<p>1. Cycle de vie des PRs  Pour la création des PRs, se reporter à la procédure décrite dans les usages Github Pas plus de 2 PRs ouvertes par personne : tant que j\u0026rsquo;ai encore une PR non mergée, je n\u0026rsquo;entame pas de nouvelle tâche. Tout le monde relit les PRs de tout le monde Afin de fluidifier les développements, il est important de relire les PRs plusieurs fois par jour (ex : le matin en arrivant, puis après la pause déjeuner. Possibilité de relire à 2 si besoin) Tout le monde peut merger les PRs en respectant les règles de validité ci-dessous  2. Règles de validité d\u0026rsquo;une PR Prérequis  Chaque branche doit contenir un numéro de ticket : feature\/XXX-new-feature Chaque commentaire de commit doit contenir un numéro de ticket : #XXX : Add new feature Les tests unitaires doivent passer La PR doit avoir le libellé \u0026ldquo;GTM\u0026rdquo; La PR doit avoir une taille raisonnable Les commits doivent être bien découpés (pas de \u0026ldquo;fix, re-re-fix, wip\u0026rdquo;)  Règles de merge Je merge une PR si elle respecte les critères suivants :\n Respect des prérequis décrits ci-dessus Déjà 2 autres personnes ont approuvé la PR dont un dev expérimenté Toutes les discussions sont marquées comme résolues ⚠️ Elle pointe sur la branche develop ⚠️ Je vérifie que le milestone est le bon pour faciliter la rédaction des notes de version  Approbation et correction En tant que relecteur  Lorsque j\u0026rsquo;ai une question ou un retour à faire sur une PR, je mets un commentaire sur la ligne concernée (en restant courtois dans mes insultes) Lorsque je n\u0026rsquo;ai plus de retours à faire, j\u0026rsquo;approuve la PR. Si elle respecte les règles de validité, je la merge sur develop.  En tant que développeur  Lorsque je corrige ma PR, je réponds au commentaire (en restant courtois dans mes insultes) et je marque la discussion comme résolue  </p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/code-review\/"
+            },
+            
+            {
+              value: "Commandes Debug",
+              label: "<p>Commandes Symfony Articles officiels présentants certaines fonctionnalités :\n https:\/\/symfony.com\/blog\/new-in-symfony-3-4-debug-autowiring-command https:\/\/symfony.com\/blog\/new-in-symfony-3-4-debug-form-command  Pour avoir la liste complete : bin\/console list debug\nDebug Router Doc officiel : https:\/\/symfony.com\/doc\/3.4\/routing\/debug.html\nPour avoir l\u0026rsquo;ensemble des routes avec leur nom et les URLs qui correspondent\nbin\/console debug:router\nExemple pour rechercher une route \u0026ldquo;produit\u0026rdquo; dans des controllers :\nbin\/console debug:router --show-controllers | grep \/product\nDebug Container Doc officiel : https:\/\/symfony.com\/doc\/3.4\/service_container\/debug.html\nPour avoir l\u0026rsquo;ensemble des services publiques\nbin\/console debug:container\n Pour rechercher un service par son nom : bin\/console debug:container validator Pour rechercher un service par tag : bin\/console debug:container --tag=form.type Pour rechercher un service par parametre : bin\/console debug:container --parameter=kernel.debug  Debug Config Doc officiel : https:\/\/symfony.com\/doc\/3.4\/reference\/configuration\/debug.html\nPour avoir l\u0026rsquo;ensemble des configuration\nbin\/console debug:config\n Pour rechercher pour un bundle : bin\/console debug:config AppBundle  Debug Twig Pour avoir l\u0026rsquo;ensemble des fonctions des filtres, des tests et des globales disponibles ainsi que les chemins chargés par l\u0026rsquo;application\nbin\/console debug:twig\nDebug Swiftmailer Doc officiel : https:\/\/symfony.com\/doc\/3.4\/reference\/configuration\/swiftmailer.html\nPour avoir les mailers disponibles\nbin\/console debug:swiftmailer\nDebug Autowiring Doc officiel : https:\/\/symfony.com\/doc\/3.4\/service_container\/debug.html\nPour avoir l\u0026rsquo;ensemble des services déclarés en auto-wiring :\nbin\/console debug:autowiring\nDebug Forms Pour avoir l\u0026rsquo;ensemble des formulaires (Type, Extension, Type Guessers) disponibles :\nbin\/console debug:form\nDebug Translations Pour avoir l\u0026rsquo;ensemble des traductions par locale ou bundle :\nbin\/console debug:translation\nDebug routes JS bin\/console fos:js-routing:debug\nCommandes Oro Entity config Oro Permet de récupérer la configuration d\u0026rsquo;une entité :\nbin\/console oro:entity-config:debug AppBundle\\\\Entity\\\\Norm\nPermet de récupérer la configuration d\u0026rsquo;un champ d\u0026rsquo;une entité :\nbin\/console oro:entity-config:debug AppBundle\\\\Entity\\\\Norm code\nLayout à compléter\nbin\/console oro:debug:layout\nWorkflow à compléter\nbin\/console oro:debug:workflow:definitions\n</p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/commandes-debug\/"
+            },
+            
+            {
+              value: "Collections Doctrine",
+              label: "<p> Documentation Github  La collection sert à adresser le besoin de fournir des listes d\u0026rsquo;objets. Doctrine fournit une implémentation utilisée dans son ORM et ses ODM.\nLa collection permet de gérer une liste d\u0026rsquo;objets du même type, pour :\n filtrer trier appliquer un traitement (map) calculer un résultat d\u0026rsquo;après le contenu de la liste (reduce)  L\u0026rsquo;interface Collection Il s\u0026rsquo;agit du contrat \u0026ldquo;Collection\u0026rdquo; de Doctrine, toute collection devra implémenter cette interface.\nCette interface implémente elle-même les contrats suivants :\n \\Countable : la collection pourra être utilisée avec la fonction count(), ce qui permettra de connaitre le nombre d\u0026rsquo;éléments contenus par la collection. \\IteratorAggregate : la collection pourra être parcourue dans une structure foreach \\ArrayAccess : la collection pourra être utilisée avec les opérateurs [], de la même manière qu\u0026rsquo;on le fait avec un tableau  Les méthodes map La méthode map( callable $callback ) va appliquer la fonction de rappel passée en argument sur chaque élément qu\u0026rsquo;elle contient et retournera une copie de la collection. Dans cette copie chaque élément aura été remplacé avec le résultat de cette fonction.\n\u0026lt;?php $collection = new ArrayCollection([\u0026#39;SKU001\u0026#39;, \u0026#39;SKU002\u0026#39;, \u0026#39;SKU003\u0026#39;]); $mappedCollection = $collection-\u0026gt;map(function(string $value): Product { return new Product($value); }); \/\/ Retournera : [object (Product) { $sku = \u0026#39;SKU001\u0026#39; }, object (Product) { $sku = \u0026#39;SKU002\u0026#39; }, object (Product) { $sku = \u0026#39;SKU003\u0026#39; }] filter La méthode filter( callable $callback ) va appliquer la fonction de rappel passée en argument sur chaque élément qu\u0026rsquo;elle contient et retournera une copie de la collection. Dans cette copie, ne restera que les éléments pour lesquels la fonction de rappel a renvoyé true\n\u0026lt;?php $collection = new ArrayCollection([new Product(\u0026#39;SKU001\u0026#39;), new Product(\u0026#39;SKU002\u0026#39;), new Product(\u0026#39;SKU003\u0026#39;)]); $mappedCollection = $collection-\u0026gt;filter(function(Product $value): bool { return in_array($value-\u0026gt;sku, [\u0026#39;SKU001\u0026#39;, \u0026#39;SKU003\u0026#39;, \u0026#39;SKU005\u0026#39;]); }); \/\/ Retournera : [object (Product) { $sku = \u0026#39;SKU001\u0026#39; }, object (Product) { $sku = \u0026#39;SKU003\u0026#39; }] slice La méthode slice( int $start, null|int $length ) va retourner une nouvelle copie de la collection contenant uniquement les éléments commençant à la position $start, avec au maximum $length éléments à partir de ce point si ce paramètre est fourni.\n\u0026lt;?php $collection = new ArrayCollection([new Product(\u0026#39;SKU001\u0026#39;), new Product(\u0026#39;SKU002\u0026#39;), new Product(\u0026#39;SKU003\u0026#39;), new Product(\u0026#39;SKU004\u0026#39;), new Product(\u0026#39;SKU005\u0026#39;)]); $mappedCollection = $collection-\u0026gt;slice(2, 3); \/\/ Retournera : [object (Product) { $sku = \u0026#39;SKU002\u0026#39; }, object (Product) { $sku = \u0026#39;SKU003\u0026#39; }, object (Product) { $sku = \u0026#39;SKU004\u0026#39; }] </p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/collections-doctrine\/"
+            },
+            
+            {
+              value: "Principes SOLID",
+              label: "<p> Single responsibility principle Open\/closed principle Liskov substitution principle Interface segregation principle Dependency inversion principle  Single responsibility principle \u0026lt;?php class Product { \/\/ ...  public function getURL(ObjectManager $om): URL { $url = new URL(); $url-\u0026gt;setProduct($this); $url-\u0026gt;setPath(...); $om-\u0026gt;persist($url); $om-\u0026gt;flush(); } \/\/ ... } Open\/closed principle \u0026lt;?php final class Foo { \/\/ ...  public function lorem(ObjectManager $om, ?string $name = null): URL { } \/\/ ... } Liskov substitution principle \u0026lt;?php class Foo { public function lorem() { return 42; } } final class Bar extends Foo { private Registry $doctrine; private Repository $repository; public function lorem(string $path) { $this-\u0026gt;repository-\u0026gt;load(72) return new URL($path); } } \u0026lt;?php class Foo { public function lorem() { return 42; } } final class Bar extends Foo { public function lorem() { return 64; } public function ipsum(string $path) { return new URL($path); } } Interface segregation principle \u0026lt;?php interface LoremInterface extends \\Countable, \\Traversable {} class Lorem implements LoremInterface, \\Stringable, \\IteratorAggregate {} class Ipsum implements LoremInterface, \\Stringable, \\Iterator {}  Traversable Iterator IteratorAggregate Countable  Dependency inversion principle \u0026lt;?php final class Incorrect { public function lorem(EntityManager $em) { $em-\u0026gt;persist(...); $em-\u0026gt;flush(); } public function ipsum(ArrayCollection $list) { return count($list) \u0026gt; 10; } } \u0026lt;?php final class Correct { public function lorem(ObjectManager $om) { $om-\u0026gt;persist(...); $om-\u0026gt;flush(); } public function ipsum(\\Countable $list) { return count($list) \u0026gt; 10; } } </p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/principes-solid\/"
+            },
+            
+            {
+              value: "Utilisation des commandes Kloud",
+              label: "<p>https:\/\/github.com\/kiboko-labs\/docker-images\nCommandes de gestion des images Docker  kloud images:test  Pour vérifier que les images soient conformes aux exigences (vérifie les pré-requis)\n kloud images:pull  Pour mettre à jour les images docker\n kloud images:tree  Pour afficher l\u0026rsquo;arbre de dépendances des images Docker\nCommandes de manipulation des stacks Docker  Initialize the Docker stack ion a project without Docker Stack\n  kloud stack:init  Identifie le meilleur choix de stack en posant jusqu\u0026rsquo;à une dizaine de questions interactivement. Initialise cette stack d\u0026rsquo;après les réponses et crée un fichier .kloud.yaml à la racine du projet pour les prochaines utilisations de la commande.\n kloud stack:upgrade  Met à jour la stack Docker d\u0026rsquo;après les contraintes listées dans le fichier .kloud.yaml\nUtilisation en local Utilisation à travers Docker (préférable sous Mac) Créer un fichier \/usr\/local\/bin\/kloud, avec le contenu suivant :\n#!\/usr\/bin\/env sh docker run --rm -ti -v \u0027\/var\/run\/docker.sock:\/var\/run\/docker.sock\u0027 -v $PWD:\/app kiboko\/kloud $@ Puis rendre le fichier exécutable avec chmod \u002bx \/usr\/local\/bin\/kloud\nUtilisation du fichier Phar (préférable sous Linux) Télécharger la dernière version publiée de l\u0026rsquo;utilitaire au format Phar : https:\/\/github.com\/kiboko-labs\/docker-images\/releases\n</p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/utilisation-des-commandes-kloud\/"
+            },
+            
+            {
+              value: "Importer un dump SQL avec Docker",
+              label: "<p>Scénario : Nous avons un dump que nous voulons importer sur une base vierge pour avoir une appli qui tourne avec de la donnée.\nOn peut copier un fichier du local au container Docker dans le dossier \/tmp\/ :\ndocker cp dump.sql mycontainer:\/tmp\/dump.sql L\u0026rsquo;inverse est possible aussi (copier du container Docker au host) :\ndocker cp mycontainer:\/tmp\/dump.sql \/chemin\/dump.sql On se connecte au container SQL de docker :\ndocker exec -ti le-container_mysql bash On lance la commande avec l\u0026rsquo;option -v ( pour voir le dump avec du \u0026ldquo;verbose\u0026rdquo; ) depuis le container SQL :\nmysql :\nmysql -v —batch -h{host} -u{user} -p nom-de-la-base-de-donnée \u0026lt; \/tmp\/bdd.sql postgresql :\npsql -U {user} -d {database} -f tmp\/dump.sql Short one :)\nBackup docker exec CONTAINER \/usr\/bin\/mysqldump -u root --password=root DATABASE \u0026gt; backup.sql Restore cat backup.sql | docker exec -i CONTAINER \/usr\/bin\/mysql -u root --password=root DATABASE </p>",
+              url: "http:\/\/tech.kiboko.fr\/docker\/importer-un-dump-sql-avec-docker\/"
+            },
+            
+            {
+              value: "Utilisation Tmetric",
+              label: "<p>Support officiel : https:\/\/tmetric.com\/support\/\n1. Outils   web app : https:\/\/app.tmetric.com\/\n  extension navigateur (indispensable)\n  Google Chrome : https:\/\/chrome.google.com\/webstore\/detail\/tmetric-%E2%80%93-time-tracker-pr\/ffijoclmniipjbhecddgkfpdafpbdnen\nMozilla Firefox : https:\/\/addons.mozilla.org\/fr\/firefox\/addon\/tmetric-extension\/\n=\u0026gt; permet d\u0026rsquo;ajouter un bouton \u0026ldquo;start timer\u0026rdquo; sur le ticket (Jira\/Github)\n desktop app : https:\/\/tmetric.com\/download  2. Saisie de temps 2.1. Depuis un ticket Dès que lon commence une tache, on déclenche l\u0026rsquo;enregistrement du temps via le bouton \u0026ldquo;Start timer\u0026rdquo; présent sur le ticket (ou la PR), une modal s\u0026rsquo;ouvre :\n task : correspond au nom du ticket (avec son numéro) notes : surcharge le nom du ticket si modifié project : :warning: bien vérifier que le projet dans la liste déourlante est bien le bon :warning: tags : non utilisé dans Tmetric, il est préférable de les retirer à ce jour  (changement à prévoir lors de l\u0026rsquo;utilisation de la version )\n2.2. Tache interne Si la tache effectuée n\u0026rsquo;a pas de ticket, c\u0026rsquo;est une tache interne (sinon on créé le ticket manquant sur le projet)\nOn peut donc ajouter un \u0026ldquo;Time entry\u0026rdquo; depuis l\u0026rsquo;application web https:\/\/app.tmetric.com\/ ou desktop.\nDans la description, utiliser l\u0026rsquo;auto-complete si la mission existe déjà et ajouter dans Project \u0026ldquo;Kiboko interne\u0026rdquo;.\nSinon on peut renseigner l\u0026rsquo;information.\n3. Autres vues 3.1. Vue \u0026ldquo;My time\u0026rdquo; =\u0026gt; https:\/\/app.tmetric.com\/\nSur cette vue, on peut suivre et vérifier sa saisie de temps et la modifier simplement si il y a des erreurs.\n3.2. Vue \u0026ldquo;Projects\u0026rdquo; Liste les différents projets disponibles, si il en manque merci de prévenir Xavier (admin) ou Dimitri (owner).\n3.3. Vue \u0026ldquo;Reports\u0026rdquo; Permet d\u0026rsquo;analyser le temps saisie par projet, tache ou équipe. Cette fonctionnalité permet d\u0026rsquo;exporter les données de l\u0026rsquo;équipe au format .csv afin de créer les CRA par client.\n</p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/utilisation-tmetric\/"
+            },
+            
+            {
+              value: "Migrations Oro",
+              label: "<p>Il y a 2 types de migrations dans Oro :\n Migrations Schema Migrations Data  Doc. Oro : https:\/\/github.com\/oroinc\/platform\/tree\/master\/src\/Oro\/Bundle\/MigrationBundle\nNous vous conseillons de suivre le cours \u0026ldquo;Entities and their data\u0026rdquo; d\u0026rsquo;OroInc qui vous apprendra en détails les méthodes et bonnes pratiques pour faire eds migrations dans OroPlatform : https:\/\/oroinc.com\/oro-fundamentals-online-course\/\n Extrait :  1. Migrations Schema Modification de schéma Doctrine =\u0026gt; DBAL\n Pas d\u0026rsquo;utilisation d\u0026rsquo;entité\/ORM dans le schéma  1.1. implémentation de l\u0026rsquo;interface Installation utilise des numéros de versions (=\u0026gt; getVersion())\n\/!\\ regroupement de l\u0026rsquo;ensemble des migrations pour créer le schéma\n=\u0026gt; cf Schéma de Yevhen\n1.2. implémentation de l\u0026rsquo;interface Migration \/!\\ quand on ajoute une Migration, il faut systématiquement :\n ajouter la migration dans l\u0026rsquo;installation en adaptant le schéma désiré changer le numéro de version  1.3. Cas spécifiques : champs non null utilisation des \u0026ldquo;OrderedMigration\u0026rdquo; =\u0026gt; getOrder():int\nEx : ajout champ UNIQUE \u002b NOT NULL\n migration A avec up() methode alterTable() avec ajout de la colonne déclarée en NULL =\u0026gt; ajout addPostQuery() migration B avec up() methode alterTable() avec ajout de la colonne NOTNULL\n 1.4. Cas spécifiques : modification de colonne existante utilisation de requêtes .SQL avec la méthode addPostQuery()\n1.5. Cas spécifiques : Oro options Utilisation de \u0026ldquo;Oro_Options\u0026rdquo;\n1.6. Cas spécifiques : OroConfigField OroConfigField uniquement pour les entités crées par ce bundle\n1.7. Cas spécifiques : entity extend Implements : ExtendExtensionInterface\n1.8. Cas spécifiques : dépendance des migrations utilisation des \u0026ldquo;DependentMigration\u0026rdquo;\n2. Migrations Data Migration pour créer de la donnée.\nExécuter après les migrations de schéma =\u0026gt; ORM\nUsage : initialiser une environnement avec des données\n\/!\\ Si Schema est mis a jour, il faut impacter les migrations de data\n3. Nomenclature des migrations 3.1. Installer Format : {nom_du_bundle}Installer\nex : KibokoBarcodeBundleInstaller\n3.2. Migration Le nom de la migration doit correspondre au fonctionnel de la migration. Si le domaine est différent, on créé des fichiers différents par domaine.\nex : AddBudgetMigration ou FixProductsNorms\n4. Tests pour vérifier la migration  bin\/console oro:platform:update --force bin\/console oro:migration:load (si fixture en plus de main) bin\/console oro:entity-extend:cache:clear =\u0026gt; si erreur, PR refusée  (prochainement ajouté à la CI)\n</p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/migrations-oro\/"
+            },
+            
+            {
+              value: "Usage Github",
+              label: "<p>1. Vue Kanban Dans cette vue Kanban d\u0026rsquo;un projet github, il y a :\n des tickets des PR des notes  2. Tickets 2.1 Création\nLors de la création d\u0026rsquo;un ticket :\n Choisir le projet correspondant Choisir le milestone Ajouter les labels\/libellés  2.2 Sous-tâches\nPenser à ajouter des sous-taches dans le ticket tel que\n- [ ] Sous-tache\n(barre d\u0026rsquo;avancement sur le ticket)\nSi la sous tâche est importante possiblité de créer un nouveau ticket et de faire référence dans le ticket parent tel que :\n- [ ] Sous-tache #123\n3.3 Commentaires\nUsage du développeur :\n remonter toutes les informations dans le tickets : bug, solution à un bug\u0026hellip; identifier les utilisateurs github avec @user  3. Pull Request (PR) Lors d\u0026rsquo;une nouvelle tache, on créé une nouvelle branche git Dès le 1er commit push, on créé une nouvelle PR associé au projet et on ajoute le libellé WIP\nDès que la tache côté développeur est finie, on peut retirer le libellé WIP et renseigner un reviewer.\nLes taches du release manager :\n échanger dans la PR avec le développeur fusionner les PR tester develop\/staging\/master (vérifier que les fusions de branches fonctionnent normalement) livrer sur l\u0026rsquo;environnement correspondant en utilisant une release (version Github)  4. Releases Création via l\u0026rsquo;UI de github (tag .git \u002b commentaire)\nConvention de nommage des tags : vyyyy.mm.x\n Exemple :\nv2020.02.1\nsi c\u0026rsquo;est la 1ère livraison du mois\n Pre-release\nPour usage sur la branch develop\nConvention de nommage des pre-release : vyyyy.mm.xRCx\n Exemple :\nv2020.02.1RC1\nsi c\u0026rsquo;est la 1ère livraison du mois\n </p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/usage-github\/"
+            },
+            
+            {
+              value: "Kibokast",
+              label: "<p></p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/"
+            },
+            
+            {
+              value: "Oro",
+              label: "<p></p>",
+              url: "http:\/\/tech.kiboko.fr\/oro\/"
+            },
+            
+            {
+              value: "Docker",
+              label: "<p></p>",
+              url: "http:\/\/tech.kiboko.fr\/docker\/"
+            },
+            
+            {
+              value: "Autre",
+              label: "<p></p>",
+              url: "http:\/\/tech.kiboko.fr\/autre\/"
+            },
+            
+            {
+              value: "Utilisation stack Docker Kiboko",
+              label: "<p>1. Initialisation d’un projet sur dev0 avec cette stack 1.1. Initialisation du projet  cloner le projet application en local git clone git@github.com:kiboko-labs\/{nom-du-projet}.git connexion ssh sur dev0   ssh kiboko@dev0.kiboko.io\n  se rendre dans le répertoire www\/   cd www\/\n  cloner le projet dans un répertoire nominatif tel que :   git clone git@github.com:kiboko-labs\/{nom-du-projet}.git {nom-du-projet}-{NOM-DU-DEV}\n  se rendre dans le répertoire créé   cd {nom-du-projet}-{NOM-DU-DEV}\n  créer ma configuration phpstorm pour le déploiement sur dev0 (remote host)  dans l\u0026rsquo;onglet Mapping, dans le champs Deployment path, mettre un \/ définir le remote en sftp et par défaut     si vous aviez déjà au moins 1 remote paramétré et par defaut, il faut forcer le remote dev0 par defaut car c\u0026rsquo;est le remote par defaut qui sera automatiquement synchronisé depuis votre local DANGER : si par defaut est une prod\n   activer le déploiement automatique : Tools\/Déployment\/Automatic upload (les modif. locales à l’enregistrement seront deployées automatiquement)\n  creation du fichier .env à partir du fichier .env.dist\n avec des ports uniques (published port) ajout du token Github ajout des tokens Blackfire ou supprimer les valeurs    1.1.1. Installation vierge  make start (lance tous les services sauf WS et MQ) make install (ne pas remplir le parameters.yml à la main attendre que l’installeur le demande)  1.1.2. Installation avec un dump  make start importer son dump dans le service sql make vendor platform-update  1.2. Lancement du MQ et WS avant exploitation  make start-{mq,ws}  1.3.Exploitation  voir la consommation des messages : docker-compose logs -f amqp` accès à RabbitMQManagement ex : http:\/\/dev0.kiboko.io:10006\/ accès au mailcatcher ex : http:\/\/dev0.kiboko.io:10004\/ accès à ElasticSearch via DejaVu ex : http:\/\/dev0.kiboko.io:10009\/  Pratique : quand vous n’utilisez plus l’environnement, make stop\n1.4. Vider le cache  make cache-clear pour le cache de l\u0026rsquo;envirnonnement prod make cache-clear-dev pour le cache de l\u0026rsquo;environnement dev  1.5 Changer de branche Il est impératif de faire changer de branche sur l\u0026rsquo;environnement local et l\u0026rsquo;environnement distant. L\u0026rsquo;environnement distant réclamera d\u0026rsquo;être committé ou remis à l\u0026rsquo;état original.\n⚠️ Aucun commit ne doit être fait depuis l\u0026rsquo;environnement distant\n Pour remettre les fichiers à leur état original : git reset --hard Pour checkout la nouvelle version de travail : git checkout \u0026lt;branch\u0026gt;  2. Usages particuliers  utilisation xdebug via le service DBGp (à venir)  3. Ressources tiers  extension navigateur qui permet de switcher en mode dev, prod et debug: https:\/\/github.com\/kiboko-labs\/kiboko-symfony-env   sur Chrome :\n ajout extensions chrome:\/\/extensions\/ activer le mode développeur charger l\u0026rsquo;extension non empaquetée    images docker : https:\/\/github.com\/kiboko-labs\/docker-images  </p>",
+              url: "http:\/\/tech.kiboko.fr\/kibokast\/utilisation-stack-docker-kiboko\/"
+            },
+            
+            {
+              value: "Categories",
+              label: "<p></p>",
+              url: "http:\/\/tech.kiboko.fr\/categories\/"
+            },
+            
+            {
+              value: "Mentions légales",
+              label: "<p>Editeur du site Kiboko\n16 avenue Clément Charbonnier\n43000 Le Puy-en-Velay\nFrance\nConditions d\u0026rsquo;utilisation Le site accessible par l\u0026rsquo;url suivante : tech.kiboko.fr, est exploité dans le respect de la législation française. L\u0026rsquo;utilisation de ce site est régie par les présentes conditions générales. En utilisant le site, vous reconnaissez avoir pris connaissance de ces conditions et les avoir acceptées. Celles-ci pourront êtres modifiées à tout moment et sans préavis par la société Kiboko. Kiboko ne saurait être tenu pour responsable en aucune manière d’une mauvaise utilisation du service.\nLimitation de responsabilité Les informations contenues sur ce site sont aussi précises que possibles et le site est périodiquement remis à jour, mais peut toutefois contenir des inexactitudes, des omissions ou des lacunes. Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, merci de bien vouloir le signaler par email en décrivant le problème de la manière la plus précise possible (page posant problème, action déclenchante, type d’ordinateur et de navigateur utilisé\u0026hellip;).\nTout contenu téléchargé se fait aux risques et périls de l\u0026rsquo;utilisateur et sous sa seule responsabilité. En conséquence, Kiboko ne saurait être tenu responsable d\u0026rsquo;un quelconque dommage subi par l\u0026rsquo;ordinateur de l\u0026rsquo;utilisateur ou d\u0026rsquo;une quelconque perte de données consécutives au téléchargement.\nLes photos sont non contractuelles. Les liens hypertextes mis en place dans le cadre du présent site internet en direction d\u0026rsquo;autres ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de Kiboko.\nLitiges Les présentes conditions sont régies par les lois françaises et toute contestation ou litiges qui pourraient naître de l\u0026rsquo;interprétation ou de l\u0026rsquo;exécution de celles-ci seront de la compétence exclusive des tribunaux dont dépend le siège social de la société Kiboko. La langue de référence, pour le règlement de contentieux éventuels, est le français.\nConfidentialité Vos données personnelles sont confidentielles et ne seront en aucun cas communiquées à des tiers hormis pour la bonne exécution de la prestation.\nPropriété intellectuelle Tout le contenu du présent site, incluant, de façon non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de la société Kiboko à l\u0026rsquo;exception des marques, logos ou contenus appartenant à d\u0026rsquo;autres sociétés partenaires ou auteurs. Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l\u0026rsquo;accord exprès par écrit de Kiboko. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles L.3335-2 et suivants du Code de la propriété intellectuelle. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale du contrefacteur. En outre, les propriétaires des Contenus copiés pourraient intenter une action en justice à votre encontre.\nKiboko est identiquement propriétaire des \u0026ldquo;droits des producteurs de bases de données\u0026rdquo; visés au Livre III, Titre IV, du Code de la Propriété Intellectuelle (loi n° 98-536 du 1er juillet 1998) relative aux droits d\u0026rsquo;auteur et aux bases de données.\nLes utilisateurs et visiteurs du site internet peuvent mettre en place un hyperlien en direction de ce site, mais uniquement en direction de la page d’accueil, accessible à l’URL suivante : www.site-internet-qualite.fr, à condition que ce lien s’ouvre dans une nouvelle fenêtre. En particulier un lien vers une sous page (« lien profond ») est interdit, ainsi que l’ouverture du présent site au sein d’un cadre (« framing »), sauf l\u0026rsquo;autorisation expresse et préalable de .\nPour toute demande d\u0026rsquo;autorisation ou d\u0026rsquo;information, veuillez nous contacter par email : hello@kiboko.fr. Des conditions spécifiques sont prévues pour la presse.\nPar ailleurs, la mise en forme de ce site a nécessité le recours à des sources externes dont nous avons acquis les droits ou dont les droits d\u0026rsquo;utilisation sont ouverts.\nHébergeur GitHub Pages : https:\/\/pages.github.com\/\nConditions de service Ce site est proposé en langages HTML5 et CSS3, pour un meilleur confort d\u0026rsquo;utilisation et un graphisme plus agréable, nous vous recommandons de recourir à des navigateurs modernes comme Chrome \u0026amp; Firefox\n</p>",
+              url: "http:\/\/tech.kiboko.fr\/legal-notice\/"
+            },
+            
+            {
+              value: "Tags",
+              label: "<p></p>",
+              url: "http:\/\/tech.kiboko.fr\/tags\/"
+            },
+            
+          ];
+          $("#search").autocomplete({
+            source: projects
+          })
+          .data("ui-autocomplete")._renderItem = function (ul, item) {
+            return $("<li>")
+            .append("<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>" + item.label)
+            .appendTo(ul);
+          };
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /banner -->
+    </header>
+    <!-- /header -->
+    
+    
+
+  <!-- topics -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title"></h2>
+        </div>
+        <!-- topic-item -->
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://tech.kiboko.fr/kibokast/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-blackboard icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">Kibokast</h3>
+            <p class="mb-0">Les Kibokast sont des mini-formations tenues par un membre de Kiboko pour le reste de l&#39;équipe. Voici la liste des sujets.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://tech.kiboko.fr/oro/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-light-bulb icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">Oro</h3>
+            <p class="mb-0">La catégorie Oro regroupe l&#39;ensemble des technologies OroCommerce, OroPlatform et OroCRM.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://tech.kiboko.fr/docker/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-server icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">Docker</h3>
+            <p class="mb-0">Pour nos développements, nous utilisons Docker avec une stack spécifique. Voici quelques méthodes que nous utilisons.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://tech.kiboko.fr/autre/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-notepad icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">Autre</h3>
+            <p class="mb-0">Différentes documentations non typées.</p>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- /topics -->
+
+  
+  
+  <!-- call to action -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section px-3 bg-white shadow text-center">
+          <h2 class="mb-4">Vous avez une question ?</h2>
+          <p class="mb-4"></p>
+          
+          
+          <a href="http://kiboko.fr/fr/contactez-nous/" class="btn btn-primary">Contactez-nous</a>
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /call to action -->
+  
+  
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>
