@@ -1,7 +1,7 @@
 ---
 title: "Mentions légales"
-date: 2020-08-04
 icon: "ti-light-bulb"
+type: "legal-notice"
 ---
 
 #### Editeur du site
