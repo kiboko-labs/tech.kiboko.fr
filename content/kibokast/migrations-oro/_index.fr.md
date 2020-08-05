@@ -10,7 +10,11 @@ Il y a 2 types de migrations dans Oro :
 
 Doc. Oro : https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle
 
-Cours "Entities" de Yevhen (=> drive Kiboko))
+Nous vous conseillons de suivre le cours "Entities and their data" d'OroInc qui vous apprendra en détails les méthodes et bonnes pratiques pour faire eds migrations dans OroPlatform :
+https://oroinc.com/oro-fundamentals-online-course/
+
+> Extrait :
+> ![40% center](oro-bundle-version.png)
 
 ## 1. Migrations Schema
 

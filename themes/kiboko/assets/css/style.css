@@ -534,14 +534,34 @@ textarea.form-control {
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* category page */
+.category-title {
+
+}
+
+.category-title [class^="ti-"],
+.category-title [class*=" ti-"] {
+    float: left;
+}
+
 /* single page */
 
 .content {
     padding-top: 1rem;
 }
 
+.content a {
+    color: var(--text-color);
+}
+
+.content a:hover,
+.content a:active {
+    color: #CD0001;
+}
+
 .content * {
   margin-bottom: 20px;
+  overflow-wrap: break-word;
 }
 
 .content img {
@@ -603,7 +623,6 @@ blockquote {
   padding: 20px 40px;
   border-left: 2px solid var(--primary-color);
   margin: 40px 0;
-  font-weight: bold;
   background: var(--light-color);
 }
 
@@ -759,10 +778,12 @@ li.sidelist li a {
 
 .sidelist li.sidelist.active a {
   color: var(--primary-color);
+  font-weight: bold;
 }
 
 .sidelist li.sidelist.active::before{
   opacity: 1;
+  background: #CD0001;
 }
 
 .page-list li a {
