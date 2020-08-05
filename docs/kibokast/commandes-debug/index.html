@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Commandes Debug</title>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/">
+    Kibokast
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+    Code review
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+    Commandes Debug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+    Collections Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+    Principes SOLID
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+    Utilisation des commandes Kloud
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+    Utilisation Tmetric
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+    Migrations Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+    Usage Github
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+    Utilisation stack Docker Kiboko
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Commandes Debug
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">07/04/2020</p>
+          
+          
+          <div class="content"><h1 id="commandes-symfony">Commandes Symfony</h1>
+<p>Articles officiels présentants certaines fonctionnalités :</p>
+<ul>
+<li><a href="https://symfony.com/blog/new-in-symfony-3-4-debug-autowiring-command">https://symfony.com/blog/new-in-symfony-3-4-debug-autowiring-command</a></li>
+<li><a href="https://symfony.com/blog/new-in-symfony-3-4-debug-form-command">https://symfony.com/blog/new-in-symfony-3-4-debug-form-command</a></li>
+</ul>
+<p>Pour avoir la liste complete :
+<code>bin/console list debug</code></p>
+<h3 id="debug-router">Debug Router</h3>
+<p>Doc officiel : <a href="https://symfony.com/doc/3.4/routing/debug.html">https://symfony.com/doc/3.4/routing/debug.html</a></p>
+<p>Pour avoir l&rsquo;ensemble des routes avec leur nom et les URLs qui correspondent</p>
+<p><code>bin/console debug:router</code></p>
+<p>Exemple pour rechercher une route &ldquo;produit&rdquo; dans des controllers :</p>
+<p><code>bin/console debug:router --show-controllers | grep /product</code></p>
+<h3 id="debug-container">Debug Container</h3>
+<p>Doc officiel : <a href="https://symfony.com/doc/3.4/service_container/debug.html">https://symfony.com/doc/3.4/service_container/debug.html</a></p>
+<p>Pour avoir l&rsquo;ensemble des services publiques</p>
+<p><code>bin/console debug:container</code></p>
+<ul>
+<li>Pour rechercher un service par son nom : <code>bin/console debug:container validator</code></li>
+<li>Pour rechercher un service par tag : <code>bin/console debug:container --tag=form.type</code></li>
+<li>Pour rechercher un service par parametre : <code>bin/console debug:container --parameter=kernel.debug</code></li>
+</ul>
+<h3 id="debug-config">Debug Config</h3>
+<p>Doc officiel : <a href="https://symfony.com/doc/3.4/reference/configuration/debug.html">https://symfony.com/doc/3.4/reference/configuration/debug.html</a></p>
+<p>Pour avoir l&rsquo;ensemble des configuration</p>
+<p><code>bin/console debug:config</code></p>
+<ul>
+<li>Pour rechercher pour un bundle : <code>bin/console debug:config AppBundle</code></li>
+</ul>
+<h3 id="debug-twig">Debug Twig</h3>
+<p>Pour avoir l&rsquo;ensemble des fonctions des filtres, des tests et des globales disponibles ainsi que les chemins chargés par l&rsquo;application</p>
+<p><code>bin/console debug:twig</code></p>
+<h3 id="debug-swiftmailer">Debug Swiftmailer</h3>
+<p>Doc officiel : <a href="https://symfony.com/doc/3.4/reference/configuration/swiftmailer.html">https://symfony.com/doc/3.4/reference/configuration/swiftmailer.html</a></p>
+<p>Pour avoir les mailers disponibles</p>
+<p><code>bin/console debug:swiftmailer</code></p>
+<h3 id="debug-autowiring">Debug Autowiring</h3>
+<p>Doc officiel : <a href="https://symfony.com/doc/3.4/service_container/debug.html">https://symfony.com/doc/3.4/service_container/debug.html</a></p>
+<p>Pour avoir l&rsquo;ensemble des services déclarés en auto-wiring :</p>
+<p><code>bin/console debug:autowiring</code></p>
+<h3 id="debug-forms">Debug Forms</h3>
+<p>Pour avoir l&rsquo;ensemble des formulaires (Type, Extension, Type Guessers) disponibles :</p>
+<p><code>bin/console debug:form</code></p>
+<h3 id="debug-translations">Debug Translations</h3>
+<p>Pour avoir l&rsquo;ensemble des traductions par locale ou bundle :</p>
+<p><code>bin/console debug:translation</code></p>
+<h3 id="debug-routes-js">Debug routes JS</h3>
+<p><code>bin/console fos:js-routing:debug</code></p>
+<h1 id="commandes-oro">Commandes Oro</h1>
+<h3 id="entity-config-oro">Entity config Oro</h3>
+<p>Permet de récupérer la configuration d&rsquo;une entité  :</p>
+<p><code>bin/console oro:entity-config:debug AppBundle\\Entity\\Norm</code></p>
+<p>Permet de récupérer la configuration d&rsquo;un champ d&rsquo;une entité :</p>
+<p><code>bin/console oro:entity-config:debug AppBundle\\Entity\\Norm code</code></p>
+<h3 id="layout">Layout</h3>
+<p><em>à compléter</em></p>
+<p><code>bin/console oro:debug:layout</code></p>
+<h3 id="workflow">Workflow</h3>
+<p><em>à compléter</em></p>
+<p><code>bin/console oro:debug:workflow:definitions</code></p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/code-review/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Code review</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/kibokast/collections-doctrine/"> <span class="d-none d-md-block">Collections Doctrine</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

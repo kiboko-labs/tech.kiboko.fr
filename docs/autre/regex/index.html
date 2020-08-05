@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Regex</title>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+            
+              
+            
+              
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/autre/" title="Autre" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/autre/">
+    Autre
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/autre/git-flow/" title="Git flow" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/autre/git-flow/">
+    Git flow
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/autre/regex/" title="Regex" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/autre/regex/">
+    Regex
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Regex
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">20/05/2020</p>
+          
+          
+          <div class="content"><h1 id="expressions-régulières">Expressions régulières</h1>
+<p>Doc. php : <a href="https://www.php.net/manual/fr/pcre.pattern.php">https://www.php.net/manual/fr/pcre.pattern.php</a></p>
+<h2 id="alternatives">Alternatives</h2>
+<ul>
+<li><code>(abc|def)</code> alternative avec capture : recherche <code>abc</code> ou <code>def</code> et fournira le résultat trouvé</li>
+<li><code>(?:abc|def)</code> alternative sans capture : recherche <code>abc</code> ou <code>def</code>, mais ne fournira pas le résultat trouvé</li>
+<li><code>(?:(Lun|Mar)di)</code> alternative avec capture interne : recherche <code>Lun</code> ou <code>Mar</code> et fournira le résultat trouvé respectivement dans les positions <code>1</code> et <code>2</code></li>
+<li><code>(?|(Lun|Mar)di)</code> alternative avec capture interne : recherche <code>Lun</code> ou <code>Mar</code> et fournira toujours le résultat trouvé dans la position <code>1</code></li>
+<li><code>(&lt;(?:span|div)&gt;Lorem Ipsum&lt;/\\1&gt;)</code> alternative sans capture et référence arrière</li>
+</ul>
+<h2 id="classes-de-caractères">Classes de caractères</h2>
+<h3 id="plages-de-caractères">Plages de caractères</h3>
+<ul>
+<li><code>.</code> recherche tout caractère</li>
+<li><code>\d</code> recherche un des caractères entre <code>0</code> et <code>9</code></li>
+<li><code>\.</code> recherche le caractère <code>.</code></li>
+<li><code>[2-6]</code> recherche un des caractères entre <code>2</code> et <code>6</code></li>
+<li><code>[a-z]</code> recherche un des caractères entre <code>a</code> et <code>z</code></li>
+<li><code>[A-Z]</code> recherche un des caractères entre <code>A</code> et <code>Z</code></li>
+<li><code>[a-zA-Z]</code> recherche un des caractères entre  <code>a</code> et <code>z</code> et entre <code>A</code> et <code>Z</code></li>
+<li><code>[a-zA-Z0-9]</code> recherche un des caractères entre  <code>a</code> et <code>z</code>, entre <code>A</code> et <code>Z</code> et entre <code>0</code> et <code>9</code></li>
+</ul>
+<h3 id="répétitions">Répétitions</h3>
+<ul>
+<li><code>[a-z0-9-]+</code> recherche les caractères 1 fois ou plus</li>
+<li><code>[a-z0-9-]*</code> recherche des caractères 0 fois ou plus</li>
+<li><code>[a-z0-9-]?</code> crecherche des caractères 0 fois ou 1 fois</li>
+</ul>
+<h3 id="recherche-inversée">Recherche inversée</h3>
+<ul>
+<li><code>[^,]*</code> recherche tout caractère différent de <code>,</code></li>
+<li><code>[^a-z]*</code> recherche tout caractère différent de la plage entre <code>a</code> et <code>z</code></li>
+</ul>
+<h3 id="ancres">Ancres</h3>
+<ul>
+<li><code>^/catalog/</code> (importance du <code>^</code>) recherche toute chaine qui commence par <code>/catalog/</code></li>
+<li><code>\\.html$</code> (importance du <code>$</code>) recherche toute chaine qui termine par <code>.html</code></li>
+<li><code>^(?:/.*|)(/[a-z0-9-]+)\.html$</code> recherche toute chaine qui termine par <code>.html</code> et ne capture que la dernière partie, ex :
+<ul>
+<li><code>/lorem-ipsum.html</code> deviendra <code>/lorem-ipsum</code></li>
+<li><code>/lorem-ipsum/dolor-sit-amet.html</code> deviendra <code>/dolor-sit-amet</code></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/autre/git-flow/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Git flow</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/legal-notice/"> <span class="d-none d-md-block">Mentions légales</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

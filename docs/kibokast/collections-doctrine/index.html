@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Collections Doctrine</title>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/">
+    Kibokast
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+    Code review
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+    Commandes Debug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+    Collections Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+    Principes SOLID
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+    Utilisation des commandes Kloud
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+    Utilisation Tmetric
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+    Migrations Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+    Usage Github
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+    Utilisation stack Docker Kiboko
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Collections Doctrine
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">01/04/2020</p>
+          
+          
+          <div class="content"><ul>
+<li><a href="https://www.doctrine-project.org/projects/doctrine-collections/en/1.6/index.html">Documentation</a></li>
+<li><a href="https://github.com/doctrine/collections/">Github</a></li>
+</ul>
+<p>La collection sert à adresser le besoin de fournir des listes d&rsquo;objets. Doctrine fournit une implémentation utilisée dans son ORM et ses ODM.</p>
+<p>La collection permet de gérer une liste d&rsquo;objets du même type, pour :</p>
+<ul>
+<li>filtrer</li>
+<li>trier</li>
+<li>appliquer un traitement (map)</li>
+<li>calculer un résultat d&rsquo;après le contenu de la liste (reduce)</li>
+</ul>
+<h2 id="linterface-collection">L&rsquo;interface <code>Collection</code></h2>
+<p>Il s&rsquo;agit du contrat &ldquo;Collection&rdquo; de Doctrine, toute collection devra implémenter cette interface.</p>
+<p>Cette interface implémente elle-même les contrats suivants :</p>
+<ul>
+<li><a href="https://www.php.net/manual/fr/class.countable.php"><code>\Countable</code></a> : la collection pourra être utilisée avec la fonction <code>count()</code>, ce qui permettra de connaitre le nombre d&rsquo;éléments contenus par la collection.</li>
+<li><a href="https://www.php.net/manual/fr/class.iteratoraggregate.php"><code>\IteratorAggregate</code></a> : la collection pourra être parcourue dans une structure <code>foreach</code></li>
+<li><a href="https://www.php.net/manual/fr/class.arrayaccess.php"><code>\ArrayAccess</code></a> : la collection pourra être utilisée avec les opérateurs <code>[]</code>, de la même manière qu&rsquo;on le fait avec un tableau</li>
+</ul>
+<h2 id="les-méthodes">Les méthodes</h2>
+<h3 id="map"><code>map</code></h3>
+<p>La méthode <code>map( callable $callback )</code> va appliquer la fonction de rappel passée en argument sur chaque
+élément qu&rsquo;elle contient et retournera une copie de la collection. Dans cette copie
+chaque élément aura été remplacé avec le résultat de cette fonction.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+$collection <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ArrayCollection</span>([<span style="color:#e6db74">&#39;SKU001&#39;</span>, <span style="color:#e6db74">&#39;SKU002&#39;</span>, <span style="color:#e6db74">&#39;SKU003&#39;</span>]);
+
+$mappedCollection <span style="color:#f92672">=</span> $collection<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">map</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">string</span> $value)<span style="color:#f92672">:</span> <span style="color:#a6e22e">Product</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>($value);
+}); <span style="color:#75715e">// Retournera : [object (Product) { $sku = &#39;SKU001&#39; }, object (Product) { $sku = &#39;SKU002&#39; }, object (Product) { $sku = &#39;SKU003&#39; }]
+</span></code></pre></div><h3 id="filter"><code>filter</code></h3>
+<p>La méthode <code>filter( callable $callback )</code> va appliquer la fonction de rappel passée en argument sur chaque
+élément qu&rsquo;elle contient et retournera une copie de la collection. Dans cette copie, ne
+restera que les éléments pour lesquels la fonction de rappel a renvoyé <code>true</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+$collection <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ArrayCollection</span>([<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU001&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU002&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU003&#39;</span>)]);
+
+$mappedCollection <span style="color:#f92672">=</span> $collection<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">Product</span> $value)<span style="color:#f92672">:</span> <span style="color:#a6e22e">bool</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">in_array</span>($value<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">sku</span>, [<span style="color:#e6db74">&#39;SKU001&#39;</span>, <span style="color:#e6db74">&#39;SKU003&#39;</span>, <span style="color:#e6db74">&#39;SKU005&#39;</span>]);
+}); <span style="color:#75715e">// Retournera : [object (Product) { $sku = &#39;SKU001&#39; }, object (Product) { $sku = &#39;SKU003&#39; }]
+</span></code></pre></div><h3 id="slice"><code>slice</code></h3>
+<p>La méthode <code>slice( int $start, null|int $length )</code> va retourner une nouvelle copie de la collection contenant
+uniquement les éléments commençant à la position <code>$start</code>, avec au maximum <code>$length</code> éléments à partir
+de ce point si ce paramètre est fourni.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+$collection <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ArrayCollection</span>([<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU001&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU002&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU003&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU004&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU005&#39;</span>)]);
+
+$mappedCollection <span style="color:#f92672">=</span> $collection<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>);
+<span style="color:#75715e">// Retournera : [object (Product) { $sku = &#39;SKU002&#39; }, object (Product) { $sku = &#39;SKU003&#39; }, object (Product) { $sku = &#39;SKU004&#39; }]
+</span></code></pre></div></div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/commandes-debug/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Commandes Debug</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/kibokast/principes-solid/"> <span class="d-none d-md-block">Principes SOLID</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

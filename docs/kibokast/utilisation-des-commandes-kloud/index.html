@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Utilisation des commandes Kloud</title>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/">
+    Kibokast
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+    Code review
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+    Commandes Debug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+    Collections Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+    Principes SOLID
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+    Utilisation des commandes Kloud
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+    Utilisation Tmetric
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+    Migrations Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+    Usage Github
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+    Utilisation stack Docker Kiboko
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Utilisation des commandes Kloud
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">24/03/2020</p>
+          
+          
+          <div class="content"><p><a href="https://github.com/kiboko-labs/docker-images">https://github.com/kiboko-labs/docker-images</a></p>
+<h2 id="commandes-de-gestion-des-images-docker">Commandes de gestion des images Docker</h2>
+<ul>
+<li><code>kloud images:test</code></li>
+</ul>
+<p>Pour vérifier que les images soient conformes aux exigences (vérifie les pré-requis)</p>
+<ul>
+<li><code>kloud images:pull</code></li>
+</ul>
+<p>Pour mettre à jour les images docker</p>
+<ul>
+<li><code>kloud images:tree</code></li>
+</ul>
+<p>Pour afficher l&rsquo;arbre de dépendances des images Docker</p>
+<h2 id="commandes-de-manipulation-des-stacks-docker">Commandes de manipulation des stacks Docker</h2>
+<blockquote>
+<p>Initialize the Docker stack ion a project without Docker Stack</p>
+</blockquote>
+<ul>
+<li><code>kloud stack:init</code></li>
+</ul>
+<p>Identifie le meilleur choix de stack en posant jusqu&rsquo;à une dizaine de questions interactivement. Initialise cette stack d&rsquo;après les réponses et crée un fichier <code>.kloud.yaml</code> à la racine du projet pour les prochaines utilisations de la commande.</p>
+<ul>
+<li><code>kloud stack:upgrade</code></li>
+</ul>
+<p>Met à jour la stack Docker d&rsquo;après les contraintes listées dans le fichier <code>.kloud.yaml</code></p>
+<h2 id="utilisation-en-local">Utilisation en local</h2>
+<h3 id="utilisation-à-travers-docker-préférable-sous-mac">Utilisation à travers Docker (préférable sous Mac)</h3>
+<p>Créer un fichier <code>/usr/local/bin/kloud</code>, avec le contenu suivant :</p>
+<pre><code>#!/usr/bin/env sh
+docker run --rm -ti -v '/var/run/docker.sock:/var/run/docker.sock' -v $PWD:/app kiboko/kloud $@
+</code></pre><p>Puis rendre le fichier exécutable avec <code>chmod +x /usr/local/bin/kloud</code></p>
+<h3 id="utilisation-du-fichier-phar-préférable-sous-linux">Utilisation du fichier Phar (préférable sous Linux)</h3>
+<p>Télécharger la dernière version publiée de l&rsquo;utilitaire au format Phar : <a href="https://github.com/kiboko-labs/docker-images/releases">https://github.com/kiboko-labs/docker-images/releases</a></p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/principes-solid/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Principes SOLID</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/"> <span class="d-none d-md-block">Utilisation Tmetric</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>
