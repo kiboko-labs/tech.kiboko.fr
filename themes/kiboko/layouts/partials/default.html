@@ -17,7 +17,12 @@
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">{{ .Title }}</h2>
+          <h2 class="mb-5 category-title">
+              {{ if eq .Type "category" }}
+                <i class="{{ .Params.Icon }} icon text-primary d-block mr-2"></i>
+              {{ end }}
+              {{ .Title }}
+          </h2>
           <p>{{ .Description }}</p>
           {{ if and (ne .Type "category") (ne .Type "legal-notice") }}
             <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ .Lastmod.Format "02/01/2006" }}</p>
@@ -120,7 +125,7 @@
     <li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="sidelist
       {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
       <a href="{{.Permalink}}">
-        {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}} <span class="post-meta">{{ .Lastmod.Format "02 Jan 2006" }}</span>
+        {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}} <span class="post-meta">{{ .Lastmod.Format "02/01/2006" }}</span>
       </a>
       {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
       {{ if ne $numberOfPages 0 }}

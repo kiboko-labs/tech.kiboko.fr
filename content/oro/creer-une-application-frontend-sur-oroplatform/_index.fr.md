@@ -4,7 +4,7 @@ date: 2020-05-20
 type : "docs"
 ---
 
-OorPlatform fournit un environnement complet pour créér des applications métier dédiées à une équipe interne d'une entreprise.
+OroPlatform fournit un environnement complet pour créér des applications métier dédiées à une équipe interne d'une entreprise.
 Il ne fournit cependant pas d'interface pubique à destination de tiers, à l'exception notable de l'interface *OroCommerce Store Front*.
 
 Nous allons créer un socle d'application OroPlatform qui disposera d'un accès client. Par défaut, une application OroPlatform dispose 
@@ -225,7 +225,7 @@ services:
       - '%kernel.debug%'
 ```
 
-Nous aurons également besoin d'exposer une route supplémentaire pour le service de contrôleur `iboko_help_desk_portal.js_routing_controller` que nous avons créé plus haut :
+Nous aurons également besoin d'exposer une route supplémentaire pour le service de contrôleur `kiboko_help_desk_portal.js_routing_controller` que nous avons créé plus haut :
 
 ```yaml
 kiboko_help_desk_portal_js_routing_js:

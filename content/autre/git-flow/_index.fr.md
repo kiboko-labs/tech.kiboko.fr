@@ -18,7 +18,7 @@ Spécificités Kiboko pour la mise en place de git flow
 
 ## Branches
 
-### `master`
+### Branche `master`
 
 - nombre : unique
 - durée de vie : permanente
@@ -31,7 +31,7 @@ Code stable, testé et validé. Ce code doit être validé en staging par le cli
 
 Les PR à destination de la branche Master sont validées par les personnes ayant la main sur les déploiements sur l’environnement de production
 
-### `staging`
+### Branche `staging`
 
 - nombre : unique
 - durée de vie : permanente
