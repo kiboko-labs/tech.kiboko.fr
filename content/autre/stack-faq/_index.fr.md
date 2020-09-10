@@ -86,6 +86,13 @@ Solution apportée :
 - puis on regénère les indexes `bin/console oro:website-search:reindex --website-id=3`
 ou n'importe quel type de commande qui fait de la reindexation (oro:search:reindex, etc.)
 
+Si c'est les websites-search indexes qui ne marche pas, il faut lancé `oro:elasticsearch:create-standard-indexes`
+
+> oro:elasticsearch:create-standard-indexes    =>     Creates new empty standard indexes with mappings. Removes current standard indexes if they exist
+
+Si c'est les websites-search indexes qui ne marche pas, il faut lancé `oro:website-elasticsearch:create-website-indexes`
+
+> oro:website-elasticsearch:create-website-indexes  =>  Creates new empty website indexes with mappings. Removes current website indexes if they exist
 
 
 #### Erreur "process_cluster_event_timeout_exception" lors d'un oro:website-search:reindex
