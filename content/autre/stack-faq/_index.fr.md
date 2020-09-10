@@ -82,7 +82,7 @@ Cette erreur correspond à un probleme de workflow, possibilité de corriger ave
 
 `bin/console oro:workflow:definitions:load`
 
-## Erreurs liées aux assets
+## 3. Erreurs liées aux assets
 
 #### Erreur "Building assets"
 
@@ -96,7 +96,7 @@ Probleme de version de node (en local mac, possibilité de switcher de version d
 
 
 
-## 3. Erreurs ElasticSearch
+## 4. Erreurs ElasticSearch
 
 #### Erreur "No alive nodes found in your cluster"
 
