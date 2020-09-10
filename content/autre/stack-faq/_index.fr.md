@@ -9,11 +9,12 @@ Stack FAQ
 
 Listes d'erreurs rencontrées lors de nos développements, avec une solution éventuelle pour remédier au problème.
 
-#### Erreur configuration "snc_redic.session"
+## 1. Erreurs lors d'une installation
 
+#### Erreur configuration "snc_redis.session"
 
 ````
-The child node "client" at path "snc_redic.session" must be configured
+The child node "client" at path "snc_redis.session" must be configured
 ````
 
 Pour éviter cette erreur, on peut commenter la configuration Redis dans `config_prod.yml` tel que :
@@ -23,15 +24,6 @@ Pour éviter cette erreur, on peut commenter la configuration Redis dans `config
 #    session:
 #        locking: false
 ```` 
-
-#### Erreur workflow "doesn't have allowed transition"
-
-````
-Step "open" of workflow "b2c_flow_abandoned_shopping_cart" doesn't have allowed transition "__start__".
-````
-
-Cette erreur correspond à un probleme de workflow, possibilité de corriger avec la commande :
-`bin/console oro:workflow:definitions:load`
 
 #### Erreur "Compilation failed: invalid range"
 
@@ -53,7 +45,6 @@ Failed connecting to tcp://logstash:5044
 
 Vérifier que les 2 services `logstash` et `kibana` sont bien lancés.
 
-
 #### Erreur "data type json"
 
 ````
@@ -65,7 +56,47 @@ Vérifier que les patchs soient bien appliqués :
 
 Patch réglant le probleme `EntityExtendBundle_UpdateExtendIndicesMigration.patch`
 
-## Erreurs ElasticSearch
+#### Erreur lors d'une ré-installation
+
+Ne pas oublier de renseigner installed null dans `config/parameters.yml`
+
+Avant 
+````
+    installed: '2020-09-04T17:39:05+02:00'
+````
+
+Après :
+````
+    installed: null
+````
+
+## 2. Erreurs lors des modifications de Workflow
+
+#### Erreur workflow "doesn't have allowed transition"
+
+````
+Step "open" of workflow "b2c_flow_abandoned_shopping_cart" doesn't have allowed transition "__start__".
+````
+
+Cette erreur correspond à un probleme de workflow, possibilité de corriger avec la commande :
+
+`bin/console oro:workflow:definitions:load`
+
+## Erreurs liées aux assets
+
+#### Erreur "Building assets"
+
+````
+Building assets.
+(...)
+    throw err;
+    ^
+````
+Probleme de version de node (en local mac, possibilité de switcher de version de Node avec nvm)
+
+
+
+## 3. Erreurs ElasticSearch
 
 #### Erreur "No alive nodes found in your cluster"
 
