@@ -40,7 +40,9 @@ service/dashboard-metrics-scraper created
 deployment.apps/dashboard-metrics-scraper created
 ```
 
-You then need to create your users.
+Kubectl will make Dashboard available at http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/.
+
+You then need to create your users if it wasn't already done.
 Create a sample User: https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
 
 Creating Users for the Kubernetes Dashboard
@@ -98,7 +100,5 @@ namespace:  20 bytes
 ```
 
 Now copy the token and paste it into Enter token field on the login screen.
-
-
 
 Click Sign in button and that's it. You are now logged in as an admin.
