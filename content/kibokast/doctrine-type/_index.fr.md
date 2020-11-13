@@ -67,6 +67,7 @@ echo $date->format('y-m-d');	// '2020-09-25'
 
 - _object_ **object** : marche pas bien, il vaut mieux sérialiser puis enregistrer en text
 
+Explications: https://www.doctrine-project.org/projects/doctrine-dbal/en/2.12/reference/types.html#object
 
 ## Les types custom
 
