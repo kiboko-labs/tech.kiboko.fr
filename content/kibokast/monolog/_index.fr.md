@@ -51,10 +51,10 @@ Exemple de la doc Symfony :
 ![40% center](Monolog-ex.png)
 
 
-## Utilisation concrète des journaux : Middleware et Kibana
+## Conférences AFUP à ce sujet 
 
-Connecter Monolog à Elastic Stack (Middleware)
+Pour en savoir plus vous pouvez retrouver une conférence AFUP réalisée par Olivier Dolbeau :
 
-![40% center](Monolog-mw.png)
+<iframe width="739" height="418" src="https://www.youtube.com/embed/1r1SOeaDqH4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![40% center](Monolog-mw2.png)
+> source : https://afup.org/talks/1160-laisse-pas-trainer-ton-log
