@@ -6,10 +6,20 @@
     <description>Recent content on Tech.Kiboko.fr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tech.kiboko.fr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>http://tech.kiboko.fr/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/kubernetes/</guid>
+      <description>Kubernetes Developer Environment  Get the kubeconfig.yml file and use the Use the --kubeconfig=kubeconfig.yml option to all your kubectl commands  Get cluster info $ kubectl --kubeconfig=kubeconfig.yml cluster-info Kubernetes master is running at https://wzb5w7.c1.gra7.k8s.ovh.net CoreDNS is running at https://wzb5w7.c1.gra7.k8s.ovh.net/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy Metrics-server is running at https://wzb5w7.c1.gra7.k8s.ovh.net/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy To further debug and diagnose cluster problems, use &#39;kubectl cluster-info dump&#39;. Install Kubernetes Dashboard FR: https://kubernetes.io/fr/docs/tasks/access-application-cluster/web-ui-dashboard/ EN: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+$ kubectl --kubeconfig=kubeconfig.yml apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended.yaml namespace/kubernetes-dashboard created serviceaccount/kubernetes-dashboard created service/kubernetes-dashboard created secret/kubernetes-dashboard-certs created secret/kubernetes-dashboard-csrf created secret/kubernetes-dashboard-key-holder created configmap/kubernetes-dashboard-settings created role.</description>
+    </item>
     
   </channel>
 </rss>
