@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Monolog</title>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/">
+    Kibokast
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/monolog/" title="Monolog" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/kibokast/monolog/">
+    Monolog
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/exceptions/" title="Exceptions" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/exceptions/">
+    Exceptions
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/doctrine-type/" title="Doctrine type" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/doctrine-type/">
+    Doctrine type
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+    Code review
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+    Commandes Debug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+    Collections Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+    Principes SOLID
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+    Utilisation des commandes Kloud
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+    Utilisation Tmetric
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+    Migrations Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+    Usage Github
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+    Utilisation stack Docker Kiboko
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Monolog
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">27/11/2020</p>
+          
+          
+          <div class="content"><h1 id="psr3-et-monolog">PSR3 et Monolog</h1>
+<h2 id="quest-ce-quun-log--a-quoi-ça-sert-">Qu&rsquo;est-ce qu&rsquo;un log ? A quoi ça sert ?</h2>
+<ul>
+<li>Log = Journal</li>
+<li>Indique différentes choses telles que des actions qui sont faites</li>
+<li>Très utiles pour les erreurs</li>
+</ul>
+<h2 id="la-psr-3-une-interface-commune-dinteropérabilité">La PSR-3, une interface commune d&rsquo;interopérabilité</h2>
+<p><a href="https://www.php-fig.org/psr/psr-3/">https://www.php-fig.org/psr/psr-3/</a></p>
+<ul>
+<li>LoggerInterface</li>
+<li>Remplace les logs de PHP</li>
+<li>Propose différents niveaux de sévérité de la norme Syslog</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Debug</th>
+<th align="center">Info</th>
+<th align="center">Notice</th>
+<th align="center">Warning</th>
+<th align="center">Error</th>
+<th align="center">Critical</th>
+<th align="center">Alert</th>
+<th align="center">Emergency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td align="center">200</td>
+<td align="center">250</td>
+<td align="center">300</td>
+<td align="center">400</td>
+<td align="center">500</td>
+<td align="center">550</td>
+<td align="center">600</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Implémentée par KLogger, Monolog, Analog et bien d&rsquo;autres</li>
+</ul>
+<h2 id="comment-choisir-le-bon-niveau-de-log-">Comment choisir le bon niveau de log ?</h2>
+<p><strong>Niveau 1</strong></p>
+<ul>
+<li><strong>Debug</strong> : Informations pour debug son app 🐛</li>
+</ul>
+<blockquote>
+<p>réservé au développeur</p>
+</blockquote>
+<p><strong>Niveau 2 :</strong></p>
+<ul>
+<li><strong>Info</strong> : Différentes informations de ce qui se passe ✅</li>
+<li><strong>Notice</strong> : D&rsquo;autres informations qui peuvent être utiles qu&rsquo;on peut garder 📖</li>
+<li><strong>Warning</strong> : Il faut prêter attention mais ce ne sont pas des erreurs ⚠️</li>
+<li><strong>Error</strong> : Quelque chose n&rsquo;a pas fonctionné mais ça peut parfois attendre ❌</li>
+</ul>
+<blockquote>
+<p>dysfonctionnement non bloquant (reprise sur erreur)</p>
+</blockquote>
+<p><strong>Niveau 3 :</strong></p>
+<ul>
+<li><strong>Critical</strong> : Quelque chose n&rsquo;a pas fonctionné mais là c&rsquo;est urgent 💥</li>
+<li><strong>Alert</strong> : Quelque chose n&rsquo;est plus utilisable du tout 🚨</li>
+<li><strong>Emergency</strong> : Système inutilisable ☢️ (= réveil quelqu&rsquo;un la nuit pour intervenir) [notif SMS possible]</li>
+</ul>
+<blockquote>
+<p>dysfonctionnement bloquant (pas de reprise sur erreur)</p>
+</blockquote>
+<h2 id="une-implémentation-de-psr-3--monolog">Une implémentation de PSR-3 : Monolog</h2>
+<p>Monolog a été développé par Jordi Boggiano (co-fondateur de Composer) : <a href="https://github.com/Seldaek/">https://github.com/Seldaek/</a></p>
+<ul>
+<li>Permet d&rsquo;envoyer des logs à plusieurs handlers</li>
+<li>Filtrer selon le niveau de log</li>
+</ul>
+<p><img src="Monolog.png" alt="40% center"></p>
+<p>Exemple d&rsquo;utilisation, pour des logs Critical/Alert/Emergency ils pourraient être envoyés par email (ou par SMS).</p>
+<p>Exemple de la doc Symfony, avec configuration des logs de base :</p>
+<p><img src="Monolog-ex.png" alt="40% center"></p>
+<p>Tous les logs seront donc écrit dans le fichier .log</p>
+<h2 id="cas-concrets">Cas concrets</h2>
+<p>Utilisation concrète</p>
+<ul>
+<li>1er étape : log envoyé a Elastic via Logstash</li>
+<li>2ème étape : affichage des logs en BO gràce au composant ElasticSearch : <a href="https://github.com/elastic/elasticsearch-php">https://github.com/elastic/elasticsearch-php</a></li>
+</ul>
+<p>Exemple de configuration avec répartition des logs dans 2 handlers :</p>
+<pre><code>services:
+    monolog.formatters.logstash:
+        class: Monolog\Formatter\LogstashFormatter
+        arguments:
+            $applicationName: 'kiboko'
+monolog:
+    handlers:
+        mail_on_errors:
+            type: fingers_crossed
+            action_level: critical
+            handler: buffered
+        buffered:
+            type: buffer
+            handler: swift
+        swift:
+            type: swift_mailer
+            from_email: alert@kiboko.fr
+            to_email: nicolas@kiboko.fr
+            subject: An Error Occurred!
+            level: critical
+
+        logstash:
+            type: socket
+            connection_string: 'tcp://logstash:5044'
+            level: debug
+            formatter: monolog.formatters.logstash
+</code></pre><h2 id="kibana">Kibana</h2>
+<p>Kibana est une interface utilisateur gratuite et ouverte qui vous permet de visualiser vos données Elasticsearch et de naviguer dans la Suite Elastic.</p>
+<p><a href="https://www.elastic.co/fr/kibana">https://www.elastic.co/fr/kibana</a></p>
+<p>Utilisation de la stack ElasticStack (ex: EKL Elastic/Kibana/Logstash)</p>
+<p><img src="kibana.png" alt="40% center"></p>
+<p>Avec Kibana, on a la possiblité de filter les logs par niveau</p>
+<h2 id="conférences-afup-à-ce-sujet">Conférences AFUP à ce sujet</h2>
+<p>Pour en savoir plus vous pouvez retrouver</p>
+<ul>
+<li>État de l&rsquo;art d&rsquo;Elasticsearch avec PHP par Damien Alexandre</li>
+</ul>
+<iframe width="739" height="418" src="https://www.youtube.com/embed/783t6r0ejfs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>=&gt; ForumPhp 2020 : <a href="https://afup.org/talks/3449-etat-de-l-art-d-elasticsearch-avec-php">https://afup.org/talks/3449-etat-de-l-art-d-elasticsearch-avec-php</a></p>
+<ul>
+<li>Laisse pas trainer ton log par Olivier Dolbeau :</li>
+</ul>
+<iframe width="739" height="418" src="https://www.youtube.com/embed/1r1SOeaDqH4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>=&gt; ForumPhp 2014 : <a href="https://afup.org/talks/1160-laisse-pas-trainer-ton-log">https://afup.org/talks/1160-laisse-pas-trainer-ton-log</a></p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Kibokast</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/kibokast/exceptions/"> <span class="d-none d-md-block">Exceptions</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>
