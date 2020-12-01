@@ -51,7 +51,7 @@ https://www.php-fig.org/psr/psr-3/
 
 ## Une implémentation de PSR-3 : Monolog
 
-Monolog a été co-développé par Jordi Boggiano (créateur de Composer) : https://github.com/Seldaek/
+Monolog a été développé par Jordi Boggiano (co-fondateur de Composer) : https://github.com/Seldaek/
 
 - Permet d'envoyer des logs à plusieurs handlers
 - Filtrer selon le niveau de log
