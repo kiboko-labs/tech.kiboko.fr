@@ -60,47 +60,23 @@ annotation au-dessus de la fonction à appeler. L’annotation peut contenir une
 des placeholders commençant par deux points. Chaque parenthèse de capture de l’expression rationnelle ou placeholder
 sera un argument de la méthode PHP appelée pour exécuter la phrase du test.
 
-## Architecture :
+## Architecture
 
 ![40% center](images/Behat.png)
 
-## Conventions :
+## Documentations
 
-[Conventions](behat-conventions.md)
+- [Conventions](behat-conventions)
+- [Configuration](behat-configuration)
+- [Architecture](behat-symfony)
+- [Autoloading](behat-autoloading)
+- [Isolation](behat-isolation)
+- [Elements et formulaire](behat-elements-form)
+- [Fixtures](behat-fixtures)
+- [Exemples d'un test behat](behat-exemples)
+- [Tips,tricks,bugfix](behat-tips)
 
-## Configuration
-
-[Configuration](behat-configuration.md)
-
-## Injection de dépendances
-
-[Architecture](behat-symfony.md)
-
-## Autoload Suites
-
-[Autoloading](behat-autoloading.md)
-
-## Feature Isolation
-
-[Isolation](behat-isolation.md)
-
-## Elements et formulaires
-
-[Elements et formulaire](behat-elements-form.md)
-
-## Fixtures :
-
-[Fixtures](behat-fixtures.md)
-
-## Ecriture des tests
-
-[Exemples d'un test behat](behat-exemples.md)
-
-## Autres :
-
-[Tips,tricks,bugfix](behat-tips.md)
-
-# Docs relatives
+## Docs relatives (externes)
 
  - [Behat](https://docs.behat.org/en/latest/guides.html)
  - [Gherkin](https://cucumber.io/docs/gherkin/)
