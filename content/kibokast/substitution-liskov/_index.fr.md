@@ -4,12 +4,13 @@ date: 2020-12-04
 type : "docs"
 ---
 
-Dans la conception OOP, nous pouvons utiliser des méthodes et des principes pour produire des architectures logicielles plus :
+Dans la conception de programmation orientée objet, nous pouvons utiliser des méthodes et des principes pour produire des architectures logicielles plus :
 - compréhensibles
 - flexibles 
 - et maintenables
 
-#### Les principes SOLID
+Les principes SOLID
+---
 
 https://fr.wikipedia.org/wiki/SOLID_(informatique)
 
@@ -19,11 +20,11 @@ https://fr.wikipedia.org/wiki/SOLID_(informatique)
 - **I** Ségrégation des interfaces (Interface segregation principle) : préférer plusieurs interfaces spécifiques pour chaque client plutôt qu'une seule interface générale
 - **D** Inversion des dépendances (Dependency inversion principle): il faut dépendre des abstractions, pas des implémentations
 
-#### L : le principe de substitution de Liskov
+### L : le principe de substitution de Liskov
 
 https://fr.wikipedia.org/wiki/Principe_de_substitution_de_Liskov
 
-Si la classe B étends la class A, alors tout objet de type A peut être remplacé par un objet de type B sans altérer les propriétés désirables du programme concerné.
+Si la classe B étend une classe A, alors tout objet de type A peut être remplacé par un objet de type B sans altérer les propriétés désirables du programme concerné.
 
 **Exemple de problématique :**
 
@@ -43,11 +44,11 @@ class Voiture {
 
 On gère des voitures dans notre application
 
-plus tard dans le développement on nous dit de rajouter des voitures volantes
+Plus tard dans le développement on nous dit de rajouter des voitures volantes
 
 Une voiture volante est un voiture ?
 
-La méthode changerPneu nous embête, qu'est qu'on peut faire ?
+La méthode `changerPneu` nous embête, qu'est qu'on peut faire ?
 
 ````
 class VoitureVolante extends Voiture {
@@ -79,8 +80,8 @@ class VoitureVolante extends Voiture {
 - Vous avez réécrit une méthode de votre parent et vous lancez une exception, alors que celle-ci n’était pas prévue dans la classe de base.
 - Vous devez modifier une classe parente pour que votre nouvelle classe fonctionne. Par exemple, ajouter des arguments optionnels.
 
-
-## Ségrégation des interfaces
+Ségrégation des interfaces
+---
 
 Aucune ne devrait dépendre de méthodes qu'il n'utilise pas.
 
@@ -95,47 +96,47 @@ On veut faire une classe avion, qui implémenterait cette interface :
 
 ````
 interface Vehicule {
-    public function vole();
-    public function avance();
-    public function atterit();
+    public function roule();
+    public function decolle();
+    public function aterrit();
 }
 
 class Avion implements Vehicule {
-    public function vole() {
+    public function roule() {
     }
-    public function avance() {
+    public function decolle() {
     }
-    public function atterit() {
+    public function aterrit() {
     }
 }
 ````
 
-La classe Avion avion respecte bien notre interface, tout va bien.
+La classe Avion respecte bien notre interface, tout va bien.
 
 Désormais on créé une class Voiture :
 
 ````
 class Voiture implements Vehicule {
-    public function vole() {
+    public function roule() {
     }
-    public function avance() {
+    public function decolle() {
     }
-    public function atterit() {
+    public function aterrit() {
     }
 }
 ````
 
-Le probleme est qu'une voiture ne vole pas et n'atterit pas => notre interface est trop générique, le client (=voiture) dépend de méthodes qu'il n'a pas besoin.
+Le probleme est qu'une voiture ne décolle pas et n'aterrit pas => notre interface est trop générique, le client (=voiture) dépend de méthodes qu'il n'a pas besoin.
 
 **Solution :** découper notre interface trop générique en plus petites.
 
 ````
 interface VehiculeRoulant {
-    public function avance();
+    public function roule();
 }
 interface VehiculeVolant {
-    public function vole();
-    public function atterit();
+    public function decolle();
+    public function aterrit();
 }
 ````
 
@@ -143,11 +144,11 @@ Notre avion respecte maintenant deux interfaces, il respecte le contrat des véh
 
 ````
 class Avion implements VehiculeVolant, VehiculeRoulant {
-    public function avance() {
+    public function roule() {
     }
-    public function vole() {
+    public function decolle() {
     }
-    public function atterit() {
+    public function aterrit() {
     }
 }
 ````
@@ -156,12 +157,13 @@ et notre voiture respecte une seule interface :
 
 ````
 class Voiture implements  VehiculeRoulant {
-    public function avance() {
+    public function roule() {
     }
  }
 ````
 
-## Conclusion
+Conclusion
+---
 
 #### Les avantages
 
@@ -170,10 +172,9 @@ class Voiture implements  VehiculeRoulant {
 - code plus maintenable
 - code moins couplé
 
-#### Les dérives
+#### Les risques
 
-- à trop vouloir découper on se retrouve avec une méthode / interface
-
+- à trop vouloir découper on se retrouve avec des interfaces à une seule méthode
 
 ## Ressources complémentaires
 
