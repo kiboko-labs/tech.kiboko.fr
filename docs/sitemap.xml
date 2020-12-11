@@ -3,17 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://tech.kiboko.fr/kibokast/substitution-liskov/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
+    <loc>http://tech.kiboko.fr/kibokast/monolog/</loc>
+    <lastmod>2020-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://tech.kiboko.fr/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/monolog/</loc>
     <lastmod>2020-11-27T00:00:00+00:00</lastmod>
   </url>
   
