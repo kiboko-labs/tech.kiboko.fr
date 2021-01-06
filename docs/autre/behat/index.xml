@@ -6,11 +6,7 @@
     <description>Recent content in Behat on Tech.Kiboko.fr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://tech.kiboko.fr/autre/behat/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://tech.kiboko.fr/autre/behat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Autoloading</title>
       <link>http://tech.kiboko.fr/autre/behat/behat-autoloading/</link>
