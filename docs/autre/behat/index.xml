@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Behat on Tech.Kiboko.fr</title>
+    <link>http://tech.kiboko.fr/autre/behat/</link>
+    <description>Recent content in Behat on Tech.Kiboko.fr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://tech.kiboko.fr/autre/behat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Autoloading</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-autoloading/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-autoloading/</guid>
+      <description>La classe OroTestFrameworkExtension est responsable de la génération des suites de test.
+Lors de l&amp;rsquo;initialisation, l&amp;rsquo;extension crée une suite de tests avec un nom de bundle si un répertoire Tests/Behat/Features existe dans un bundle. Ainsi, si le bundle n&amp;rsquo;a pas de répertoire Features - aucune suite de tests ne sera créée ce bundle.
+Si vous avez besoin de certaines étapes de fonctionnalité spécifiques pour votre bundle, créez la classe AcmeDemoBundle\Tests\Behat\Context\FeatureContext. Ce contexte est ajouté à la suite avec les contextes courants.</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-configuration/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-configuration/</guid>
+      <description>Configuration de l&amp;rsquo;application :
+Utilisez la configuration par défaut de l&amp;rsquo;application installée en mode production. Si aucun serveur de messagerie n&amp;rsquo;est configuré localement, définissez le paramètre mailer_transport dans parameters.yml sur null.
+Configuration Behat
+La configuration de base se trouve dans behat.yml.dist. Chaque application possède son propre fichier behat.yml.dist à la racine du répertoire de l&amp;rsquo;application. Créez votre behat.yml (il est ignoré par git automatiquement et n&amp;rsquo;est jamais validé dans le référentiel distant), importez la configuration de base et modifiez-la pour l&amp;rsquo;adapter à votre environnement:</description>
+    </item>
+    
+    <item>
+      <title>Conventions</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-conventions/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-conventions/</guid>
+      <description>Conventions Utilisez le mapping de formulaire au lieu de sélecteurs dans vos scénarios pour les garder clairs et compréhensibles pour les personnes du monde technique et non technique.
+Example Ne pas:
+I fill in &amp;quot;oro_workflow_definition_form[label]&amp;quot; with &amp;quot;User Workflow Test&amp;quot; I fill in &amp;quot;oro_workflow_definition_form[related_entity]&amp;quot; with &amp;quot;User&amp;quot; Mais plutot :
+ And I fill &amp;quot;Workflow Edit Form&amp;quot; with: | Name | User Workflow Test | | Related Entity | User | avec la description des éléments indépendament :</description>
+    </item>
+    
+    <item>
+      <title>Elements form</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-elements-form/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-elements-form/</guid>
+      <description>Elements est une couche de service dans les tests behat. Ils enveloppent la logique métier complexe. Prenez une minute pour lire la base des NodeElement Mink
+Il y a de nombreuses méthodes publiques; certains d&amp;rsquo;entre eux ne s&amp;rsquo;appliquent qu&amp;rsquo;à certains éléments. Chaque test Bundle peut contenir un nombre particulier d&amp;rsquo;éléments. Tous les éléments doivent être décrits dans {BundleName} {BundleName}/Tests/Behat/behat.yml de la manière suivante:
+oro_behat_extension: elements: Login: selector: &amp;#39;#login-form&amp;#39; class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form options: mapping: Username: &amp;#39;_username&amp;#39; Password: &amp;#39;_password&amp;#39; ou :</description>
+    </item>
+    
+    <item>
+      <title>exemples</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-exemples/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-exemples/</guid>
+      <description>Ecrire une feature Chaque bundle doit contenir ses propres tests behat pour les fonctionnalités du répertoire {BundleName}/Tests/Behat/Features/. Chaque fonctionnalité est un fichier distinct avec l&amp;rsquo;extension .feature et une syntaxe spécifique.
+Note : Voir la doc de Cucumber pour plus d&amp;rsquo;infos.
+Une fonctionnalité commence par ce qui suit:
+ Le mot clé Feature: et le nom de la fonctionnalité (ceux-ci doivent rester sur la même ligne), Une description facultative (peut être formatée sur plusieurs lignes).</description>
+    </item>
+    
+    <item>
+      <title>Fixtures</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-fixtures/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-fixtures/</guid>
+      <description>Feature Fixtures : Chaque fois que behat exécute une nouvelle fonctionnalité, l&amp;rsquo;état de l&amp;rsquo;application est réinitialisé par défaut : il n&amp;rsquo;y a qu&amp;rsquo;un seul utilisateur administrateur, une organisation, une unité commerciale et des rôles par défaut dans la base de données.
+Les tests de fonctionnalités doivent s&amp;rsquo;appuyer sur les données disponibles dans l&amp;rsquo;application après l&amp;rsquo;exécution de la commande oro: install. Dans la plupart des cas, cela ne suffit pas.
+Ainsi, vous avez deux façons d&amp;rsquo;obtenir plus de données dans le système: en utilisant des fixtures de base ou des fixtures alice.</description>
+    </item>
+    
+    <item>
+      <title>Functional</title>
+      <link>http://tech.kiboko.fr/autre/behat/functional/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/functional/</guid>
+      <description>Tests fonctionnels Les tests fonctionnels permettent de vérifier l’intégration des différentes couches d’une application.
+Dans cet article, vous apprendrez comment vous pouvez améliorer l’expérience de la rédaction de tests fonctionnels avec Oroplatform. Il est recommandé de lire la Doc Symfony concernant les tests avant de continuer. Vous devriez également connaître PhpUnit
+Quand rédiger les tests fonctionnels Les tests fonctionnels sont généralement rédigés pour les :
+Contrôleurs Commandes Dépôts Autres services</description>
+    </item>
+    
+    <item>
+      <title>intro</title>
+      <link>http://tech.kiboko.fr/autre/behat/intro/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/intro/</guid>
+      <description>Les tests unitaires et fonctionnels, qui aident à tester l’architecture d’application et les API de programmation.
+Cependant, ces types de tests donnent aux développeurs aucune garantie que lorsque l’utilisateur ouvre une page, tout va fonctionner comme prévu. Pour cette raison, le framework Behavior-Driven nommé Behat est utilisé, qui au lieu de compter sur le code source se comporte comme un utilisateur réel. Il peut très bien émuler l’utilisateur, exécuter des tests dans un véritable navigateur Web, et utilise un langage spécifique et lisible par tout le monde appelé Gherkin pour décrire les tests.</description>
+    </item>
+    
+    <item>
+      <title>Isolation</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-isolation/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-isolation/</guid>
+      <description>Chaque fonctionnalité peut interagir avec l&amp;rsquo;application et effectuer des opérations CRUD. Par conséquent, la base de données peut être modifiée. Pour éviter les collisions de données, les fonctionnalités sont isolées: la base de données et les répertoires de cache sont vidés avant d&amp;rsquo;exécuter les tests de fonctionnalités; ils sont restaurés une fois l&amp;rsquo;exécution des tests de fonctionnalités terminée.
+Chaque isolateur doit implémenter l&amp;rsquo;interface Oro\Bundle\TestFrameworkBundle\Behat\Isolation\IsolatorInterface et le tag `oro_behat.isolator avec de la priorité.</description>
+    </item>
+    
+    <item>
+      <title>Symfony</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-symfony/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-symfony/</guid>
+      <description>Behat est une application console Symfony avec son propre conteneur et ses propres services. Un conteneur Behat peut être configuré via des extensions en utilisant behat.yml à la racine du répertoire d&amp;rsquo;application. Le conteneur d&amp;rsquo;application peut être utilisé par le noyau injecté dans votre contexte après avoir implémenté KernelAwareContext et utilisé le trait KernelDictionary.
+use Behat\Symfony2Extension\Context\KernelAwareContext; use Behat\Symfony2Extension\Context\KernelDictionary; use Oro\Bundle\TestFrameworkBundle\Behat\Context\OroFeatureContext; class FeatureContext extends OroFeatureContext implements KernelAwareContext { use KernelDictionary; public function useContainer() { $doctrine = $this-&amp;gt;getContainer()-&amp;gt;get(&amp;#39;doctrine&amp;#39;); } } De plus, vous pouvez injecter des services dans le contexte behat:</description>
+    </item>
+    
+    <item>
+      <title>Test unitaire Javascript</title>
+      <link>http://tech.kiboko.fr/autre/behat/javascript/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/javascript/</guid>
+      <description>Test unitaire Javascript Installation Les logiciel suivant sont nécessaire pour exécuter les tests JS :
+ Node.js (Moteur JavaScript) Karma (Lanceur de test Javascript) Jasmine 3.5 (Framework BDD)  NOTE Pour obtenir des instructions sur la façon d’installer Node.js, accédez au site officiel.
+Une fois Node installé, installez plusieurs modules en utilisant Node Packaged Modules en exécutant la commande suivante à partir du dossier racine de votre application
+npm install --prefix=vendor/oro/platform/build</description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>http://tech.kiboko.fr/autre/behat/behat-tips/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.kiboko.fr/autre/behat/behat-tips/</guid>
+      <description>Health Checkers Behat a une possibilité native d&amp;rsquo;invoquer des formateurs sans exécuter les tests et les hooks.
+Vous pouvez essayer:
+bin/behat --dry-run Cela peut être utile au cas où vous n&amp;rsquo;êtes pas sûr d&amp;rsquo;avoir déclaré tout le contexte nécessaire à votre fonctionnalité. OroBehatExtension améliore cette fonctionnalité et ajoute des fonctionnalités supplémentaires.
+Erreurs Erreur courante : Couldn’t generate random unique value for OroBundleUserBundleEntityUser: username in 128 tries
+hot fix:
+Vérifiez votre fixtures.</description>
+    </item>
+    
+  </channel>
+</rss>

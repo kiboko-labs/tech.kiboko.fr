@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Principes SOLID</title>
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.79.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -159,6 +159,50 @@
   
   
     <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/scss-dans-oro/" title="SCSS dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/scss-dans-oro/">
+    SCSS dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/processus/" title="Les processus dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/processus/">
+    Les processus dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
       
         
           
@@ -461,7 +505,7 @@
 <li>Dependency inversion principle</li>
 </ul>
 <h2 id="single-responsibility-principle">Single responsibility principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Product</span>
 {
@@ -477,7 +521,7 @@
 <span style="color:#75715e">// ...
 </span><span style="color:#75715e"></span>}
 </code></pre></div><h2 id="openclosed-principle">Open/closed principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
 <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
 {
@@ -488,7 +532,7 @@
 <span style="color:#75715e">// ...
 </span><span style="color:#75715e"></span>}
 </code></pre></div><h2 id="liskov-substitution-principle">Liskov substitution principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
 {
@@ -509,7 +553,7 @@
         <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URL</span>($path);
     }
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
 {
@@ -532,7 +576,7 @@
     }
 }
 </code></pre></div><h2 id="interface-segregation-principle">Interface segregation principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
 <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">LoremInterface</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">\Countable</span>, <span style="color:#a6e22e">\Traversable</span> {}
 
@@ -547,7 +591,7 @@
 <li><a href="https://www.php.net/manual/fr/class.countable.php">Countable</a></li>
 </ul>
 <h2 id="dependency-inversion-principle">Dependency inversion principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
 <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Incorrect</span>
 {
@@ -562,7 +606,7 @@
         <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">count</span>($list) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>;
     }
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
 <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Correct</span>
 {
@@ -609,6 +653,38 @@
 
             
             
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
             
             
             
