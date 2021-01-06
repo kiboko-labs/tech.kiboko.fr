@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Collections Doctrine</title>
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.79.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -159,6 +159,28 @@
   
   
     <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/scss-dans-oro/" title="SCSS dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/scss-dans-oro/">
+    SCSS dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
       
         
           
@@ -522,7 +544,7 @@
 <p>La méthode <code>map( callable $callback )</code> va appliquer la fonction de rappel passée en argument sur chaque
 élément qu&rsquo;elle contient et retournera une copie de la collection. Dans cette copie
 chaque élément aura été remplacé avec le résultat de cette fonction.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 $collection <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ArrayCollection</span>([<span style="color:#e6db74">&#39;SKU001&#39;</span>, <span style="color:#e6db74">&#39;SKU002&#39;</span>, <span style="color:#e6db74">&#39;SKU003&#39;</span>]);
 
 $mappedCollection <span style="color:#f92672">=</span> $collection<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">map</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">string</span> $value)<span style="color:#f92672">:</span> <span style="color:#a6e22e">Product</span> {
@@ -532,7 +554,7 @@ $mappedCollection <span style="color:#f92672">=</span> $collection<span style="c
 <p>La méthode <code>filter( callable $callback )</code> va appliquer la fonction de rappel passée en argument sur chaque
 élément qu&rsquo;elle contient et retournera une copie de la collection. Dans cette copie, ne
 restera que les éléments pour lesquels la fonction de rappel a renvoyé <code>true</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 $collection <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ArrayCollection</span>([<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU001&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU002&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU003&#39;</span>)]);
 
 $mappedCollection <span style="color:#f92672">=</span> $collection<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">Product</span> $value)<span style="color:#f92672">:</span> <span style="color:#a6e22e">bool</span> {
@@ -542,7 +564,7 @@ $mappedCollection <span style="color:#f92672">=</span> $collection<span style="c
 <p>La méthode <code>slice( int $start, null|int $length )</code> va retourner une nouvelle copie de la collection contenant
 uniquement les éléments commençant à la position <code>$start</code>, avec au maximum <code>$length</code> éléments à partir
 de ce point si ce paramètre est fourni.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 $collection <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ArrayCollection</span>([<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU001&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU002&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU003&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU004&#39;</span>), <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Product</span>(<span style="color:#e6db74">&#39;SKU005&#39;</span>)]);
 
 $mappedCollection <span style="color:#f92672">=</span> $collection<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>);
@@ -579,6 +601,22 @@ $mappedCollection <span style="color:#f92672">=</span> $collection<span style="c
 
             
             
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
             
             
             
