@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Créer une application frontend sur OroPlatform</title>
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.79.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -275,17 +275,17 @@ composer install
 </code></pre><h2 id="routage">Routage</h2>
 <p>Dans le but de simplification, nous allons activer l&rsquo;auto-wiring sur notre composant de routage :</p>
 <h3 id="autowiring">Autowiring</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">services</span>:
-  <span style="color:#66d9ef">Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router\</span>:
-    <span style="color:#66d9ef">resource</span>: <span style="color:#e6db74">&#39;../src/HelpDeskPortal/Infrastructure/Router&#39;</span>
-    <span style="color:#66d9ef">autowire</span>: <span style="color:#66d9ef">true</span>
-    <span style="color:#66d9ef">autoconfigure</span>: <span style="color:#66d9ef">true</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">services</span>:
+  <span style="color:#f92672">Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router\</span>:
+    <span style="color:#f92672">resource</span>: <span style="color:#e6db74">&#39;../src/HelpDeskPortal/Infrastructure/Router&#39;</span>
+    <span style="color:#f92672">autowire</span>: <span style="color:#66d9ef">true</span>
+    <span style="color:#f92672">autoconfigure</span>: <span style="color:#66d9ef">true</span>
 </code></pre></div><h3 id="ajouter-un-préfixe-aux-routes-oroplatform">Ajouter un préfixe aux routes OroPlatform</h3>
 <p>Pour la première étape, nous allons ajouter un préfixe <code>admin/</code> à nos routes standard OroPlatform, comme le fait OroCommerce.</p>
 <p>Nous utiliserons le paramètre de configuration <code>%web_backend_prefix%</code> pour définir facilement cette valeur. Nous profiterons
 que OroCommerce ait déjà défini ce paramètre.</p>
 <p>Nous alons utiliser un event listener qui va retraiter les déclarations de routes, tel que :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span> <span style="color:#66d9ef">declare</span>(<span style="color:#a6e22e">strict_types</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#66d9ef">declare</span>(<span style="color:#a6e22e">strict_types</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>);
 
 <span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router\EventListener</span>;
 
@@ -351,17 +351,17 @@ que OroCommerce ait déjà défini ce paramètre.</p>
     }
 }
 </code></pre></div><p>Et la déclaration de service qui lui correspond :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">services</span>:
-  <span style="color:#66d9ef">Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router\EventListener\RouteCollectionListener</span>:
-    <span style="color:#66d9ef">arguments</span>:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">services</span>:
+  <span style="color:#f92672">Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router\EventListener\RouteCollectionListener</span>:
+    <span style="color:#f92672">arguments</span>:
       - <span style="color:#e6db74">&#39;%web_backend_prefix%&#39;</span>
-    <span style="color:#66d9ef">tags</span>:
-      - { <span style="color:#66d9ef">name: kernel.event_listener, event: oro_distribution.route_collection.expose, method: onCollectionAutoload, priority</span>: <span style="color:#ae81ff">120</span> }
-      - { <span style="color:#66d9ef">name: kernel.event_listener, event: oro_distribution.route_collection.autoload, method: onCollectionAutoload, priority</span>: <span style="color:#ae81ff">120</span> }
-    <span style="color:#66d9ef">lazy</span>: <span style="color:#66d9ef">true</span>
+    <span style="color:#f92672">tags</span>:
+      - { <span style="color:#f92672">name: kernel.event_listener, event: oro_distribution.route_collection.expose, method: onCollectionAutoload, priority</span>: <span style="color:#ae81ff">120</span> }
+      - { <span style="color:#f92672">name: kernel.event_listener, event: oro_distribution.route_collection.autoload, method: onCollectionAutoload, priority</span>: <span style="color:#ae81ff">120</span> }
+    <span style="color:#f92672">lazy</span>: <span style="color:#66d9ef">true</span>
 </code></pre></div><h3 id="extracteur-de-routes-frontend">Extracteur de routes frontend</h3>
 <p>Pour pouvoir exporter les routes javascript, nous avons besoin d&rsquo;extraire les routes du portail Helpdesk.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
 <span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router</span>;
 
@@ -396,30 +396,30 @@ que OroCommerce ait déjà défini ce paramètre.</p>
     }
 }
 </code></pre></div><p>Ainsi que les services nécessaires à l&rsquo;extraction de ces routes Javascript :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">services</span>:
-  <span style="color:#66d9ef">Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router\PortalExposedRoutesExtractor</span>:
-    <span style="color:#66d9ef">arguments</span>:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">services</span>:
+  <span style="color:#f92672">Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router\PortalExposedRoutesExtractor</span>:
+    <span style="color:#f92672">arguments</span>:
       - <span style="color:#e6db74">&#39;@router&#39;</span>
       - []
       - <span style="color:#e6db74">&#39;%kernel.cache_dir%/oro_data&#39;</span>
       - <span style="color:#e6db74">&#39;%kernel.bundles%&#39;</span>
 
-  <span style="color:#66d9ef">kiboko_help_desk_portal.js_routing_controller</span>:
-    <span style="color:#66d9ef">class</span>: <span style="color:#e6db74">&#39;%fos_js_routing.controller.class%&#39;</span>
-    <span style="color:#66d9ef">public</span>: <span style="color:#66d9ef">true</span>
-    <span style="color:#66d9ef">arguments</span>:
+  <span style="color:#f92672">kiboko_help_desk_portal.js_routing_controller</span>:
+    <span style="color:#f92672">class</span>: <span style="color:#e6db74">&#39;%fos_js_routing.controller.class%&#39;</span>
+    <span style="color:#f92672">public</span>: <span style="color:#66d9ef">true</span>
+    <span style="color:#f92672">arguments</span>:
       - <span style="color:#e6db74">&#39;@fos_js_routing.serializer&#39;</span>
       - <span style="color:#e6db74">&#39;@Kiboko\HelpDeskPortal\Infrastructure\Symfony\Router\PortalExposedRoutesExtractor&#39;</span>
       - <span style="color:#e6db74">&#39;%fos_js_routing.cache_control%&#39;</span>
       - <span style="color:#e6db74">&#39;%kernel.debug%&#39;</span>
 </code></pre></div><p>Nous aurons également besoin d&rsquo;exposer une route supplémentaire pour le service de contrôleur <code>kiboko_help_desk_portal.js_routing_controller</code> que nous avons créé plus haut :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">kiboko_help_desk_portal_js_routing_js</span>:
-  <span style="color:#66d9ef">path</span>: <span style="color:#e6db74">&#34;/media/js/frontend_routes.{_format}&#34;</span>
-  <span style="color:#66d9ef">defaults</span>: { <span style="color:#66d9ef">_controller</span>: kiboko_help_desk_porta.js_routing_controller:indexAction }
-  <span style="color:#66d9ef">requirements</span>:
-    <span style="color:#66d9ef">_format</span>: json
-  <span style="color:#66d9ef">options</span>:
-    <span style="color:#66d9ef">helpdesk_portal</span>: <span style="color:#66d9ef">true</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">kiboko_help_desk_portal_js_routing_js</span>:
+  <span style="color:#f92672">path</span>: <span style="color:#e6db74">&#34;/media/js/frontend_routes.{_format}&#34;</span>
+  <span style="color:#f92672">defaults</span>: { <span style="color:#f92672">_controller</span>: <span style="color:#ae81ff">kiboko_help_desk_porta.js_routing_controller:indexAction }</span>
+  <span style="color:#f92672">requirements</span>:
+    <span style="color:#f92672">_format</span>: <span style="color:#ae81ff">json</span>
+  <span style="color:#f92672">options</span>:
+    <span style="color:#f92672">helpdesk_portal</span>: <span style="color:#66d9ef">true</span>
 </code></pre></div></div>
           
           <nav class="pagination mt-3">
@@ -458,6 +458,54 @@ que OroCommerce ait déjà défini ce paramètre.</p>
             
             
 
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
             
             
             
