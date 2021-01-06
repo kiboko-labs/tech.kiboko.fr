@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>SCSS dans Oro</title>
+
+  <meta name="generator" content="Hugo 0.79.0" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Accueil</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/">
+    Kibokast
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/scss-dans-oro/" title="SCSS dans Oro" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/kibokast/scss-dans-oro/">
+    SCSS dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/processus/" title="Les processus dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/processus/">
+    Les processus dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/monolog/" title="Monolog" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/monolog/">
+    Monolog
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/exceptions/" title="Exceptions" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/exceptions/">
+    Exceptions
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/doctrine-type/" title="Doctrine type" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/doctrine-type/">
+    Doctrine type
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+    Code review
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+    Commandes Debug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+    Collections Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+    Principes SOLID
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+    Utilisation des commandes Kloud
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+    Utilisation Tmetric
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+    Migrations Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+    Usage Github
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+    Utilisation stack Docker Kiboko
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              SCSS dans Oro
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">18/12/2020</p>
+          
+          
+          <div class="content"><h2 id="quest-ce-que-le-scss-et-le-sass-">Qu&rsquo;est ce que le SCSS (et le SASS) ?</h2>
+<p>Ce sont des préprocesseurs CSS</p>
+<ul>
+<li><strong>SASS</strong> = Syntactically Awesome Style Sheets : <a href="https://sass-lang.com/documentation/">https://sass-lang.com/documentation/</a></li>
+<li><strong>SCSS</strong> = Sassy CSS c&rsquo;est-à-dire du CSS dans le style de SASS.</li>
+</ul>
+<p>Avec la version 3 de SASS, SCSS a été défini comme <strong>la syntaxe officielle</strong>.</p>
+<p>La plus grande différence réside dans l’utilisation des crochets et des points-virgules.</p>
+<ul>
+<li>SASS plus proche du Yaml niveau visuel</li>
+<li>SCSS plus proche du CSS niveau visuel</li>
+</ul>
+<p><strong>Outil similaire :</strong> Less <a href="http://lesscss.org/">http://lesscss.org/</a> (basé sur du JS contrairement au Sass basé sur du Ruby)</p>
+<h3 id="1-avantagesinconvénients">1. Avantages/Inconvénients</h3>
+<table>
+<thead>
+<tr>
+<th>Avantages</th>
+<th style="text-align:center">Inconvénients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plus de possibilités</td>
+<td style="text-align:center">Le code doit être compilé</td>
+</tr>
+<tr>
+<td>Code plus clair</td>
+<td style="text-align:center">Résolution des erreurs difficiles</td>
+</tr>
+<tr>
+<td>Frameworks étendus</td>
+<td style="text-align:center">Effort d’apprentissage</td>
+</tr>
+<tr>
+<td>Travail avec des mixins et des variables</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-différences-entre-css-et-scss">2. Différences entre CSS et SCSS</h3>
+<p>Liste de fonctionnalités SCSS trés pratiques : <a href="https://sass-lang.com/documentation/at-rules">https://sass-lang.com/documentation/at-rules</a></p>
+<p>En voici quelqu&rsquo;unes en détails.</p>
+<h4 id="21-utilisation-de-variables">2.1. Utilisation de variables</h4>
+<p>On peut déclarer des variables avec cette syntaxe :</p>
+<p><code>$variable: value;</code></p>
+<p>Exemples :</p>
+<p><strong>CSS</strong></p>
+<pre><code>body{
+    color: #ffffff;
+    font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
+    font-size: 18px;
+}
+</code></pre><p><strong>SCSS</strong></p>
+<pre><code>$white: #ffffff;
+$ubuntu-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
+$md-font: 18px;
+
+body{
+    color: $white;
+    font: $ubuntu-font;
+    font-size: $md-font;
+}
+</code></pre><p>Trés pratique pour les couleurs, taille de typo, les fonts mais aussi pour les points de ruptures pour le responsive :</p>
+<pre><code>$sm-font: 14px;
+$md-font: 18px;
+$xl-font: 22px;
+
+$grid--breakpoint-sm: 480px;
+$grid--breakpoint-md: 768px;
+$grid--breakpoint-lg: 1024px;
+
+@media (max-width: $grid--breakpoint-sm) {
+    body {
+        font-size: $sm-font;
+    }
+}
+
+</code></pre><p>Attention on peut utiliser uniquement les variables déclarés dans le fichiers courants (sauf si on utilise des imports).</p>
+<h4 id="22-utilisation-des-imports">2.2. Utilisation des imports</h4>
+<p>Possibilité d&rsquo;importer des fichiers SASS :</p>
+<pre><code>@import 'components/page-container';
+@import 'components/page-header';
+@import 'components/page-content';
+@import 'components/page-footer';
+@import 'components/page-title';
+</code></pre><p>Exemple concret :</p>
+<p>_<em>variables.scss</em></p>
+<pre><code>$sm-font: 14px;
+$md-font: 18px;
+$xl-font: 22px;
+</code></pre><p><em>style.scss</em></p>
+<pre><code>@import 'variables';
+   
+body {
+    font-size: $sm-font;
+}
+</code></pre><p>avec ces 2 fichiers au même niveau.</p>
+<h4 id="23-utilisation-de-mixins">2.3. Utilisation de mixins</h4>
+<p>Pour simplifier et éviter de répéter tout le temps les mêmes lignes, on peut créer des mixins :</p>
+<p><strong>Mixin simple</strong></p>
+<pre><code>@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul {
+  @include reset-list;
+}
+</code></pre><p><strong>Mixin avec variables</strong></p>
+<pre><code>@mixin box-shadow($left, $top, $radius, $color) {
+    box-shadow: $left $top $radius $color;
+    -webkit-box-shadow: $left $top $radius $color;
+    -moz-box-shadow: $left $top $radius $color;
+}
+
+input {
+    @include box-shadow(10px 5px 5px red);
+}
+</code></pre><h4 id="24-méthodologie-bem">2.4. Méthodologie BEM</h4>
+<p>BEM = une convention CSS qui va nous aider à rendre nos classes plus compréhensibles, et ce grâce au nommage.</p>
+<ul>
+<li><strong>B</strong>loc</li>
+<li><strong>E</strong>lément</li>
+<li><strong>M</strong>odificateur</li>
+</ul>
+<p><strong>Exemple :</strong></p>
+<p>SCSS</p>
+<pre><code>.block{
+    background: #000;
+
+    .block__element {
+      color: #fff;
+    }
+}
+</code></pre><p>CSS généré</p>
+<pre><code>.block {
+    background: #000;
+}
+.block .block__element {
+    color: #fff;
+}
+</code></pre><p>SCSS avec méthodologie BEM</p>
+<pre><code>.block {
+    background-color: #000;
+
+    &amp;__element {
+        color: #fff;
+    }
+}
+</code></pre><p>CSS généré</p>
+<pre><code>.block {
+    background: #000;
+}
+.block__element {
+    color: #fff;
+}
+</code></pre><p>Ressources externes pour avoir plus d&rsquo;informations sur la méthodologie BEM :</p>
+<ul>
+<li><a href="https://openclassrooms.com/fr/courses/6106181-simplifiez-vous-le-css-avec-sass/6596494-utilisez-des-selecteurs-bem-avec-sass">https://openclassrooms.com/fr/courses/6106181-simplifiez-vous-le-css-avec-sass/6596494-utilisez-des-selecteurs-bem-avec-sass</a></li>
+<li><a href="https://medium.com/@andrew_barnes/bem-and-sass-a-perfect-match-5e48d9bc3894">https://medium.com/@andrew_barnes/bem-and-sass-a-perfect-match-5e48d9bc3894</a></li>
+<li><a href="https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html#bem">https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html#bem</a></li>
+</ul>
+<h2 id="2-dans-oro">2. Dans Oro</h2>
+<p>Documentation officiele pour l&rsquo;usage front : <a href="https://doc.oroinc.com/frontend/storefront/css/">https://doc.oroinc.com/frontend/storefront/css/</a></p>
+<h2 id="21-utilisation-et-déclaration">2.1. Utilisation et déclaration</h2>
+<p>Exemple d&rsquo;un usage simple pour ajouter des assets .Scss pour le front :</p>
+<p>Dans le fichier <code>src/AppBundle/Resources/views/layouts/montheme/config/assets.yml</code></p>
+<pre><code>styles:
+    inputs:
+        - 'bundles/app/montheme/scss/settings/global-settings.scss'
+        - 'bundles/app/montheme/scss/variables/base-config.scss'
+        - 'bundles/app/montheme/scss/variables/page-header-config.scss'
+        - 'bundles/app/montheme/scss/variables/page-content-config.scss'
+        - 'bundles/app/montheme/scss/variables/page-footer-config.scss'
+        - 'bundles/app/montheme/scss/styles.scss'
+    filters: ['cssrewrite', 'cssmin']
+    output: 'css/styles.css'
+</code></pre><p>L&rsquo;option <code>filters</code> est optionnel.</p>
+<p><strong>NOTE</strong>
+Dans la partie <code>inputs</code>, il faut renseigner l&rsquo;emplacement du fichier dans le répertoire <code>/public/</code>
+Visible une fois avoir lancer la commande <code>bin/console assets:install</code>.</p>
+<h2 id="22-commandes-sf-et-oro">2.2. Commandes SF et Oro</h2>
+<p>Source : <a href="https://doc.oroinc.com/backend/bundles/platform/AssetBundle/">https://doc.oroinc.com/backend/bundles/platform/AssetBundle/</a></p>
+<p><code>bin/console oro:assets:build</code> : cette command lance webpack pour construire les assets. (et donc compiler le SCSS en CSS)</p>
+<ul>
+<li>En mode dév., la commande créé les ressources sans minification et avec les fichiers sources.</li>
+<li>En mode production, les ressources sont minifiées et n&rsquo;incluent pas les fichiers sources.</li>
+</ul>
+<blockquote>
+<p><strong>Use Commands</strong></p>
+<p><code>oro:assets:build</code> [-w|&ndash;watch] [-i|&ndash;npm-install] [&ndash;] [<theme>]</p>
+<p><code>oro:assets:build admin.oro</code> to build assets only for the default management-console theme called admin.oro</p>
+<p><code>oro:assets:build default --watch</code> to build assets only for the blank theme with enabled watch mode</p>
+<p><code>oro:assets:build default -skip-js</code> to build assets without JS</p>
+</blockquote>
+<p><strong>NOTE</strong>
+Lorsque vous utilisez le mode &ldquo;Watch&rdquo; après avoir modifié la configuration dans le fichier assets.yml, il est nécessaire de redémarrer la commande ; sinon, il ne détectera pas les changements.</p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Kibokast</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/kibokast/processus/"> <span class="d-none d-md-block">Les processus dans Oro</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>
