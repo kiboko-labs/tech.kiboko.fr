@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Autoloading</title>
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.79.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -552,26 +552,26 @@ existe dans un bundle. Ainsi, si le bundle n&rsquo;a pas de répertoire Features
 <p>Si vous avez besoin de certaines étapes de fonctionnalité spécifiques pour votre bundle, créez la classe AcmeDemoBundle\Tests\Behat\Context\FeatureContext.
 Ce contexte est ajouté à la suite avec les contextes courants.La liste complète du contexte commun est configurée dans le fichier de configuration behat sous la clé <code>shared_contexts</code>.</p>
 <p>Vous pouvez configurer manuellement la suite de tests pour un bundle dans la configuration de l&rsquo;application behat:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">default</span>: <span style="color:#75715e">&amp;default</span>
-   <span style="color:#66d9ef">suites</span>:
-     <span style="color:#66d9ef">AcmeDemoBundle</span>:
-       <span style="color:#66d9ef">type</span>: symfony_bundle
-       <span style="color:#66d9ef">bundle</span>: AcmeDemoBundle
-       <span style="color:#66d9ef">contexts</span>:
-         - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
-         - OroDataGridBundle::GridContext
-         - AcmeDemoBundle::FeatureContext
-       <span style="color:#66d9ef">paths</span>:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">default</span>: <span style="color:#75715e">&amp;default</span>
+   <span style="color:#f92672">suites</span>:
+     <span style="color:#f92672">AcmeDemoBundle</span>:
+       <span style="color:#f92672">type</span>: <span style="color:#ae81ff">symfony_bundle</span>
+       <span style="color:#f92672">bundle</span>: <span style="color:#ae81ff">AcmeDemoBundle</span>
+       <span style="color:#f92672">contexts</span>:
+         - <span style="color:#ae81ff">Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext</span>
+         - <span style="color:#ae81ff">OroDataGridBundle::GridContext</span>
+         - <span style="color:#ae81ff">AcmeDemoBundle::FeatureContext</span>
+       <span style="color:#f92672">paths</span>:
          - <span style="color:#e6db74">&#39;vendor/Acme/DemoBundle/Tests/Behat/Features&#39;</span>
 </code></pre></div><p>ou dans une configuration de bundle behat {BundleName}/Tests/Behat/behat.yml :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">oro_behat_extension</span>:
-   <span style="color:#66d9ef">suites</span>:
-     <span style="color:#66d9ef">AcmeDemoBundle</span>:
-       <span style="color:#66d9ef">contexts</span>:
-         - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
-         - OroDataGridBundle::GridContext
-         - AcmeDemoBundle::FeatureContext
-       <span style="color:#66d9ef">paths</span>:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">oro_behat_extension</span>:
+   <span style="color:#f92672">suites</span>:
+     <span style="color:#f92672">AcmeDemoBundle</span>:
+       <span style="color:#f92672">contexts</span>:
+         - <span style="color:#ae81ff">Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext</span>
+         - <span style="color:#ae81ff">OroDataGridBundle::GridContext</span>
+         - <span style="color:#ae81ff">AcmeDemoBundle::FeatureContext</span>
+       <span style="color:#f92672">paths</span>:
          - <span style="color:#e6db74">&#39;@AcmeDemoBundle/Tests/Behat/Features&#39;</span>
 </code></pre></div><p>Les suites de test configurées manuellement ne sont pas chargées automatiquement par l&rsquo;extension.</p>
 </div>
@@ -612,6 +612,38 @@ Ce contexte est ajouté à la suite avec les contextes courants.La liste complè
             
             
 
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
             
             
             

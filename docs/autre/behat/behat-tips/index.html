@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Tips</title>
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.79.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -548,7 +548,7 @@
           <div class="content"><h2 id="health-checkers">Health Checkers</h2>
 <p>Behat a une possibilité native d&rsquo;invoquer des formateurs sans exécuter les tests et les hooks.</p>
 <p>Vous pouvez essayer:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> bin/behat --dry-run
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#ae81ff">bin/behat --dry-run</span>
 </code></pre></div><p>Cela peut être utile au cas où vous n&rsquo;êtes pas sûr d&rsquo;avoir déclaré tout le contexte nécessaire à votre fonctionnalité.
 OroBehatExtension améliore cette fonctionnalité et ajoute des fonctionnalités supplémentaires.</p>
 <h2 id="erreurs">Erreurs</h2>
@@ -563,19 +563,19 @@ Oro\Bundle\UserBundle\Entity\User:
       lastName: Marge Simpson
       username (unique): marge228
 </code></pre><p><strong>Correction</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">Oro\Bundle\UserBundle\Entity\User</span>:
-    <span style="color:#66d9ef">charlie</span>:
-      <span style="color:#66d9ef">firstName</span>: Marge
-      <span style="color:#66d9ef">lastName</span>: Marge Simpson
-      <span style="color:#66d9ef">username</span>: marge228
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">Oro\Bundle\UserBundle\Entity\User</span>:
+    <span style="color:#f92672">charlie</span>:
+      <span style="color:#f92672">firstName</span>: <span style="color:#ae81ff">Marge</span>
+      <span style="color:#f92672">lastName</span>: <span style="color:#ae81ff">Marge Simpson</span>
+      <span style="color:#f92672">username</span>: <span style="color:#ae81ff">marge228</span>
 </code></pre></div><p><strong>Erreur racine</strong></p>
 <p>Alice se souvient de toutes les valeurs de la propriété d&rsquo;entité donnée et essaie de générer une valeur unique, mais cela provoque des problèmes lorsqu&rsquo;il n&rsquo;y a qu&rsquo;une seule valeur pour la propriété d&rsquo;entité.</p>
 <p>Cette option peut toujours être utilisée si elle est combinée avec la fausse valeur générée automatiquement, comme dans l&rsquo;exemple suivant:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">Oro\Bundle\UserBundle\Entity\User</span>:
-    <span style="color:#66d9ef">charlie</span>:
-      <span style="color:#66d9ef">firstName (unique)</span>: &lt;firstName()<span style="color:#e6db74">&gt;
-</span><span style="color:#e6db74">      lastName: Marge Simpson</span>
-      <span style="color:#66d9ef">username</span>: marge228
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">Oro\Bundle\UserBundle\Entity\User</span>:
+    <span style="color:#f92672">charlie</span>:
+      <span style="color:#f92672">firstName (unique)</span>: <span style="color:#ae81ff">&lt;firstName()&gt;</span>
+      <span style="color:#f92672">lastName</span>: <span style="color:#ae81ff">Marge Simpson</span>
+      <span style="color:#f92672">username</span>: <span style="color:#ae81ff">marge228</span>
 </code></pre></div><h3 id="ajouter-des-extraits">Ajouter des extraits</h3>
 <p>Le développement des fonctionnalités comprend les étapes de conception suivantes:</p>
 <ul>
@@ -650,6 +650,38 @@ Utilisez les conseils ci-dessous pour trouver l&rsquo;étape nécessaire.</p>
             
             
 
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
             
             
             

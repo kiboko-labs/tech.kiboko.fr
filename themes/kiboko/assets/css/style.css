@@ -551,12 +551,13 @@ textarea.form-control {
 }
 
 .content a {
-    color: var(--text-color);
+    color: #CD0001;
 }
 
 .content a:hover,
 .content a:active {
     color: #CD0001;
+    text-decoration: underline;
 }
 
 .content * {
@@ -579,6 +580,7 @@ textarea.form-control {
 
 .content ul li {
   padding-left: 20px;
+  margin-bottom: 5px;
   position: relative;
 }
 
@@ -762,7 +764,7 @@ tbody {
   display: block;
 }
 
-li.sidelist>a {
+li.sidelist > a {
   margin-left: 20px;
   margin-bottom: 10px;
   display: block;
@@ -770,6 +772,14 @@ li.sidelist>a {
 
 li.sidelist li a {
   margin: 0;
+}
+
+li.sidelist li.sidelist li.sidelist:before {
+  top: 10px;
+}
+li.sidelist li.sidelist li.sidelist a {
+  padding: 0;
+  line-height: 1.7;
 }
 
 .sidelist li.sidelist {
@@ -790,8 +800,12 @@ li.sidelist li a {
   display: none;
 }
 
+.page-list li ul {
+  padding-left: 15px;
+}
 .page-list li ul a {
   display: block;
+    font-size: 14px;
 }
 
 .sidelist li a {

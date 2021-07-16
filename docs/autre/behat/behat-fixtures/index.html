@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Fixtures</title>
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.79.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -574,15 +574,15 @@ Alice est une bibliothèque qui vous permet de créer facilement des fixtures au
 <p>Voir la <a href="https://github.com/nelmio/alice/blob/2.x/README.md">documentation d&rsquo;Alice</a> pour plus d&rsquo;informations.</p>
 <p>Les fixtures doivent être situés dans le répertoire {BundleName}/Tests/Behat/Features/Fixtures. Pour charger une fixture avant l&rsquo;exécution des tests de fonctionnalité,
 ajoutez une balise (annotation) qui est construite à l&rsquo;aide de la convention suivante <code>@fixture-BundleName:fixture_file_name.yml</code>, par exemple:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> @fixture-OroCRMBundle:mass_action.yml
- <span style="color:#66d9ef">Feature</span>: Mass Delete records
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> @<span style="color:#ae81ff">fixture-OroCRMBundle:mass_action.yml</span>
+ <span style="color:#f92672">Feature</span>: <span style="color:#ae81ff">Mass Delete records</span>
 </code></pre></div><p>Il est également possible de charger des fixtures pour tout autre bundle disponible pour l&rsquo;application.</p>
 <p>Par exemple:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> @fixture-OroUserBundle:user.yml
- @fixture-OroOrganizationBundle:BusinessUnit.yml
- <span style="color:#66d9ef">Feature</span>: Adding attributes for workflow transition
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> @<span style="color:#ae81ff">fixture-OroUserBundle:user.yml</span>
+ @<span style="color:#ae81ff">fixture-OroOrganizationBundle:BusinessUnit.yml</span>
+ <span style="color:#f92672">Feature</span>: <span style="color:#ae81ff">Adding attributes for workflow transition</span>
 </code></pre></div><p>De plus, Alice vous permet <a href="https://github.com/nelmio/alice/blob/a060587f3c90edd92a65c6c0d163972f49bc4e21/doc/fixtures-refactoring.md#including-files">d&rsquo;inclure des fichiers</a> via l&rsquo;extension, vous pouvez donc importer des fichiers à partir d&rsquo;autres bundles:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">include</span>:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">include</span>:
      - <span style="color:#e6db74">&#39;@OroCustomerBundle/Tests/Behat/Features/Fixtures/CustomerUserAmandaRCole.yml&#39;</span>
 </code></pre></div><p><strong>Vous devez toujours inclure les fixtures d&rsquo;autres bundles avec des entités qui ont été déclarées dans ce bundle</strong></p>
 <h2 id="références-dentités">Références d&rsquo;entités</h2>
@@ -638,6 +638,38 @@ ajoutez une balise (annotation) qui est construite à l&rsquo;aide de la convent
             
             
 
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
             
             
             

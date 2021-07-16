@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Elements form</title>
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.79.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -548,27 +548,27 @@
           <div class="content"><p>Elements est une couche de service dans les tests behat. Ils enveloppent la logique métier complexe. Prenez une minute pour lire la base des <a href="https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php">NodeElement Mink</a></p>
 <p>Il y a de nombreuses méthodes publiques; certains d&rsquo;entre eux ne s&rsquo;appliquent qu&rsquo;à certains éléments. Chaque test Bundle peut contenir un nombre particulier d&rsquo;éléments.
 Tous les éléments doivent être décrits dans {BundleName} {BundleName}/Tests/Behat/behat.yml de la manière suivante:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">oro_behat_extension</span>:
-   <span style="color:#66d9ef">elements</span>:
-     <span style="color:#66d9ef">Login</span>:
-       <span style="color:#66d9ef">selector</span>: <span style="color:#e6db74">&#39;#login-form&#39;</span>
-       <span style="color:#66d9ef">class</span>: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
-       <span style="color:#66d9ef">options</span>:
-         <span style="color:#66d9ef">mapping</span>:
-           <span style="color:#66d9ef">Username</span>: <span style="color:#e6db74">&#39;_username&#39;</span>
-           <span style="color:#66d9ef">Password</span>: <span style="color:#e6db74">&#39;_password&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">oro_behat_extension</span>:
+   <span style="color:#f92672">elements</span>:
+     <span style="color:#f92672">Login</span>:
+       <span style="color:#f92672">selector</span>: <span style="color:#e6db74">&#39;#login-form&#39;</span>
+       <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\TestFrameworkBundle\Behat\Element\Form</span>
+       <span style="color:#f92672">options</span>:
+         <span style="color:#f92672">mapping</span>:
+           <span style="color:#f92672">Username</span>: <span style="color:#e6db74">&#39;_username&#39;</span>
+           <span style="color:#f92672">Password</span>: <span style="color:#e6db74">&#39;_password&#39;</span>
 </code></pre></div><p>ou :</p>
 <ol>
 <li><code>Login</code> est un nom d&rsquo;élément qui DOIT être unique. L&rsquo;élément peut être créé dans un contexte par OroElementFactory par son nom:</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$this-&gt;elementFactory-&gt;createElement(&#39;Login&#39;);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">elementFactory</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;Login&#39;</span>);
 </code></pre></div><ol start="2">
 <li>selector` définit comment le driver Web doit trouver l&rsquo;élément sur la page. Par défaut, lorsque le type de sélecteur n&rsquo;est pas spécifié, le sélecteur css est utilisé.
 Le sélecteur XPath est également pris en charge et peut être fourni avec la configuration suivante:</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">selector</span>:
-     <span style="color:#66d9ef">type</span>: xpath
-     <span style="color:#66d9ef">locator</span>: //span[id=<span style="color:#e6db74">&#39;mySpan&#39;</span>]/ancestor::form/
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">selector</span>:
+     <span style="color:#f92672">type</span>: <span style="color:#ae81ff">xpath</span>
+     <span style="color:#f92672">locator</span>: <span style="color:#ae81ff">//span[id=&#39;mySpan&#39;]/ancestor::form/</span>
 </code></pre></div><ol start="3">
 <li>
 <p>Le namespace de l&rsquo;élément (doit être étendu à partir de Oro\Bundle\TestFrameworkBundle\Behat\Element\Element<code>). Lorsqu'elle est omise, la classe </code>Oro\Bundle\TestFrameworkBundle\Behat\Element\Element` est utilisée par défaut.</p>
@@ -582,21 +582,21 @@ Il est fortement recommandé de fournir une classe avec des options de mappage p
 <p>Par défaut, les tests utilisent le <a href="http://mink.behat.org/en/latest/guides/traversing-pages.html#named-selectors">sélecteur de champ nommé</a>  pour mapper les champs du formulaire.
 Le sélecteur de nom de champ a recherché le champ par son identifiant, son nom, son label ou son placeholder.
 Vous êtes libre d&rsquo;utiliser n&rsquo;importe quel sélecteur pour mapper des champs de formulaire ou encapsuler un élément dans l&rsquo;élément behat particulier.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">oro_behat_extension</span>:
-   <span style="color:#66d9ef">elements</span>:
-     <span style="color:#66d9ef">Payment Method Config Type Field</span>:
-       <span style="color:#66d9ef">class</span>: Oro\Bundle\PaymentBundle\Tests\Behat\Element\PaymentMethodConfigType
-     <span style="color:#66d9ef">PaymentRuleForm</span>:
-       <span style="color:#66d9ef">selector</span>: <span style="color:#e6db74">&#34;form[id^=&#39;oro_payment_methods_configs_rule&#39;]&#34;</span>
-       <span style="color:#66d9ef">class</span>: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
-       <span style="color:#66d9ef">options</span>:
-         <span style="color:#66d9ef">mapping</span>:
-           <span style="color:#66d9ef">Method</span>:
-             <span style="color:#66d9ef">type</span>: <span style="color:#e6db74">&#39;xpath&#39;</span>
-             <span style="color:#66d9ef">locator</span>: <span style="color:#e6db74">&#39;//div[@id[starts-with(.,&#34;uniform-oro_payment_methods_configs_rule_method&#34;)]]&#39;</span>
-             <span style="color:#66d9ef">element</span>: Payment Method Config Type Field
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">oro_behat_extension</span>:
+   <span style="color:#f92672">elements</span>:
+     <span style="color:#f92672">Payment Method Config Type Field</span>:
+       <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\PaymentBundle\Tests\Behat\Element\PaymentMethodConfigType</span>
+     <span style="color:#f92672">PaymentRuleForm</span>:
+       <span style="color:#f92672">selector</span>: <span style="color:#e6db74">&#34;form[id^=&#39;oro_payment_methods_configs_rule&#39;]&#34;</span>
+       <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\TestFrameworkBundle\Behat\Element\Form</span>
+       <span style="color:#f92672">options</span>:
+         <span style="color:#f92672">mapping</span>:
+           <span style="color:#f92672">Method</span>:
+             <span style="color:#f92672">type</span>: <span style="color:#e6db74">&#39;xpath&#39;</span>
+             <span style="color:#f92672">locator</span>: <span style="color:#e6db74">&#39;//div[@id[starts-with(.,&#34;uniform-oro_payment_methods_configs_rule_method&#34;)]]&#39;</span>
+             <span style="color:#f92672">element</span>: <span style="color:#ae81ff">Payment Method Config Type Field</span>
 </code></pre></div><p>Vous devez maintenant implémenter la méthode <code>setValue</code> de l&rsquo;élément:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
  <span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\PaymentBundle\Tests\Behat\Element</span>;
  <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Behat\Element\Element</span>;
  <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PaymentMethodConfigType</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Element</span>
@@ -618,55 +618,55 @@ Vous êtes libre d&rsquo;utiliser n&rsquo;importe quel sélecteur pour mapper de
      }
  }
 </code></pre></div><p>Vous pouvez maintenant l&rsquo;utiliser dans une étape standard:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">Feature</span>: Payment Rules CRUD
-   <span style="color:#66d9ef">Scenario</span>: Creating Payment Rule
-     Given I login as administrator
-     And I go to System/ Payment Rules
-     And I click <span style="color:#e6db74">&#34;Create Payment Rule&#34;</span>
-     When I fill <span style="color:#e6db74">&#34;Payment Rule Form&#34;</span> <span style="color:#66d9ef">with</span>:
-       | Method | PayPal |
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">Feature</span>: <span style="color:#ae81ff">Payment Rules CRUD</span>
+   <span style="color:#f92672">Scenario</span>: <span style="color:#ae81ff">Creating Payment Rule</span>
+     <span style="color:#ae81ff">Given I login as administrator</span>
+     <span style="color:#ae81ff">And I go to System/ Payment Rules</span>
+     <span style="color:#ae81ff">And I click &#34;Create Payment Rule&#34;</span>
+     <span style="color:#ae81ff">When I fill &#34;Payment Rule Form&#34; with:</span>
+       <span style="color:#ae81ff">| Method | PayPal |</span>
 </code></pre></div><h3 id="mappages-de-formulaires-intégrés-">Mappages de formulaires intégrés :</h3>
 <p>Parfois, un formulaire apparaît dans l&rsquo;iframe. Behat peut passer à l&rsquo;iframe par son identifiant.
 Pour remplir correctement le formulaire dans l&rsquo;iframe, spécifiez l&rsquo;id iframe dans les options du formulaire:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">   <span style="color:#66d9ef">oro_behat_extension</span>:
-     <span style="color:#66d9ef">elements</span>:
-       <span style="color:#66d9ef">MagentoContactUsForm</span>:
-         <span style="color:#66d9ef">selector</span>: <span style="color:#e6db74">&#39;div#page&#39;</span>
-         <span style="color:#66d9ef">class</span>: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
-         <span style="color:#66d9ef">options</span>:
-           <span style="color:#66d9ef">embedded-id</span>: embedded-form
-           <span style="color:#66d9ef">mapping</span>:
-             <span style="color:#66d9ef">First name</span>: <span style="color:#e6db74">&#39;oro_magento_contactus_contact_request[firstName]&#39;</span>
-             <span style="color:#66d9ef">Last name</span>: <span style="color:#e6db74">&#39;oro_magento_contactus_contact_request[lastName]&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">   <span style="color:#f92672">oro_behat_extension</span>:
+     <span style="color:#f92672">elements</span>:
+       <span style="color:#f92672">MagentoContactUsForm</span>:
+         <span style="color:#f92672">selector</span>: <span style="color:#e6db74">&#39;div#page&#39;</span>
+         <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\TestFrameworkBundle\Behat\Element\Form</span>
+         <span style="color:#f92672">options</span>:
+           <span style="color:#f92672">embedded-id</span>: <span style="color:#ae81ff">embedded-form</span>
+           <span style="color:#f92672">mapping</span>:
+             <span style="color:#f92672">First name</span>: <span style="color:#e6db74">&#39;oro_magento_contactus_contact_request[firstName]&#39;</span>
+             <span style="color:#f92672">Last name</span>: <span style="color:#e6db74">&#39;oro_magento_contactus_contact_request[lastName]&#39;</span>
 </code></pre></div><h2 id="element-de-page">ELement de page</h2>
 <p>L&rsquo;élément Page encapsule la page Web entière avec son URL et son chemin d&rsquo;accès à la page. Chaque élément Page doit étendre <code>Oro\Bundle\TestFrameworkBundle\Behat\Element\Page</code>.</p>
 <p>Exemple de Configuration de Page :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">oro_behat_extension</span>:
-   <span style="color:#66d9ef">pages</span>:
-     <span style="color:#66d9ef">UserProfileView</span>:
-       <span style="color:#66d9ef">class</span>: Oro\Bundle\UserBundle\Tests\Behat\Page\UserProfileView
-       <span style="color:#66d9ef">route</span>: <span style="color:#e6db74">&#39;oro_user_profile_view&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">oro_behat_extension</span>:
+   <span style="color:#f92672">pages</span>:
+     <span style="color:#f92672">UserProfileView</span>:
+       <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\UserBundle\Tests\Behat\Page\UserProfileView</span>
+       <span style="color:#f92672">route</span>: <span style="color:#e6db74">&#39;oro_user_profile_view&#39;</span>
 </code></pre></div><p>Exemple de classe de page:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"> namespace Oro\Bundle\UserBundle\Tests\Behat\Page;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"> <span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\UserBundle\Tests\Behat\Page</span>;
 
- use Oro\Bundle\TestFrameworkBundle\Behat\Element\Page;
+ <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Behat\Element\Page</span>;
 
- class UserProfileView extends Page
+ <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserProfileView</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Page</span>
  {
-     /**
-      * {@inheritdoc}
-      */
-     public function open(array $parameters = [])
+     <span style="color:#e6db74">/**
+</span><span style="color:#e6db74">      * {@inheritdoc}
+</span><span style="color:#e6db74">      */</span>
+     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">open</span>(<span style="color:#66d9ef">array</span> $parameters <span style="color:#f92672">=</span> [])
      {
-         $userMenu = $this-&gt;elementFactory-&gt;createElement(&#39;UserMenu&#39;);
-         $userMenu-&gt;find(&#39;css&#39;, &#39;[data-toggle=&#34;dropdown&#34;]&#39;)-&gt;click();
+         $userMenu <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">elementFactory</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;UserMenu&#39;</span>);
+         $userMenu<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;css&#39;</span>, <span style="color:#e6db74">&#39;[data-toggle=&#34;dropdown&#34;]&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">click</span>();
 
-         $userMenu-&gt;clickLink(&#39;My User&#39;);
+         $userMenu<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">clickLink</span>(<span style="color:#e6db74">&#39;My User&#39;</span>);
      }
  }
 </code></pre></div><p>Vous pouvez maintenant utiliser plusieurs étapes significatives:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> And I open User Profile View page
- And I should be on User Profile View page
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#ae81ff">And I open User Profile View page</span>
+ <span style="color:#ae81ff">And I should be on User Profile View page</span>
 </code></pre></div></div>
           
           <nav class="pagination mt-3">
@@ -705,6 +705,38 @@ Pour remplir correctement le formulaire dans l&rsquo;iframe, spécifiez l&rsquo;
             
             
 
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
             
             
             

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Symfony</title>
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.79.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -548,25 +548,25 @@
           <div class="content"><p>Behat est une application console Symfony avec son propre conteneur et ses propres services.
 Un conteneur Behat peut être configuré via des extensions en utilisant behat.yml à la racine du répertoire d&rsquo;application.
 Le conteneur d&rsquo;application peut être utilisé par le noyau injecté dans votre contexte après avoir implémenté KernelAwareContext et utilisé le trait KernelDictionary.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"> use Behat\Symfony2Extension\Context\KernelAwareContext;
- use Behat\Symfony2Extension\Context\KernelDictionary;
- use Oro\Bundle\TestFrameworkBundle\Behat\Context\OroFeatureContext;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"> <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Behat\Symfony2Extension\Context\KernelAwareContext</span>;
+ <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Behat\Symfony2Extension\Context\KernelDictionary</span>;
+ <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Behat\Context\OroFeatureContext</span>;
 
- class FeatureContext extends OroFeatureContext implements KernelAwareContext
+ <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FeatureContext</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">OroFeatureContext</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">KernelAwareContext</span>
  {
-     use KernelDictionary;
+     <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">KernelDictionary</span>;
 
-     public function useContainer()
+     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">useContainer</span>()
      {
-         $doctrine = $this-&gt;getContainer()-&gt;get(&#39;doctrine&#39;);
+         $doctrine <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getContainer</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;doctrine&#39;</span>);
      }
  }
 </code></pre></div><p>De plus, vous pouvez injecter des services dans le contexte behat:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">oro_behat_extension</span>:
-   <span style="color:#66d9ef">suites</span>:
-     <span style="color:#66d9ef">OroCustomerAccountBridgeBundle</span>:
-       <span style="color:#66d9ef">contexts</span>:
-         - <span style="color:#66d9ef">OroImportExportBundle::ImportExportContext</span>:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">oro_behat_extension</span>:
+   <span style="color:#f92672">suites</span>:
+     <span style="color:#f92672">OroCustomerAccountBridgeBundle</span>:
+       <span style="color:#f92672">contexts</span>:
+         - <span style="color:#f92672">OroImportExportBundle::ImportExportContext</span>:
              - <span style="color:#e6db74">&#39;@oro_entity.entity_alias_resolver&#39;</span>
              - <span style="color:#e6db74">&#39;@oro_importexport.processor.registry&#39;</span>
 </code></pre></div></div>
@@ -607,6 +607,38 @@ Le conteneur d&rsquo;application peut être utilisé par le noyau injecté dans 
             
             
 
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
             
             
             
