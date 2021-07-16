@@ -4,9 +4,9 @@ date: 2020-12-01
 type : "docs"
 ---
 
-Elements est une couche de service dans les tests behat. Ils enveloppent la logique métier complexe. Prenez une minute pour lire la base des [NodeElement Mink](https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php)
+Les elements sont le mapping entre des elements du dom utilisé par le test.
+Prenez une minute pour lire la base des [NodeElement Mink](https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php)
 
-Il y a de nombreuses méthodes publiques; certains d'entre eux ne s'appliquent qu'à certains éléments. Chaque test Bundle peut contenir un nombre particulier d'éléments.
 Tous les éléments doivent être décrits dans {BundleName} {BundleName}/Tests/Behat/behat.yml de la manière suivante:
 
 ````yaml
@@ -21,15 +21,14 @@ Tous les éléments doivent être décrits dans {BundleName} {BundleName}/Tests/
            Password: '_password'
 ````
 
-ou :
-
-1. `Login` est un nom d'élément qui DOIT être unique. L'élément peut être créé dans un contexte par OroElementFactory par son nom:
+1. `Login` est un nom d'élément qui DOIT être unique. L'élément peut être créé manuellement dans un contexte par OroElementFactory par son nom:
 
 ````php
 $this->elementFactory->createElement('Login');
 ````
 
-2. selector` définit comment le driver Web doit trouver l'élément sur la page. Par défaut, lorsque le type de sélecteur n'est pas spécifié, le sélecteur css est utilisé.
+2. Le `selector` définit comment le driver Web doit trouver l'élément dans le DOM.
+   Par défaut, lorsque le type de sélecteur n'est pas spécifié, le type `css` est utilisé.
 Le sélecteur XPath est également pris en charge et peut être fourni avec la configuration suivante:
 
 ```yaml
@@ -37,16 +36,15 @@ Le sélecteur XPath est également pris en charge et peut être fourni avec la c
      type: xpath
      locator: //span[id='mySpan']/ancestor::form/
 ```
-3. Le namespace de l'élément (doit être étendu à partir de Oro\Bundle\TestFrameworkBundle\Behat\Element\Element`).
-Lorsqu'elle est omise, la classe `Oro\Bundle\TestFrameworkBundle\Behat\Element\Element` est utilisée par défaut.
 
-4. `options` est un tableau d'options supplémentaires stockées dans la propriété options de la classe Element.
-Il est fortement recommandé de fournir une classe avec des options de mappage pour les éléments de formulaire, car cela augmente la vitesse de test et garantit un mappage de champ plus précis.
+3. `options` est un tableau d'options supplémentaires stockées dans la propriété options de la classe Element. 
+   Il est fortement recommandé de fournir une classe avec des options de mappage pour les éléments de formulaire,
+   car cela augmente la vitesse de test et garantit un mappage de champ plus précis.
 
 ## Mappage des champs de formulaire
 
 Par défaut, les tests utilisent le [sélecteur de champ nommé](http://mink.behat.org/en/latest/guides/traversing-pages.html#named-selectors)  pour mapper les champs du formulaire.
-Le sélecteur de nom de champ a recherché le champ par son identifiant, son nom, son label ou son placeholder.
+Le sélecteur de nom de champ peut rechercher le champ par son identifiant, son nom, son label ou son placeholder.
 Vous êtes libre d'utiliser n'importe quel sélecteur pour mapper des champs de formulaire ou encapsuler un élément dans l'élément behat particulier.
 
 ```yaml
@@ -65,7 +63,7 @@ Vous êtes libre d'utiliser n'importe quel sélecteur pour mapper des champs de 
              element: Payment Method Config Type Field
 ```
 
-Vous devez maintenant implémenter la méthode `setValue` de l'élément:
+Vous devez maintenant créer et implémenter la méthode `setValue` de l'Element:
 
 ````php
 <?php

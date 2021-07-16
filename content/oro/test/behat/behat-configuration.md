@@ -4,11 +4,12 @@ date: 2020-12-01
 type : "docs"
 ---
 
-**Configuration de l'application** :
+**Préparation de l'environnement** :
 
-Utilisez la configuration par défaut de l'application installée en mode production. Si aucun serveur de messagerie n'est configuré localement, définissez le paramètre mailer_transport dans parameters.yml sur null.
+Utilisez la configuration par défaut de l'application installée en mode production.
+Si aucun serveur de messagerie n'est configuré localement, définissez le paramètre mailer_transport dans parameters.yml sur null.
 
-**Configuration Behat**
+**Configuration de Behat**
 
 La configuration de base se trouve dans behat.yml.dist. Chaque application possède son propre fichier behat.yml.dist à la racine du répertoire de l'application.
 Créez votre behat.yml (il est ignoré par git automatiquement et n'est jamais validé dans le référentiel distant), importez la configuration de base et modifiez-la pour l'adapter à votre environnement:
@@ -85,21 +86,14 @@ default: &default
 
 ## Installation
 
-### Installation des dépendances de développement :
-
-Si vous avez installé des dépendances avec le paramètre --no-dev plus tôt, supprimez le fichier composer.lock de la racine du répertoire de l'application.
-
-Installez les dépendances dev à l'aide de la commande suivante
-
-`composer install`
-
 ### Etat de l'application initiale 
 
 Dans Oro, l'état initial est celui lorsque l'application est installé sans données de démonstration.
 Les scénarios qui testent des fonctionnalités doivent s'appuyer sur cet état et doivent créer toutes les données nécessaires à des vérifications supplémentaires.
-Les données peuvent être créées par les étapes du scénario ou comme montages.
+Les données peuvent être créées par les étapes du scénario.
 
-Installez l'application en anglais, sans données de démonstration en mode production, sans rabbit et elastic à l'aide de la commande suivante:
+Installez l'application en anglais, sans données de démonstration en mode production,
+sans rabbit et elastic à l'aide de la commande suivante:
 
 ```
  bin/console oro:install  --drop-database --user-name=admin --user-email=admin@example.com  \
@@ -110,7 +104,8 @@ Installez l'application en anglais, sans données de démonstration en mode prod
 
 ### Installation des outils de test en local, sans la stack docker :
 
-Pour exécuter des scénarios qui utilisent les fonctionnalités de l'application Oro, exécutez le navigateur WebKit (à l'aide de ChromeDriver). Pour installer ChromeDriver, exécutez les commandes suivantes:
+Pour exécuter des scénarios qui utilisent les fonctionnalités de l'application Oro, exécutez le navigateur 
+WebKit (à l'aide de ChromeDriver). Pour installer ChromeDriver, exécutez les commandes suivantes:
 
 LINUX : 
 

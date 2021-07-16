@@ -1,5 +1,5 @@
 ---
-title: "Functional"
+title: "Tests fonctionnel avec PHPUnit"
 date: 2020-12-01
 type : "docs"
 ---
