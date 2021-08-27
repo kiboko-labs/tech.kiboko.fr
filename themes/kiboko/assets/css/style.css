@@ -7,6 +7,12 @@ body {
   background-color: var(--body-color);
 }
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
 P {
   color: var(--text-color);
   font-size: 15px;
