@@ -9,7 +9,7 @@ vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: transparent;
+  background: #272822;
 }
 
 /*selection color*/

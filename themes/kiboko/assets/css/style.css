@@ -778,6 +778,11 @@ li.sidelist > a {
 
 li.sidelist li a {
   margin: 0;
+  padding: 5px 0;
+}
+
+li.sidelist li.sidelist:before {
+  top: 12px;
 }
 
 li.sidelist li.sidelist li.sidelist:before {
