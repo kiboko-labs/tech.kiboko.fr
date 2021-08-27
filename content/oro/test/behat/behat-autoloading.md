@@ -4,11 +4,14 @@ date: 2020-12-01
 type : "docs"
 ---
 
-Lors de l'initialisation, l'extension crée une suite de tests avec un nom de bundle si un répertoire `Tests/Behat/Features`
-existe dans un bundle. Ainsi, si le bundle n'a pas de répertoire Features - aucune suite de tests ne sera créée ce bundle.
+Lors de l'initialisation des tests, l'extension crée une suite de tests
+avec un nom de bundle si un répertoire `Tests/Behat/Features` existe dans un bundle.
+Ainsi, si le bundle n'a pas de répertoire Features - aucune suite de tests ne sera créée ce bundle.
 
-Si vous avez besoin de certaines étapes de fonctionnalité spécifiques pour votre bundle, créez la classe `AcmeDemoBundle\Tests\Behat\Context\FeatureContext`.
-Ce contexte est ajouté à la suite avec les contextes courants.La liste complète du contexte commun est configurée dans le fichier de configuration behat sous la clé `shared_contexts`.
+Si vous avez besoin de certaines étapes de fonctionnalité spécifiques pour votre bundle( Contextes),
+créez la classe `AcmeDemoBundle\Tests\Behat\Context\FeatureContext`.
+Ce contexte est ajouté à la suite avec les contextes courants.
+La liste complète du contexte commun est configurée dans le fichier de configuration behat sous la clé `shared_contexts`.
 
 Vous pouvez configurer manuellement la suite de tests pour un bundle dans la configuration de l'application behat:
 

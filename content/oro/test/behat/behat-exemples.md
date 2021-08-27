@@ -51,22 +51,11 @@ Feature: User login
    And I press "Log in"
    Then I should be on "/user/login"
    And I should see "Invalid user name or password."
-
-   Examples:
-   | login | password |
-   | user  | pass     |
-   | user2 | pass2    |
 ````
 
 1. La ligne `Feature: User login` démarre la fonctionnalité et lui donne un titre.
 2. Behat n'analyse pas les trois lignes de texte suivantes: In order to... As an... I need to...
-Ces lignes fournissent un contexte lisible par l'homme aux personnes qui réviseront ou modifieront cette fonctionnalité. Ils décrivent la valeur commerciale dérivée de l'inclusion de la fonctionnalité dans le logiciel.
+Ces lignes fournissent un contexte lisible par l'homme aux personnes qui réviseront ou modifieront cette fonctionnalité. 
+Ils décrivent la valeur commerciale dérivée de l'inclusion de la fonctionnalité dans le logiciel.
 3. La ligne `Scenario: Success login` démarre le scénario et fournit une description.
 4. Les six lignes suivantes représentent les étapes du scénario. Chaque étape correspond à une expression régulière définie dans le contexte.
-5. La ligne `Scenario Outline: Fail login` démarre le scénario suivant. Dans le plan du scénario, les placeholders sont utilisés à la place des valeurs réelles
-et les valeurs pour l'exécution du scénario sont fournies sous la forme d'un ensemble d'exemples sous le plan.
-Le scénario vous aide à exécuter ces étapes plusieurs fois, en parcourant les valeurs fournies dans la section `Exemples:` et en testant ainsi le même flux avec des entrées différentes.
-Le plan du scénario est un modèle qui n'est jamais exécuté seul.
-Au lieu de cela, un scénario qui suit un plan s'exécute une fois pour chaque ligne dans la section `Exemples:` en dessous (à l'exception de la première ligne d'en-tête qui est ignorée).
-Considérez un espace réservé comme une variable. Il est remplacé par une valeur réelle depuis `Exemples:`, où le texte entre les crochets d'angle de l'espace réservé (par exemple, <login>) correspond au texte de l'en-tête de la colonne du tableau (par exemple, login).
-

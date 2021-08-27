@@ -6,7 +6,8 @@ type : "docs"
 
 Behat est une application console Symfony avec son propre conteneur et ses propres services.
 Un conteneur Behat peut être configuré via des extensions en utilisant behat.yml à la racine du répertoire d'application.
-Le conteneur d'application peut être utilisé par le noyau injecté dans votre contexte après avoir implémenté KernelAwareContext et utilisé le trait KernelDictionary.
+Le conteneur d'application peut être utilisé par le noyau injecté dans votre contexte 
+après avoir implémenté KernelAwareContext et utilisé le trait KernelDictionary.
 
 ```php
  use Behat\Symfony2Extension\Context\KernelAwareContext;

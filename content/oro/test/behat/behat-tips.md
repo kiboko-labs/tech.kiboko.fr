@@ -25,62 +25,7 @@ hot fix:
 
 Vérifiez votre fixtures. Supprimez le suffixe (unique) dans la propriété d'entité dans le luminaire d'entité, comme dans l'exemple suivant:
 
-**Fixture incorrect** :
-
-````
-yaml
-Oro\Bundle\UserBundle\Entity\User:
-    charlie:
-      firstName: Marge
-      lastName: Marge Simpson
-      username (unique): marge228
-````
-
-**Correction**
-
-````yaml
-Oro\Bundle\UserBundle\Entity\User:
-    charlie:
-      firstName: Marge
-      lastName: Marge Simpson
-      username: marge228
-````
-
-**Erreur racine**
-
-Alice se souvient de toutes les valeurs de la propriété d'entité donnée et essaie de générer une valeur unique, mais cela provoque des problèmes lorsqu'il n'y a qu'une seule valeur pour la propriété d'entité.
-
-Cette option peut toujours être utilisée si elle est combinée avec la fausse valeur générée automatiquement, comme dans l'exemple suivant:
-
-````yaml
-Oro\Bundle\UserBundle\Entity\User:
-    charlie:
-      firstName (unique): <firstName()>
-      lastName: Marge Simpson
-      username: marge228
-````
-
-### Ajouter des extraits
-
-Le développement des fonctionnalités comprend les étapes de conception suivantes:
-
-- Créez un brouillon de la fonctionnalité: implémentez un scénario de haut niveau qui couvre l'histoire. À ce stade, vous devez avoir une compréhension claire des résultats commerciaux obtenus par l'automatisation des tests de fonctionnalités.
-- Spécifiez tous les scénarios susceptibles de se produire lors de l'utilisation de la fonction. Les étapes exactes ne sont pas nécessaires.
-- Finalisez la vue d'ensemble de la mise en œuvre et planifiez les différentes étapes.
-
-Certaines étapes peuvent déjà être entièrement automatisées. Idéalement, vous devez automatiser les étapes manquantes après avoir prévu de les utiliser dans vos scénarios de test de fonctionnalités. Si la fonctionnalité de fonctionnalité est déjà implémentée, il est nécessaire d'implémenter les étapes behat impliquées dans le test de fonctionnalité.
-
-Cependant, il est parfois impossible de le faire immédiatement (en raison de l'implémentation incomplète des fonctionnalités, des problèmes de blocage ou des informations manquantes). Dans ce cas, vous pouvez temporairement vous moquer des étapes qui manquent d'implémentation.
-
-Un moyen rapide de le faire consiste à exécuter dry-run sur vos tests de fonctionnalités. Dans la console, exécutez la commande suivante:
-
-`bin/behat path/to/your.feature --dry-run --append-snippets --snippets-type=regex`
-
-La fonctionnalité est exécutée en mode –dry-run , au stade final de l'exécution, vous êtes invité à ajouter des étapes de mise en œuvre simulée non définies à l'un des contextes existants.
-
-
-### Comment trouver l'étape nécessaire
-
+### Comment trouver le nom d'une étape
 
 Lorsque vous concevez des scénarios d'automatisation de test pour la nouvelle fonctionnalité, vous pouvez avoir du mal à trouver des étapes à réutiliser parmi les centaines d'étapes déjà automatisées.
 Utilisez les conseils ci-dessous pour trouver l'étape nécessaire.

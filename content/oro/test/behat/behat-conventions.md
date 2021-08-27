@@ -6,7 +6,8 @@ type : "docs"
 
 ## Conventions
 
-Utilisez le mapping de formulaire au lieu de sélecteurs dans vos scénarios pour les garder clairs et compréhensibles pour les personnes du monde technique et non technique.
+Utilisez le mapping de formulaire au lieu de sélecteurs dans vos scénarios pour les garder clairs
+et compréhensibles pour les personnes du monde technique et non technique.
 
 ### Exemples 
 

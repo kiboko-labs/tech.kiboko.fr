@@ -5,7 +5,7 @@ type : "docs"
 ---
 
 Les elements sont le mapping entre des elements du dom utilisé par le test.
-Prenez une minute pour lire la base des [NodeElement Mink](https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php)
+Prenez une minute pour regarder la structure d'un element : [NodeElement Mink](https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php)
 
 Tous les éléments doivent être décrits dans {BundleName} {BundleName}/Tests/Behat/behat.yml de la manière suivante:
 
@@ -43,9 +43,33 @@ Le sélecteur XPath est également pris en charge et peut être fourni avec la c
 
 ## Mappage des champs de formulaire
 
-Par défaut, les tests utilisent le [sélecteur de champ nommé](http://mink.behat.org/en/latest/guides/traversing-pages.html#named-selectors)  pour mapper les champs du formulaire.
+Par défaut, les tests utilisent le [sélecteur de champ nommé](http://mink.behat.org/en/latest/guides/traversing-pages.html#named-selectors)
+pour mapper les champs du formulaire.
 Le sélecteur de nom de champ peut rechercher le champ par son identifiant, son nom, son label ou son placeholder.
 Vous êtes libre d'utiliser n'importe quel sélecteur pour mapper des champs de formulaire ou encapsuler un élément dans l'élément behat particulier.
+
+Example 1:
+```yaml
+        Event Information Form:
+            selector: 'form[name="oro_workflow_transition"]'
+            class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+            options:
+                mapping:
+                    Label: 'oro_workflow_transition[event][label]'
+                    Start At:
+                        type: 'xpath'
+                        locator: '//input[@name="oro_workflow_transition[event][startAt]"]/../../input'
+
+                    End At:
+                        type: 'xpath'
+                        locator: '//input[@name="oro_workflow_transition[event][endAt]"]/../../input'
+                    Postal Code: 'oro_workflow_transition[event][address][postalCode]'
+                    Street: 'oro_workflow_transition[event][address][street]'
+                    City: 'oro_workflow_transition[event][address][city]'
+                    Country: 'oro_workflow_transition[event][address][country]'
+```
+
+Exemple 2 (classe d'element custom):
 
 ```yaml
  oro_behat_extension:
@@ -103,7 +127,7 @@ Vous pouvez maintenant l'utiliser dans une étape standard:
 
 ### Mappages de formulaires intégrés : 
 
-Parfois, un formulaire apparaît dans l'iframe. Behat peut passer à l'iframe par son identifiant.
+Parfois, un formulaire apparaît dans une iframe. Behat peut passer à l'iframe par son identifiant.
 Pour remplir correctement le formulaire dans l'iframe, spécifiez l'id iframe dans les options du formulaire:
 
 ````yaml
@@ -122,7 +146,8 @@ Pour remplir correctement le formulaire dans l'iframe, spécifiez l'id iframe da
 ## ELement de page
 
 
-L'élément Page encapsule la page Web entière avec son URL et son chemin d'accès à la page. Chaque élément Page doit étendre `Oro\Bundle\TestFrameworkBundle\Behat\Element\Page`.
+L'élément Page encapsule la page Web entière avec son URL et son chemin d'accès à la page.
+Chaque élément Page doit étendre `Oro\Bundle\TestFrameworkBundle\Behat\Element\Page`.
 
 Exemple de Configuration de Page :
 

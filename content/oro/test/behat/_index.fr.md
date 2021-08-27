@@ -14,6 +14,9 @@ Le BDD combine les techniques générales et les principes de TDD avec des idée
 l'analyse d'objet et du design pour fournir aux équipes de développement et de gestion de logiciels des outils partagés et 
 un processus partagé de collaboration pour le développement de logiciels.
 
+<details>
+  <summary>Technos/classes utilisés</summary>
+
 1. [Behat](https://docs.behat.org/en/v3.0/) est un framework de développement basé sur le comportement pour PHP. 
    Cet outil permet de décrire le comportement de l'application voulue en utilisant Php et
    le language de test : [Gherking](https://docs.behat.org/en/latest/user_guide/gherkin.html)
@@ -61,27 +64,24 @@ un processus partagé de collaboration pour le développement de logiciels.
     - ``getPage()``
     - ``findElement($name, $selectorCallback, Element $context = null)``
     - et d'autre fonctions ....
-
-10. Le **contexte** : Chaque phrase en Gherkin est associée à une méthode PHP grâce aux classes de contexte.La phrase est située dans une
-annotation au-dessus de la fonction à appeler. L’annotation peut contenir une expression rationnelle ou une phrase avec
-des placeholders commençant par deux points. Chaque parenthèse de capture de l’expression rationnelle ou placeholder
-sera un argument de la méthode PHP appelée pour exécuter la phrase du test.
+</details>
 
 ## Architecture
 
 ![40% center](images/Behat.png)
 
-## Documentations
+## Doc à lire dans l'ordre
 
-- [Conventions](behat-conventions)
-- [Configuration](behat-configuration)
-- [Architecture](behat-symfony)
-- [Autoloading](behat-autoloading)
-- [Isolation](behat-isolation)
-- [Elements et formulaire](behat-elements-form)
-- [Fixtures](behat-fixtures)
-- [Exemples d'un test behat](behat-exemples)
-- [Tips,tricks,bugfix](behat-tips)
+- 1: [Installation/Lancer les tests](behat-configuration)
+- 2: [Les services Symfony dans les tests behat](behat-symfony)
+- 3: [C'est quoi un context](behat-contextes)
+- 4: [L'autoloading des tests behat](behat-autoloading)
+- 5: [L'isolation de l'état de l'application entre les tests](behat-isolation)
+- 6: [Un Exemple pour mieux comprendre](behat-exemples)
+- 7: [Conventions d'écriture des test](behat-conventions)
+- 8: [Elements et formulaires](behat-elements-form)
+- 9: [Charger des données avec les fixtures](behat-fixtures)
+- 10: [Tips and tricks](behat-tips)
 
 ## Docs relatives (externes)
 

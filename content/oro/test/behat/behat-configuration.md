@@ -7,14 +7,18 @@ type : "docs"
 **Préparation de l'environnement** :
 
 Utilisez la configuration par défaut de l'application installée en mode production.
-Si aucun serveur de messagerie n'est configuré localement, définissez le paramètre mailer_transport dans parameters.yml sur null.
+L'environnement testé doit être le plus proche de l'environnement de production.
+Si aucun serveur de messagerie n'est configuré localement, définissez le paramètre 
+`mailer_transport` dans `parameters.yml` sur `null`.
 
 **Configuration de Behat**
 
-La configuration de base se trouve dans behat.yml.dist. Chaque application possède son propre fichier behat.yml.dist à la racine du répertoire de l'application.
-Créez votre behat.yml (il est ignoré par git automatiquement et n'est jamais validé dans le référentiel distant), importez la configuration de base et modifiez-la pour l'adapter à votre environnement:
+La configuration de base se trouve dans behat.yml.dist à la racine du projet.
+Mais chaque chaque bundle possède aussi sa config dans le dossier du bundle.
+Dupliquez donc votre behat.yml.dist en behat.yml (il est déja ajouté dans le .gitignore), et adapter le à votre environnement:
 
 ## configuration en local, sans docker
+
 ```
 yaml
 imports:
@@ -88,12 +92,7 @@ default: &default
 
 ### Etat de l'application initiale 
 
-Dans Oro, l'état initial est celui lorsque l'application est installé sans données de démonstration.
-Les scénarios qui testent des fonctionnalités doivent s'appuyer sur cet état et doivent créer toutes les données nécessaires à des vérifications supplémentaires.
-Les données peuvent être créées par les étapes du scénario.
-
-Installez l'application en anglais, sans données de démonstration en mode production,
-sans rabbit et elastic à l'aide de la commande suivante:
+Il faut installer l'appli, sans Elastic, Rabbit, et les données de démo.
 
 ```
  bin/console oro:install  --drop-database --user-name=admin --user-email=admin@example.com  \
@@ -104,10 +103,9 @@ sans rabbit et elastic à l'aide de la commande suivante:
 
 ### Installation des outils de test en local, sans la stack docker :
 
-Pour exécuter des scénarios qui utilisent les fonctionnalités de l'application Oro, exécutez le navigateur 
-WebKit (à l'aide de ChromeDriver). Pour installer ChromeDriver, exécutez les commandes suivantes:
+Installation de Chromedriver :
 
-LINUX : 
+Linux : 
 
 ```
  CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
@@ -117,7 +115,7 @@ LINUX :
  sudo ln -s "$HOME/chrome/chromedriver" /usr/local/bin/chromedriver
 ```
 
-MAC  : 
+Mac  : 
 
 `brew cask install chromedriver`
 
@@ -387,7 +385,7 @@ volumes:
 
 Conditions préalables
 
-- Exécutez ChromeDriver:
+- Exécutez ChromeDriver dans un onglet du terminal:
 
 `chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1`
 
@@ -395,31 +393,23 @@ Pour exécuter ChromeDriver en arrière-plan, ajoutez le symbole esperluette (&)
 
 `chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1 &`
 
-- Lancer un serveur sur le port spécifié pour l'installation (ici 8010 ), avec apache, nginx, ou juste le serveur symfony de base
-
+- Lancer un serveur web sur le port spécifié dans el fichier behat.yml
 
 ### Execution des tests
 
-Avant de commencer, il est fortement recommandé de vous familiariser avec les arguments et les options de Behat. Exécutez `bin/behat --help` pour une description détaillée.
+Avant de commencer, il est fortement recommandé de vous familiariser avec les arguments et les options de Behat.
+Exécutez `bin/behat --help` pour une description détaillée.
 
-Lorsque l'application Oro est installée sans données de démonstration et est en cours d'exécution, et que ChromeDriver 
-est en cours d'exécution, vous pouvez commencer à exécuter les tests behat par fonctionnalité à partir de la racine de l'application.
+Lorsque l'application Oro est installée et est en cours d'exécution, et que ChromeDriver 
+est en cours d'exécution, vous pouvez commencer à exécuter les tests.
 
 Vous pouvez utiliser l'une des commandes suivantes.
 
-Exécutez le scénario de test des fonctionnalités:
+Exécutez un fichier de test en particulier:
 
 `bin/behat vendor/oro/platform/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature -vvv`
 
-Aperçu de toutes les étapes de fonctionnalité disponibles:
-
-`bin/behat -dl -s OroUserBundle`
-
-Voir les étapes avec une description complète et des exemples:
-
-`bin/behat -di -s OroUserBundle`
-
-
-Chaque bundle a sa suite de tests dédiée qui peut être exécutée séparément:
+Executer tout les tests d'un bundle:
 
 `bin/behat -s OroUserBundle`
+
