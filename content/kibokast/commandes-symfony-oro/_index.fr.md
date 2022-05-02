@@ -78,7 +78,7 @@ Quand on lance la commande `oro:platform:update`, les commandes ci-dessous sont 
 13. `oro:translation:dump`
 14. `oro:assets:build`
 
-Ajouter l'option `--timeout=0` (en local)
+Si vous avez un grand nombre de migrations, ou que votre migration a un risque de dépasser 300 secondes d'exécution, il faut ajouter l'option `--timeout=0`
 
 Ajouter l'option `--schedule-search-reindexation`
 pour ne pas bloquer la console et remplir la MQ :
