@@ -34,11 +34,14 @@ https://symfony.com/doc/current/setup/symfony_server.html#different-php-settings
 
 **Server local**
 
-Lancement local d'un serveur :
+Pour lancer le serveur HTTPS local :
 
-- `symfony serve`
-- `symfony server:start`
+- Soit `symfony serve`
+- Soit `symfony server:start`
 
+Pour arrêter le serveur HTTPS local :
+- Soit faire un `CTRL` + `C` dans la console qui a lancé le serveur
+- Soit `symfony server:stop`
 https://symfony.com/doc/current/setup/symfony_server.html#getting-started
 
 **Activer TLS/HTTPS**
