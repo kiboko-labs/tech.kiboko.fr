@@ -122,7 +122,7 @@ laisse le cache existant, en construit un à côté puis quand c'est fini il inv
 
 `symfony doctrine:schema:update --dump`
 
-https://symfony.com/doc/6.1/doctrine.html
+https://symfony.com/doc/6.0/doctrine.html
 
 `symfony doctrine:migrations`
 
