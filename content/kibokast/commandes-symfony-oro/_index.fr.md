@@ -60,7 +60,7 @@ https://symfony.com/doc/current/setup/symfony_server.html#enabling-tls
 
 La commande `oro:platform:update` d'Oro : https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/InstallerBundle/Command/PlatformUpdateCommand.php
 
-`symfony oro:platform:update --force --timeout=0`
+`symfony console oro:platform:update --force --timeout=0`
 
 Quand on lance la commande `oro:platform:update`, les commandes ci-dessous sont lancées dans cet ordre :
 
@@ -92,39 +92,39 @@ Cette dernière option est à utiliser uniquement dans des situations où vous a
 
 Pour lancer la réindexation back-office :
 
-`symfony oro:search:reindex --scheduled`
+`symfony console oro:search:reindex --scheduled`
 
 Pour lancer la réindexation d'un site web :
 
-`symfony oro:website-search:reindex --website-id=2 --scheduled`
+`symfony console oro:website-search:reindex --website-id=2 --scheduled`
 
 ### 2.2 Commandes de cache
 
-`symfony cache:clear`
+`symfony console cache:clear`
 
 Cette commande reconstruit un nouveau cache en conservant le cache existant vivre le temps de cette reconstruction. Une fois le cache reconstruit, l'ancien cache est remplacé par le nouveau. C'est cette commande qui crée les dossiers `var/cache/de_` et `var/cache/pro_` dans son processus de régénération de cache.
 
 Cette commande ne met pas à jour le fichier `bundles.php` généré par Oro. Quand on ajoute un bundle Oro il faut absolument supprimer ce fichier.
 
-`symfony cache:warmup`
+`symfony console cache:warmup`
 
 Cette commande reconstruit un nouveau cache, Si un dossier de cache existe, le nouveau cache se cumulera avec le cache existant. Il es impératif de lancer cette commande après un `rm -rf var/cache/*` et de s'assurer que les processus de *Worker de MQ* ou se *serveur Websocket* ou qu'aucune requête HTTP ne soit en cours d'exécution. Si ce dernier critère n'est pas suivi, le cache aura une chance d'être corrompu.
 
 ### 2.3. Commandes d'assets
 
-`symfony assets:install --symlink`
+`symfony console assets:install --symlink`
 
 Cette commande permet d'effectuer une copie des assets  de l'application et des bundles dans le dossier `public/bundles`. La seule limite à cette commande est l'ajout d'un nouveau fichier d'assets. À chaque création de nouveau fichier il faudra relancer cette commande.
 
-`symfony oro:assets:build`
+`symfony console oro:assets:build`
 
 Cette commande lance le build webpack. Elle permet avec l'option `--watch` de lancer le watcher Webpack, qui permet d'avoir des mises à jour en temps réel dans le navigateur sans avoir à rafraichir la page.
 
 On peut la restreindre sur un seul theme pour la partie front en précisant le nom du thème en paramètre comme ceci :
 
-`symfony oro:asset:build --watch mon_theme`
+`symfony console oro:asset:build --watch`
 
-La commande `symfony oro:assets:install --symlink` permet de générer tous les assets, dans le cas où on ne ferait pas de développements front-end. En fond, 4 commandes sont lancées :
+La commande `symfony console oro:assets:install --symlink` permet de générer tous les assets, dans le cas où on ne ferait pas de développements front-end. En fond, 4 commandes sont lancées :
 1. `fos:js-routing:dump`
 2. `oro:localization:dump`
 3. `assets:install --symlink`
@@ -133,7 +133,7 @@ La commande `symfony oro:assets:install --symlink` permet de générer tous les 
 
 ## 3. Commandes Doctrine
 
-`symfony doctrine:schema:update --dump`
+`symfony console doctrine:schema:update --dump`
 
 https://symfony.com/doc/6.0/doctrine.html
 
