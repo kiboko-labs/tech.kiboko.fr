@@ -18,7 +18,7 @@ On lance désormais les commandes Symfony en local.
 
 `symfony console cache:clear`
 
-On utilise désormais l'outil client Symfony :  
+On utilise désormais Symfony CLI :  
 - https://github.com/symfony-cli/symfony-cli
 - https://symfony.com/doc/current/components/console.html
 
