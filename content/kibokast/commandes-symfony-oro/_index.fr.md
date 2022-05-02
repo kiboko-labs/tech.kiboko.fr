@@ -80,7 +80,7 @@ Quand on lance la commande `oro:platform:update`, les commandes ci-dessous sont 
 
 Si vous avez un grand nombre de migrations, ou que votre migration a un risque de dépasser 300 secondes d'exécution, il faut ajouter l'option `--timeout=0`
 
-Ajouter l'option `--schedule-search-reindexation`
+Si vous souhaitez reprendre rapidement la main sur votre console et laisser l'indexation se lancer en tâche de fond, il faut ajoueer l'option `--schedule-search-reindexation`
 pour ne pas bloquer la console et remplir la MQ :
 
 https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/EventListener/Command/ReindexationOptionsCommandListener.php
