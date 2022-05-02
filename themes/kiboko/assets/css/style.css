@@ -280,15 +280,17 @@ pre {
 .navbar {
   padding: 0;
 }
+.navbar-brand {
+    font-size: 2rem;
+}
 
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 0;
   }
-}
-
-.navbar-brand  {
-  font-size: 2rem !important;
+  .navbar-brand  {
+    font-size: 1.25rem;
+  }
 }
 
 .navbar-brand img {
