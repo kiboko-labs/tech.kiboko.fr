@@ -112,7 +112,7 @@ Cette commande ne met pas à jour le fichier `bundles.php` généré par Oro. Qu
 ### 2.3. Commandes d'assets
 
 `symfony assets:install` => commande symfony
-`symfony oro:assets:build` => uniquement le build webpack
+`symfony oro:assets:build` Lance le build webpack. Elle permet avec l'option `--watch` de lancer le watcher Webpack, qui permet d'avoir des mises à jour en temps réel dans le navigateur sans avoir à rafraichir la page
 
 `symfony oro:assets:install` => 4 commandes sont lancées :
 1. fos:js-routing:dump
