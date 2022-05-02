@@ -87,11 +87,11 @@ https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Event
 
 ou `--skip-search-reindexation` pour totalement passer l'indexation
 
-à utiliser uniquement dans certaines situations notament pour une multi-boutiques qui a de nombreux produits, il faudra ensuite lancer les commandes d'indexation telles que :
+Cette dernière option est à utiliser uniquement dans des situations où vous avez de grandes volumétries, comme un site multi-boutiques ou un site avec de nombreux produits. Vous devrez vous charger vous-même du lancement des commandes d'indexation.
 
-`symfony oro:search:reindex --scheduled`
+Pour lancer la réindexation back-office : `symfony oro:search:reindex --scheduled`
 
-`symfony oro:website-search:reindex --website-id=2 --scheduled`
+Pour lancer la réindexation d'un site web :`symfony oro:website-search:reindex --website-id=2 --scheduled`
 
 
 ### 2.2 Commandes de cache
