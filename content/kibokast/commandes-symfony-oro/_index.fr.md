@@ -85,7 +85,7 @@ pour ne pas bloquer la console et remplir la MQ :
 
 https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/EventListener/Command/ReindexationOptionsCommandListener.php
 
-ou `--skip-search-reindexation` pour totalement passer l'indexation back et front
+ou `--skip-search-reindexation` pour totalement passer l'indexation
 
 à utiliser uniquement dans certaines situations notament pour une multi-boutiques qui a de nombreux produits, il faudra ensuite lancer les commandes d'indexation telles que :
 
