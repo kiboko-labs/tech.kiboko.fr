@@ -111,7 +111,7 @@ Cette commande ne met pas à jour le fichier `bundles.php` généré par Oro. Qu
 
 ### 2.3. Commandes d'assets
 
-`symfony assets:install` => commande symfony
+La commande `symfony assets:install --symlink` permet d'effectuer une copie des assets  de l'application et des bundles dans le dossier `public/bundles`. La seule limite à cette commande est l'ajout d'un nouveau fichier d'assets. À chaque création de nouveau fichier il faudra relancer cette commande.
 `symfony oro:assets:build` Lance le build webpack. Elle permet avec l'option `--watch` de lancer le watcher Webpack, qui permet d'avoir des mises à jour en temps réel dans le navigateur sans avoir à rafraichir la page
 
 `symfony oro:assets:install` => 4 commandes sont lancées :
