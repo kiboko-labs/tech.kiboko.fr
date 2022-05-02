@@ -104,10 +104,7 @@ Cette commande ne met pas à jour le fichier `bundles.php` généré par Oro. Qu
 
 `symfony cache:warmup`
 
-=> reconstruit seulement, se cumule avec le cache existant
-
-==> systématiquement apres un rm -rf var/cache/* et être sur qu'il n'y a pas de processus qui tourne et pourrait le reconstruire en parallèle
-
+Cette commande reconstruit un nouveau cache, Si un dossier de cache existe, le nouveau cache se cumulera avec le cache existant. Il es impératif de lancer cette commande après un `rm -rf var/cache/*` et de s'assurer que les processus de *Worker de MQ* ou se *serveur Websocket* ou qu'aucune requête HTTP ne soit en cours d'exécution. Si ce dernier critère n'est pas suivi, le cache aura une chance d'être corrompu.
 
 ### 2.3. Commandes d'assets
 
