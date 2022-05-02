@@ -12,7 +12,7 @@ On lance désormais les commandes Symfony en local.
 
 **Avant :**
 
-`bin/console cache:clear`
+`docker compose exec sh bin/console cache:clear`
 
 **Après :**
 
