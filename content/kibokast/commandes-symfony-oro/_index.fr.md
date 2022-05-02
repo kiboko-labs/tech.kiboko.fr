@@ -28,7 +28,7 @@ Pour lancer les commandes composer on peut également utiliser le client Symfony
 
 **Multiples versions de Php**
 
-Quand il y a plusieurs versions de php, on peut ajouter un fichier `.php-version` à la racine du projet pour indiquer la version de php à utiliser.
+Quand il y a plusieurs versions de php installées sur votre poste, il est préférable de forcer la version utilisée sur le projet. Il faut pour cela ajouter un fichier `.php-version` à la racine du projet pour indiquer la version de php à utiliser.
 
 https://symfony.com/doc/current/setup/symfony_server.html#different-php-settings-per-project
 
