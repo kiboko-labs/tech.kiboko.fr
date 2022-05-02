@@ -98,10 +98,9 @@ Pour lancer la réindexation d'un site web :`symfony oro:website-search:reindex 
 
 `symfony cache:clear`
 
-laisse le cache existant, en construit un à côté puis quand c'est fini il inverse les 2 (de_ et pro_)
+Cette commande reconstruit un nouveau cache en conservant le cache existant vivre le temps de cette reconstruction. Une fois le cache reconstruit, l'ancien cache est remplacé par le nouveau. C'est cette commande qui crée les dossiers `var/cache/de_` et `var/cache/pro_` dans son processus de régénération de cache.
 
-- evite les problemes dans les sockets et messages queue
-- ne met pas à jour le fichier bundles.php (quand on ajoute un bundle il faut supprimer ce fichier)
+Cette commande ne met pas à jour le fichier `bundles.php` généré par Oro. Quand on ajoute un bundle Oro il faut absolument supprimer ce fichier.
 
 `symfony cache:warmup`
 
