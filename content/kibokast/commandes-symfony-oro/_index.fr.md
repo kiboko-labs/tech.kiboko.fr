@@ -46,7 +46,7 @@ https://symfony.com/doc/current/setup/symfony_server.html#getting-started
 
 **Activer TLS/HTTPS**
 
-Activer certificat local
+Pour que le HTTPS soit fonctionnel, il faut ajouter les certificats TLS sur le poste local avec la commande suivante :
 
 `symfony server:ca:install`
 
