@@ -64,7 +64,7 @@ La commande `oro:platform:update` d'Oro : https://github.com/oroinc/platform/blo
 Quand on lance la commande `oro:platform:update`, les commandes ci-dessous sont lancées dans cet ordre :
 
 1. `oro:check-requirements`
-2. `oro:migration:load` (comprend le rafraichissement de cache)
+2. `oro:migration:load` (comprend le rafraichissement de cache d'entités)
 3. `security:permission:configuration:load`
 4. `oro:cron:definitions:load`
 5. `oro:workflow:definitions:load`
