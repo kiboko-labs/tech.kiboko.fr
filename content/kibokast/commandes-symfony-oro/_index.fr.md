@@ -57,7 +57,7 @@ https://symfony.com/doc/current/setup/symfony_server.html#enabling-tls
 
 ### 2.1. Commande "platform update"
 
-La commande platform:update d'Oro : https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/InstallerBundle/Command/PlatformUpdateCommand.php
+La commande `oro:platform:update` d'Oro : https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/InstallerBundle/Command/PlatformUpdateCommand.php
 
 `symfony oro:platform:update --force --timeout=0`
 
