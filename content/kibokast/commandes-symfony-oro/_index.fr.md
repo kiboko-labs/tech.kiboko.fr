@@ -98,7 +98,6 @@ Pour lancer la réindexation d'un site web :
 
 `symfony oro:website-search:reindex --website-id=2 --scheduled`
 
-
 ### 2.2 Commandes de cache
 
 `symfony cache:clear`
