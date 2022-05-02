@@ -43,6 +43,7 @@ Pour lancer le serveur HTTPS local :
 Pour arrêter le serveur HTTPS local :
 - Soit faire un `CTRL` + `C` dans la console qui a lancé le serveur
 - Soit `symfony server:stop`
+
 https://symfony.com/doc/current/setup/symfony_server.html#getting-started
 
 **Activer TLS/HTTPS**
@@ -80,7 +81,7 @@ Quand on lance la commande `oro:platform:update`, les commandes ci-dessous sont 
 
 Si vous avez un grand nombre de migrations, ou que votre migration a un risque de dépasser 300 secondes d'exécution, il faut ajouter l'option `--timeout=0`
 
-Si vous souhaitez reprendre rapidement la main sur votre console et laisser l'indexation se lancer en tâche de fond, il faut ajoueer l'option `--schedule-search-reindexation`
+Si vous souhaitez reprendre rapidement la main sur votre console et laisser l'indexation se lancer en tâche de fond, il faut ajouter l'option `--schedule-search-reindexation`
 pour ne pas bloquer la console et remplir la MQ :
 
 https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/EventListener/Command/ReindexationOptionsCommandListener.php
@@ -89,9 +90,13 @@ ou `--skip-search-reindexation` pour totalement passer l'indexation
 
 Cette dernière option est à utiliser uniquement dans des situations où vous avez de grandes volumétries, comme un site multi-boutiques ou un site avec de nombreux produits. Vous devrez vous charger vous-même du lancement des commandes d'indexation.
 
-Pour lancer la réindexation back-office : `symfony oro:search:reindex --scheduled`
+Pour lancer la réindexation back-office :
 
-Pour lancer la réindexation d'un site web :`symfony oro:website-search:reindex --website-id=2 --scheduled`
+`symfony oro:search:reindex --scheduled`
+
+Pour lancer la réindexation d'un site web :
+
+`symfony oro:website-search:reindex --website-id=2 --scheduled`
 
 
 ### 2.2 Commandes de cache
@@ -108,8 +113,17 @@ Cette commande reconstruit un nouveau cache, Si un dossier de cache existe, le n
 
 ### 2.3. Commandes d'assets
 
-La commande `symfony assets:install --symlink` permet d'effectuer une copie des assets  de l'application et des bundles dans le dossier `public/bundles`. La seule limite à cette commande est l'ajout d'un nouveau fichier d'assets. À chaque création de nouveau fichier il faudra relancer cette commande.
-`symfony oro:assets:build` Lance le build webpack. Elle permet avec l'option `--watch` de lancer le watcher Webpack, qui permet d'avoir des mises à jour en temps réel dans le navigateur sans avoir à rafraichir la page
+`symfony assets:install --symlink`
+
+Cette commande permet d'effectuer une copie des assets  de l'application et des bundles dans le dossier `public/bundles`. La seule limite à cette commande est l'ajout d'un nouveau fichier d'assets. À chaque création de nouveau fichier il faudra relancer cette commande.
+
+`symfony oro:assets:build`
+
+Cette commande lance le build webpack. Elle permet avec l'option `--watch` de lancer le watcher Webpack, qui permet d'avoir des mises à jour en temps réel dans le navigateur sans avoir à rafraichir la page.
+
+On peut la restreindre sur un seul theme pour la partie front en précisant le nom du thème en paramètre comme ceci :
+
+`symfony oro:asset:build --watch mon_theme`
 
 La commande `symfony oro:assets:install --symlink` permet de générer tous les assets, dans le cas où on ne ferait pas de développements front-end. En fond, 4 commandes sont lancées :
 1. `fos:js-routing:dump`
@@ -143,5 +157,5 @@ ne fonctionne pas avec les extensions (ex: extendExtension)
 ## 4. Conclusion
 
 Privilégier le lancement de commandes génériques :
-- `symfony oro:platform:update`
+- `symfony oro:platform:update --force --timeout=0`
 - `symfony oro:assets:install`
