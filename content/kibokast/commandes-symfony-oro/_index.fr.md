@@ -57,7 +57,7 @@ La commande platform:update d'Oro : https://github.com/oroinc/platform/blob/mast
 
 `symfony oro:platform:update --force --timeout=0`
 
-Quand on lance la commande `platforma:update`, les commandes ci-dessus sont lancées dans cette ordre :
+Quand on lance la commande `platform:update`, les commandes ci-dessous sont lancées dans cet ordre :
 
 1. `oro:check-requirements`
 2. `oro:migration:load` (comprend le rafraichissement de cache)
