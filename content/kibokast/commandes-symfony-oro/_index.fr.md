@@ -22,7 +22,8 @@ On utilise désormais Symfony CLI :
 - https://github.com/symfony-cli/symfony-cli
 - https://symfony.com/doc/current/components/console.html
 
-Pour lancer les commandes composer on peut également utiliser le client Symfony :
+Symfony CLI permet également de lancer les commandes `composer` et `php`.
+> ⚠︎ Toutes les commandes `php`, `composer` et `bin/console` doivent être lancées en utilisant Symfony CLI
 
 `symfony composer`
 
