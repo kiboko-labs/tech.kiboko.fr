@@ -143,18 +143,17 @@ https://symfony.com/bundles/DoctrineMigrationsBundle/current/index.html#usage
 
 => déconseillé sur Oro
 
-sur Oro :
-`symfony oro:migration:dump`
-
-=> générer un fichier de migration schema
+La commande `symfony console oro:migration:dump --bundle=AppBundle > src/AppBundle/Migrations/AppBundleInstaller.php` permet de générer un fichier de migration de schéma Oro.
 
 https://doc.oroinc.com/backend/entities/migration/
 
-ne fonctionne pas avec les extensions (ex: extendExtension)
+> ⚠︎ Ces fichiers générés peuvent avoir des lignes en trop, notamment lorsque vous avez une entité qui hérite d'une entité d'un autre bundle. Il faudra nettoyer manuellement les lignes en trop.
+
+> ⚠︎ Ces fichiers de migrations ne prennent pas en compte les champs ajoutés à l'aide des extensions (pièces jointes, assets, attributs dynamiques, etc.). Il faudra ajouter ces champs manuellement au fichier généré
 
 
 ## 4. Conclusion
 
-Privilégier le lancement de commandes génériques :
-- `symfony oro:platform:update --force --timeout=0`
-- `symfony oro:assets:install`
+Il faut d'une manière générale privilégier le lancement de commandes Oro plutôt que les commandes génériques :
+- `symfony console oro:platform:update --force --timeout=0`
+- `symfony console oro:assets:install --symlink`
