@@ -137,11 +137,14 @@ La commande `symfony console oro:assets:install --symlink` permet de générer t
 
 https://symfony.com/doc/6.0/doctrine.html
 
-`symfony doctrine:migrations`
+Sur un projet Symfony standard (qui n'utilise pas OroPlatform) Les commandes listées dans `symfony console list doctrine:migrations` permettent de gérer les fichiers de migrations. Les fichiers de migration sont des listings des requêtes SQL à exécuter pour modifier le schéma de base de données.
+
+* `symfony console doctrine:migration:diff` permet de générer un nouveau fichier de migration pour aligner les schémas Doctrine et SQL
+* `symfony console doctrine:migrations:migrate` permet d'exécuter toutes les migrations qui n'auraient pas encore été exécutées
 
 https://symfony.com/bundles/DoctrineMigrationsBundle/current/index.html#usage
 
-=> déconseillé sur Oro
+> ⚠︎ Ces commandes ne doivent pas être utilisées sur des applications Oro
 
 La commande `symfony console oro:migration:dump --bundle=AppBundle > src/AppBundle/Migrations/AppBundleInstaller.php` permet de générer un fichier de migration de schéma Oro.
 
