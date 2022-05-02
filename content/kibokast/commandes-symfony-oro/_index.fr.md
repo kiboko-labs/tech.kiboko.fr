@@ -131,11 +131,15 @@ La commande `symfony console oro:assets:install --symlink` permet de générer t
 4. `oro:assets:build`
 
 
-## 3. Commandes Doctrine
-
-`symfony console doctrine:schema:update --dump`
-
+## 3. Entités Doctrine et schéma SQL
+	
+Les commandes Doctrine permettent de maintenir le schéma de bases de données lorsque l'on modifie des entités.
+	
 https://symfony.com/doc/6.0/doctrine.html
+	
+La commande `symfony console doctrine:schema:update --dump-sql` permet de voir quelles requêtes SQL doivent être lancées pour aligner le schéma déclaré en base de donnés avec celui déclaré sur les entités Doctrine.
+	
+La commande `symfony console doctrine:schema:update --force` permet d'exécuter ces requêtes pour aligner les deux schémas.
 
 Sur un projet Symfony standard (qui n'utilise pas OroPlatform) Les commandes listées dans `symfony console list doctrine:migrations` permettent de gérer les fichiers de migrations. Les fichiers de migration sont des listings des requêtes SQL à exécuter pour modifier le schéma de base de données.
 
