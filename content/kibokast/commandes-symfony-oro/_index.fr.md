@@ -4,7 +4,7 @@ date: 2022-04-29
 type : "docs"
 ---
 
-À partir de Oro 4.1, php est sorti de la stack Docker.
+À partir de Oro 4.1, Oro a fourni sa propre stack Docker. La différence majeure par rapport à la stack Kiboko est l'utilisation de symfony CLI  à la place de services php.
 
 On lance désormais les commandes Symfony en local.
 
