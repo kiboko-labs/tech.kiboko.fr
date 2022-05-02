@@ -65,7 +65,7 @@ Quand on lance la commande `oro:platform:update`, les commandes ci-dessous sont 
 
 1. `oro:check-requirements`
 2. `oro:migration:load` (comprend le rafraichissement de cache)
-3. "load permissions"
+3. `security:permission:configuration:load`
 4. `oro:cron:definitions:load`
 5. `oro:workflow:definitions:load`
 6. `oro:process:configuration:load`
