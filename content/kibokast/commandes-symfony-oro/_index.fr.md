@@ -107,7 +107,7 @@ laisse le cache existant, en construit un à côté puis quand c'est fini il inv
 
 => reconstruit seulement, se cumule avec le cache existant
 
-==> systématiquement apres un rm- var/cache/* et être sur qu'il n'y a pas de processus qui tourne et pourrait le reconstruit en parallèle
+==> systématiquement apres un rm -rf var/cache/* et être sur qu'il n'y a pas de processus qui tourne et pourrait le reconstruire en parallèle
 
 
 ### 2.3. Commandes d'assets
