@@ -47,6 +47,30 @@ hasChildren = true
     url = "autre"
     weight = 3
 
+    [[menu.main]]
+    parent = "docs"
+    name = "Composer"
+    url = "composer"
+    weight = 4
+
+    [[menu.main]]
+    parent = "docs"
+    name = "Environnement local"
+    url = "env-local"
+    weight = 5
+
+    [[menu.main]]
+    parent = "docs"
+    name = "Kubernetes"
+    url = "kubernetes"
+    weight = 6
+
+    [[menu.main]]
+    parent = "docs"
+    name = "SQL"
+    url = "sql"
+    weight = 7
+
 [[menu.main]]
 name = "Contactez-nous"
 url = "http://kiboko.fr/fr/contactez-nous/"
