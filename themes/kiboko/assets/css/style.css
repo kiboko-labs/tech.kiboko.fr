@@ -7,6 +7,12 @@ body {
   background-color: var(--body-color);
 }
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
 P {
   color: var(--text-color);
   font-size: 15px;
@@ -82,12 +88,9 @@ h6,
   color: var(--white-color);
 }
 
-.btn-primary:active {
-  background: var(--primary-color);
-}
-
+.btn-primary:active,
 .btn-primary:hover {
-  background: var(--primary-color);
+  background: #CD0001;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -307,6 +310,10 @@ pre {
   padding: 10px 15px !important;
   font-size: 15px;
 }
+.navbar .nav-item .nav-link:active,
+.navbar .nav-item .nav-link:hover {
+    color: #CD0001 !important;
+}
 
 .navbar .dropdown:hover .dropdown-menu {
   visibility: visible;
@@ -410,8 +417,9 @@ pre {
   color: var(--primary-color) !important;
 }
 
+.banner .nav-link.text-dark:active,
 .banner .nav-link.text-dark:hover {
-  color: var(--secondary-color) !important;
+  color: #CD0001 !important;
 }
 
 .banner .navbar-brand {
@@ -520,6 +528,7 @@ textarea.form-control {
 
 .icon {
   font-size: 40px;
+  color: #CD0001 !important;
 }
 
 .shadow {
@@ -774,6 +783,11 @@ li.sidelist > a {
 
 li.sidelist li a {
   margin: 0;
+  padding: 5px 0;
+}
+
+li.sidelist li.sidelist:before {
+  top: 12px;
 }
 
 li.sidelist li.sidelist li.sidelist:before {
