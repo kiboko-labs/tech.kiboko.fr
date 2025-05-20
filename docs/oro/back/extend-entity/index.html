@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Etendre une entité</title>
+
+  <meta name="generator" content="Hugo 0.147.3">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/"></a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+            <a class="dropdown-item" href="/composer">Composer</a>
+            
+            <a class="dropdown-item" href="/env-local">Environnement local</a>
+            
+            <a class="dropdown-item" href="/kubernetes">Kubernetes</a>
+            
+            <a class="dropdown-item" href="/sql">SQL</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+            
+              
+            
+              
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/" title="Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/">
+    Oro
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/" title="Back" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/back/">
+    Back
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/order-field-in-migration/" title="Changer l&#39;ordre d&#39;affichage des champs dans les migrations" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/back/order-field-in-migration/">
+    Changer l&#39;ordre d&#39;affichage des champs dans les migrations
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/extend-entity/" title="Etendre une entité" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/oro/back/extend-entity/">
+    Etendre une entité
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/" title="Datagrid" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/">
+    Datagrid
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/afficher-dynamiquement-une-action/" title="Afficher dynamiquement une action de datagrid" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/afficher-dynamiquement-une-action/">
+    Afficher dynamiquement une action de datagrid
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/mass-actions-product-grid/" title="Ajouter une mass action dans la grille produit" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/mass-actions-product-grid/">
+    Ajouter une mass action dans la grille produit
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/" title="Front" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/">
+    Front
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/add-consent-on-registration/" title="Ajouter  un Consent sur la page d&#39;inscription" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/add-consent-on-registration/">
+    Ajouter  un Consent sur la page d&#39;inscription
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/create-form-frontend/" title="Creer un formulaite en front" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/create-form-frontend/">
+    Creer un formulaite en front
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/select-type-in-oro-config/" title="Utiliser un champ select d&#39;entité dans la config Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/select-type-in-oro-config/">
+    Utiliser un champ select d&#39;entité dans la config Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/" title="Tester avec Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/">
+    Tester avec Oro
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/" title="Tests Behat" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/">
+    Tests Behat
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-autoloading/" title="Autoloading" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-autoloading/">
+    Autoloading
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-configuration/" title="Configuration" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-configuration/">
+    Configuration
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-conventions/" title="Conventions" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-conventions/">
+    Conventions
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-elements-form/" title="Elements form" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-elements-form/">
+    Elements form
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-exemples/" title="exemples" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-exemples/">
+    exemples
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-fixtures/" title="Fixtures" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-fixtures/">
+    Fixtures
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-isolation/" title="Isolation" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-isolation/">
+    Isolation
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-symfony/" title="Symfony" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-symfony/">
+    Symfony
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-tips/" title="Tips" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-tips/">
+    Tips
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/functional/functional/" title="Tests fonctionnel avec PHPUnit" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/functional/functional/">
+    Tests fonctionnel avec PHPUnit
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/javascript/javascript/" title="Tests unitaire en Javascript" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/javascript/javascript/">
+    Tests unitaire en Javascript
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/creer-une-application-frontend-sur-oroplatform/" title="Créer une application frontend sur OroPlatform" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/creer-une-application-frontend-sur-oroplatform/">
+    Créer une application frontend sur OroPlatform
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/block-types/" title="Les types de blocks dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/block-types/">
+    Les types de blocks dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/commandes-utiles/" title="Commandes utiles" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/commandes-utiles/">
+    Commandes utiles
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/sql/" title="" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/sql/">
+    
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Etendre une entité
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">19/05/2020</p>
+          
+          
+          <div class="content"><h2 id="extending-the-businessunit-entity">Extending the BusinessUnit entity</h2>
+<p>Extending the BusinessUnit entity is rather easy. Just create a new class in the <code>[Bundle]\Migrations\Schema\vx_x</code> namespace and make it implement the <code>Oro\Bundle\MigrationBundle\Migration\Migration</code> interface (and eventually the <code>Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareInterface</code> if you need to have attachments to your entity, like images or any files).</p>
+<p>Below is an example from <code>kiboko-labs/sevea-orocommerce</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Kiboko\Bundle\AppBundle\Migrations\Schema\v1_0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\DBAL\Schema\Schema</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtension</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareInterface</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\EntityExtendBundle\Migration\OroOptions</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\MigrationBundle\Migration\Migration</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\MigrationBundle\Migration\QueryBag</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomizeBusinessUnit</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">Migration</span>, <span style="color:#a6e22e">AttachmentExtensionAwareInterface</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">TABLE_NAME</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;oro_business_unit&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">THUMB_WIDTH</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">THUMB_HEIGHT</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">IMAGE_SIZE</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/** @var AttachmentExtension */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> $attachmentExtension;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * Sets the AttachmentExtension
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param AttachmentExtension $attachmentExtension
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setAttachmentExtension</span>(<span style="color:#a6e22e">AttachmentExtension</span> $attachmentExtension)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">attachmentExtension</span> <span style="color:#f92672">=</span> $attachmentExtension;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * Modifies the given schema to apply necessary changes of a database
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * The given query bag can be used to apply additional SQL queries before and after schema changes
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param Schema $schema
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param QueryBag $queries
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @return void
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @throws \Doctrine\DBAL\Schema\SchemaException
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">up</span>(<span style="color:#a6e22e">Schema</span> $schema, <span style="color:#a6e22e">QueryBag</span> $queries)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $table <span style="color:#f92672">=</span> $schema<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTable</span>(<span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">TABLE_NAME</span>);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;address&#39;</span>, <span style="color:#e6db74">&#39;string&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>, <span style="color:#e6db74">&#39;entity&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;description&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;The address of the business unit&#39;</span>]],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">200</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;address_details&#39;</span>, <span style="color:#e6db74">&#39;string&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">190</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;postal_code&#39;</span>, <span style="color:#e6db74">&#39;string&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;length&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">180</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;town&#39;</span>, <span style="color:#e6db74">&#39;string&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;length&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">170</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;longitude&#39;</span>, <span style="color:#e6db74">&#39;float&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">160</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;latitude&#39;</span>, <span style="color:#e6db74">&#39;float&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">150</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;type&#39;</span>, <span style="color:#e6db74">&#39;string&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;length&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">140</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;erp_code&#39;</span>, <span style="color:#e6db74">&#39;string&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;length&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">120</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $table<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addColumn</span>(<span style="color:#e6db74">&#39;facebook&#39;</span>, <span style="color:#e6db74">&#39;string&#39;</span>, [
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">OroOptions</span><span style="color:#f92672">::</span><span style="color:#a6e22e">KEY</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;extend&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;owner&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">ExtendScope</span><span style="color:#f92672">::</span><span style="color:#a6e22e">OWNER_CUSTOM</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;view&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;priority&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">110</span>],
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">attachmentExtension</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addImageRelation</span>(
+</span></span><span style="display:flex;"><span>            $schema,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">TABLE_NAME</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;image&#39;</span>,
+</span></span><span style="display:flex;"><span>            [],
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">IMAGE_SIZE</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">THUMB_WIDTH</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">THUMB_HEIGHT</span>
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<p>Be very careful ! If you mistake, it&rsquo;s possible you&rsquo;ll have to run the <code>oro:install</code> command again. Oro keeps memory of the previous structure in database (table <code>oro_entity_config_field</code>), stored base64 serialized BLOB field. Really difficult to update.</p></blockquote>
+<h2 id="extending-the-businessunittype">Extending the BusinessUnitType</h2>
+<p>You have to write a new type extension in order to add and configure the fields of the form. You may create new fields, and override &ldquo;parent&rdquo; field configurations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Kiboko\Bundle\AppBundle\Form\Extension</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\AttachmentBundle\Form\Type\ImageType</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\OrganizationBundle\Form\Type\BusinessUnitType</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Symfony\Component\Form\AbstractTypeExtension</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Symfony\Component\Form\Extension\Core\Type\ChoiceType</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Symfony\Component\Form\FormBuilderInterface</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BusinessUnitExtension</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractTypeExtension</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">TYPE_VENDOR</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;vendor&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">TYPE_VITRINE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;vitrine&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">TYPE_EXTERNAL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;external&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * Returns the name of the type being extended.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @return string The name of the type being extended
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getExtendedType</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">BusinessUnitType</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param FormBuilderInterface $builder
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param array $options
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">buildForm</span>(<span style="color:#a6e22e">FormBuilderInterface</span> $builder, <span style="color:#66d9ef">array</span> $options)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $builder
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#39;image&#39;</span>, <span style="color:#a6e22e">ImageType</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#39;type&#39;</span>, <span style="color:#a6e22e">ChoiceType</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>, [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;label&#39;</span> <span style="color:#f92672">=&gt;</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTranslationKey</span>(<span style="color:#e6db74">&#39;type&#39;</span>),
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;choices&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTranslationKey</span>(<span style="color:#e6db74">&#39;type.choices.vendor&#39;</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">TYPE_VENDOR</span>,
+</span></span><span style="display:flex;"><span>                    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTranslationKey</span>(<span style="color:#e6db74">&#39;type.choices.vitrine&#39;</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">TYPE_VITRINE</span>,
+</span></span><span style="display:flex;"><span>                    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTranslationKey</span>(<span style="color:#e6db74">&#39;type.choices.external&#39;</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">TYPE_EXTERNAL</span>,
+</span></span><span style="display:flex;"><span>                ]
+</span></span><span style="display:flex;"><span>            ])
+</span></span><span style="display:flex;"><span>        ;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getTranslationKey</span>(<span style="color:#a6e22e">string</span> $key) <span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">sprintf</span>(<span style="color:#e6db74">&#39;oro.organization.businessunit.%s.label&#39;</span>, $key);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="creating-the-form-listener">Creating the form listener</h2>
+<p>New fields declared in the type extension above won&rsquo;t be added automatically on the form view.
+In order to add those fields on the form view, we need to hook into the form prerender event <code>Oro\Bundle\UIBundle\Event\Events::BEFORE_UPDATE_FORM_RENDER</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Kiboko\Bundle\AppBundle\EventListener</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\UIBundle\Event\BeforeFormRenderEvent</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\UIBundle\Event\Events</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\UIBundle\View\ScrollData</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Symfony\Component\EventDispatcher\EventSubscriberInterface</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Symfony\Component\Form\FormView</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BusinessUnitFormListener</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">EventSubscriberInterface</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">FORM_NAME</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;oro_business_unit_form&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @return array The event names to listen to
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getSubscribedEvents</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">Events</span><span style="color:#f92672">::</span><span style="color:#a6e22e">BEFORE_UPDATE_FORM_RENDER</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;onBusinessUnitEdit&#39;</span>,
+</span></span><span style="display:flex;"><span>        ];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">onBusinessUnitEdit</span>(<span style="color:#a6e22e">BeforeFormRenderEvent</span> $event)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $form <span style="color:#f92672">=</span> $event<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getForm</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>$this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">supports</span>($form)) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $template <span style="color:#f92672">=</span> $event<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTwigEnvironment</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">render</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;@KibokoApp/Form/file_widget.html.twig&#39;</span>,
+</span></span><span style="display:flex;"><span>            [<span style="color:#e6db74">&#39;form&#39;</span> <span style="color:#f92672">=&gt;</span> $form<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">children</span>[<span style="color:#e6db74">&#39;image&#39;</span>]]
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $scrollData <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ScrollData</span>($event<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getFormData</span>());
+</span></span><span style="display:flex;"><span>        $scrollData<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addSubBlockData</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, $template, <span style="color:#e6db74">&#39;image&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $event<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setFormData</span>($scrollData<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getData</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param FormView $formView
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @return bool
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">supports</span>(<span style="color:#a6e22e">FormView</span> $formView)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> $formView<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">vars</span>[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">===</span> <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">FORM_NAME</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<p>Be careful, as each form rendering will trigger this event. Be sure to filter the forms with a <code>supports</code> method as above, for example</p></blockquote>
+<p>The form data can be found via the <code>BeforeFormRenderEvent</code>. It&rsquo;s just a flat array, that is easier to manipulate wrapped into a <code>Oro\Bundle\UIBundle\View\ScrollData</code> object.</p>
+<p>The goal is to generate the HTML for each added form field:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$template <span style="color:#f92672">=</span> $event<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTwigEnvironment</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">render</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;@KibokoApp/Form/file_widget.html.twig&#39;</span>,
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;form&#39;</span> <span style="color:#f92672">=&gt;</span> $form<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">children</span>[<span style="color:#e6db74">&#39;image&#39;</span>]]
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>and to place it at the required place in the form data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$scrollData<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addSubBlockData</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, $template, <span style="color:#e6db74">&#39;image&#39;</span>);
+</span></span></code></pre></div><p>You&rsquo;ll have to create the template file yourself. In the above example (<code>file_widget.html.twig</code>), it&rsquo;s just a one-line template:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-twig" data-lang="twig"><span style="display:flex;"><span><span style="color:#75715e">{{</span> form_row<span style="color:#f92672">(</span>form<span style="color:#f92672">)</span> <span style="color:#75715e">}}</span>
+</span></span></code></pre></div></div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/oro/back/order-field-in-migration/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Changer l&#39;ordre d&#39;affichage des champs dans les migrations</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/oro/datagrid/"> <span class="d-none d-md-block">Datagrid</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

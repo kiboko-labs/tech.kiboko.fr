@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Commandes Symfony, Oro et Doctrine</title>
+
+  <meta name="generator" content="Hugo 0.147.3">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/"></a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+            <a class="dropdown-item" href="/composer">Composer</a>
+            
+            <a class="dropdown-item" href="/env-local">Environnement local</a>
+            
+            <a class="dropdown-item" href="/kubernetes">Kubernetes</a>
+            
+            <a class="dropdown-item" href="/sql">SQL</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/">
+    Kibokast
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/symfony-proxy/" title="Proxy Symfony" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/symfony-proxy/">
+    Proxy Symfony
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-symfony-oro/" title="Commandes Symfony, Oro et Doctrine" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-symfony-oro/">
+    Commandes Symfony, Oro et Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/scss-dans-oro/" title="SCSS dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/scss-dans-oro/">
+    SCSS dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/processus/" title="Les processus dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/processus/">
+    Les processus dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/monolog/" title="Monolog" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/monolog/">
+    Monolog
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/exceptions/" title="Exceptions" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/exceptions/">
+    Exceptions
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/doctrine-type/" title="Doctrine type" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/doctrine-type/">
+    Doctrine type
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+    Code review
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+    Commandes Debug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+    Collections Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+    Principes SOLID
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+    Utilisation des commandes Kloud
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+    Utilisation Tmetric
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+    Migrations Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+    Usage Github
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+    Utilisation stack Docker Kiboko
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Commandes Symfony, Oro et Doctrine
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">29/04/2022</p>
+          
+          
+          <div class="content"><p>À partir de Oro 4.1, Oro a fourni sa propre stack Docker. La différence majeure par rapport à la stack Kiboko est l&rsquo;utilisation de symfony CLI  à la place de services php.</p>
+<p>On lance désormais les commandes Symfony en local.</p>
+<h2 id="1-commandes-symfony">1. Commandes Symfony</h2>
+<p><strong>Avant :</strong></p>
+<p><code>docker compose exec sh bin/console cache:clear</code></p>
+<p><strong>Après :</strong></p>
+<p><code>symfony console cache:clear</code></p>
+<p>On utilise désormais Symfony CLI :</p>
+<ul>
+<li><a href="https://github.com/symfony-cli/symfony-cli">https://github.com/symfony-cli/symfony-cli</a></li>
+<li><a href="https://symfony.com/doc/current/components/console.html">https://symfony.com/doc/current/components/console.html</a></li>
+</ul>
+<p>Symfony CLI permet également de lancer les commandes <code>composer</code> et <code>php</code>.</p>
+<blockquote>
+<p>⚠︎ Toutes les commandes <code>php</code>, <code>composer</code> et <code>bin/console</code> doivent être lancées en utilisant Symfony CLI</p></blockquote>
+<p><code>symfony composer</code></p>
+<p><strong>Multiples versions de Php</strong></p>
+<p>Quand il y a plusieurs versions de php installées sur votre poste, il est préférable de forcer la version utilisée sur le projet. Il faut pour cela ajouter un fichier <code>.php-version</code> à la racine du projet pour indiquer la version de php à utiliser.</p>
+<p><a href="https://symfony.com/doc/current/setup/symfony_server.html#different-php-settings-per-project">https://symfony.com/doc/current/setup/symfony_server.html#different-php-settings-per-project</a></p>
+<p><strong>Server local</strong></p>
+<p>Pour lancer le serveur HTTPS local :</p>
+<ul>
+<li>Soit <code>symfony serve</code></li>
+<li>Soit <code>symfony server:start</code></li>
+</ul>
+<p>Pour arrêter le serveur HTTPS local :</p>
+<ul>
+<li>Soit faire un <code>CTRL</code> + <code>C</code> dans la console qui a lancé le serveur</li>
+<li>Soit <code>symfony server:stop</code></li>
+</ul>
+<p><a href="https://symfony.com/doc/current/setup/symfony_server.html#getting-started">https://symfony.com/doc/current/setup/symfony_server.html#getting-started</a></p>
+<p><strong>Activer TLS/HTTPS</strong></p>
+<p>Pour que le HTTPS soit fonctionnel, il faut ajouter les certificats TLS sur le poste local avec la commande suivante :</p>
+<p><code>symfony server:ca:install</code></p>
+<p><a href="https://symfony.com/doc/current/setup/symfony_server.html#enabling-tls">https://symfony.com/doc/current/setup/symfony_server.html#enabling-tls</a></p>
+<h2 id="2-commandes-oro">2. Commandes Oro</h2>
+<h3 id="21-commande-platform-update">2.1. Commande &ldquo;platform update&rdquo;</h3>
+<p>La commande <code>oro:platform:update</code> d&rsquo;Oro : <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/InstallerBundle/Command/PlatformUpdateCommand.php">https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/InstallerBundle/Command/PlatformUpdateCommand.php</a></p>
+<p><code>symfony console oro:platform:update --force --timeout=0</code></p>
+<p>Quand on lance la commande <code>oro:platform:update</code>, les commandes ci-dessous sont lancées dans cet ordre :</p>
+<ol>
+<li><code>oro:check-requirements</code></li>
+<li><code>oro:migration:load</code> (comprend le rafraichissement de cache d&rsquo;entités)</li>
+<li><code>security:permission:configuration:load</code></li>
+<li><code>oro:cron:definitions:load</code></li>
+<li><code>oro:workflow:definitions:load</code></li>
+<li><code>oro:process:configuration:load</code></li>
+<li><code>oro:migration:data:load</code></li>
+<li><code>router:cache:clear</code></li>
+<li><code>oro:message-queue:create-queues</code></li>
+<li><code>assets:install</code></li>
+<li><code>fos:js-routing:dump</code></li>
+<li><code>oro:localization:dump</code></li>
+<li><code>oro:translation:dump</code></li>
+<li><code>oro:assets:build</code></li>
+</ol>
+<p>Si vous avez un grand nombre de migrations, ou que votre migration a un risque de dépasser 300 secondes d&rsquo;exécution, il faut ajouter l&rsquo;option <code>--timeout=0</code></p>
+<p>Si vous souhaitez reprendre rapidement la main sur votre console et laisser l&rsquo;indexation se lancer en tâche de fond, il faut ajouter l&rsquo;option <code>--schedule-search-reindexation</code>
+pour ne pas bloquer la console et remplir la MQ :</p>
+<p><a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/EventListener/Command/ReindexationOptionsCommandListener.php">https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/EventListener/Command/ReindexationOptionsCommandListener.php</a></p>
+<p>ou <code>--skip-search-reindexation</code> pour totalement passer l&rsquo;indexation</p>
+<p>Cette dernière option est à utiliser uniquement dans des situations où vous avez de grandes volumétries, comme un site multi-boutiques ou un site avec de nombreux produits. Vous devrez vous charger vous-même du lancement des commandes d&rsquo;indexation.</p>
+<p>Pour lancer la réindexation back-office :</p>
+<p><code>symfony console oro:search:reindex --scheduled</code></p>
+<p>Pour lancer la réindexation d&rsquo;un site web :</p>
+<p><code>symfony console oro:website-search:reindex --website-id=2 --scheduled</code></p>
+<h3 id="22-commandes-de-cache">2.2 Commandes de cache</h3>
+<p><code>symfony console cache:clear</code></p>
+<p>Cette commande reconstruit un nouveau cache en conservant le cache existant vivre le temps de cette reconstruction. Une fois le cache reconstruit, l&rsquo;ancien cache est remplacé par le nouveau. C&rsquo;est cette commande qui crée les dossiers <code>var/cache/de_</code> et <code>var/cache/pro_</code> dans son processus de régénération de cache.</p>
+<p>Cette commande ne met pas à jour le fichier <code>bundles.php</code> généré par Oro. Quand on ajoute un bundle Oro il faut absolument supprimer ce fichier.</p>
+<p><code>symfony console cache:warmup</code></p>
+<p>Cette commande reconstruit un nouveau cache, Si un dossier de cache existe, le nouveau cache se cumulera avec le cache existant. Il es impératif de lancer cette commande après un <code>rm -rf var/cache/*</code> et de s&rsquo;assurer que les processus de <em>Worker de MQ</em> ou se <em>serveur Websocket</em> ou qu&rsquo;aucune requête HTTP ne soit en cours d&rsquo;exécution. Si ce dernier critère n&rsquo;est pas suivi, le cache aura une chance d&rsquo;être corrompu.</p>
+<h3 id="23-commandes-dassets">2.3. Commandes d&rsquo;assets</h3>
+<p><code>symfony console assets:install --symlink</code></p>
+<p>Cette commande permet d&rsquo;effectuer une copie des assets  de l&rsquo;application et des bundles dans le dossier <code>public/bundles</code>. La seule limite à cette commande est l&rsquo;ajout d&rsquo;un nouveau fichier d&rsquo;assets. À chaque création de nouveau fichier il faudra relancer cette commande.</p>
+<p><code>symfony console oro:assets:build</code></p>
+<p>Cette commande lance le build webpack. Elle permet avec l&rsquo;option <code>--watch</code> de lancer le watcher Webpack, qui permet d&rsquo;avoir des mises à jour en temps réel dans le navigateur sans avoir à rafraichir la page.</p>
+<p>On peut la restreindre sur un seul theme pour la partie front en précisant le nom du thème en paramètre comme ceci :</p>
+<p><code>symfony console oro:asset:build --watch</code></p>
+<p>La commande <code>symfony console oro:assets:install --symlink</code> permet de générer tous les assets, dans le cas où on ne ferait pas de développements front-end. En fond, 4 commandes sont lancées :</p>
+<ol>
+<li><code>fos:js-routing:dump</code></li>
+<li><code>oro:localization:dump</code></li>
+<li><code>assets:install --symlink</code></li>
+<li><code>oro:assets:build</code></li>
+</ol>
+<h2 id="3-entités-doctrine-et-schéma-sql">3. Entités Doctrine et schéma SQL</h2>
+<p>Les commandes Doctrine permettent de maintenir le schéma de bases de données lorsque l&rsquo;on modifie des entités.</p>
+<p><a href="https://symfony.com/doc/6.0/doctrine.html">https://symfony.com/doc/6.0/doctrine.html</a></p>
+<p>La commande <code>symfony console doctrine:schema:update --dump-sql</code> permet de voir quelles requêtes SQL doivent être lancées pour aligner le schéma déclaré en base de donnés avec celui déclaré sur les entités Doctrine.</p>
+<p>La commande <code>symfony console doctrine:schema:update --force</code> permet d&rsquo;exécuter ces requêtes pour aligner les deux schémas.</p>
+<p>Sur un projet Symfony standard (qui n&rsquo;utilise pas OroPlatform) Les commandes listées dans <code>symfony console list doctrine:migrations</code> permettent de gérer les fichiers de migrations. Les fichiers de migration sont des listings des requêtes SQL à exécuter pour modifier le schéma de base de données.</p>
+<ul>
+<li><code>symfony console doctrine:migration:diff</code> permet de générer un nouveau fichier de migration pour aligner les schémas Doctrine et SQL</li>
+<li><code>symfony console doctrine:migrations:migrate</code> permet d&rsquo;exécuter toutes les migrations qui n&rsquo;auraient pas encore été exécutées</li>
+</ul>
+<p><a href="https://symfony.com/bundles/DoctrineMigrationsBundle/current/index.html#usage">https://symfony.com/bundles/DoctrineMigrationsBundle/current/index.html#usage</a></p>
+<blockquote>
+<p>⚠︎ Ces commandes ne doivent pas être utilisées sur des applications Oro</p></blockquote>
+<p>La commande <code>symfony console oro:migration:dump --bundle=AppBundle &gt; src/AppBundle/Migrations/AppBundleInstaller.php</code> permet de générer un fichier de migration de schéma Oro.</p>
+<p><a href="https://doc.oroinc.com/backend/entities/migration/">https://doc.oroinc.com/backend/entities/migration/</a></p>
+<blockquote>
+<p>⚠︎ Ces fichiers générés peuvent avoir des lignes en trop, notamment lorsque vous avez une entité qui hérite d&rsquo;une entité d&rsquo;un autre bundle. Il faudra nettoyer manuellement les lignes en trop.</p></blockquote>
+<blockquote>
+<p>⚠︎ Ces fichiers de migrations ne prennent pas en compte les champs ajoutés à l&rsquo;aide des extensions (pièces jointes, assets, attributs dynamiques, etc.). Il faudra ajouter ces champs manuellement au fichier généré</p></blockquote>
+<h2 id="4-conclusion">4. Conclusion</h2>
+<p>Il faut d&rsquo;une manière générale privilégier le lancement de commandes Oro plutôt que les commandes génériques :</p>
+<ul>
+<li><code>symfony console oro:platform:update --force --timeout=0</code></li>
+<li><code>symfony console oro:assets:install --symlink</code></li>
+</ul>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/symfony-proxy/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Proxy Symfony</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/kibokast/scss-dans-oro/"> <span class="d-none d-md-block">SCSS dans Oro</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

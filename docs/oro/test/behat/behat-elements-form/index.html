@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Elements form</title>
+
+  <meta name="generator" content="Hugo 0.147.3">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/"></a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+            <a class="dropdown-item" href="/composer">Composer</a>
+            
+            <a class="dropdown-item" href="/env-local">Environnement local</a>
+            
+            <a class="dropdown-item" href="/kubernetes">Kubernetes</a>
+            
+            <a class="dropdown-item" href="/sql">SQL</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+            
+              
+            
+              
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/" title="Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/">
+    Oro
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/" title="Back" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/back/">
+    Back
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/order-field-in-migration/" title="Changer l&#39;ordre d&#39;affichage des champs dans les migrations" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/back/order-field-in-migration/">
+    Changer l&#39;ordre d&#39;affichage des champs dans les migrations
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/extend-entity/" title="Etendre une entité" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/back/extend-entity/">
+    Etendre une entité
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/" title="Datagrid" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/">
+    Datagrid
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/afficher-dynamiquement-une-action/" title="Afficher dynamiquement une action de datagrid" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/afficher-dynamiquement-une-action/">
+    Afficher dynamiquement une action de datagrid
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/mass-actions-product-grid/" title="Ajouter une mass action dans la grille produit" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/mass-actions-product-grid/">
+    Ajouter une mass action dans la grille produit
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/" title="Front" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/">
+    Front
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/add-consent-on-registration/" title="Ajouter  un Consent sur la page d&#39;inscription" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/add-consent-on-registration/">
+    Ajouter  un Consent sur la page d&#39;inscription
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/create-form-frontend/" title="Creer un formulaite en front" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/create-form-frontend/">
+    Creer un formulaite en front
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/select-type-in-oro-config/" title="Utiliser un champ select d&#39;entité dans la config Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/select-type-in-oro-config/">
+    Utiliser un champ select d&#39;entité dans la config Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/" title="Tester avec Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/">
+    Tester avec Oro
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/" title="Tests Behat" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/">
+    Tests Behat
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-autoloading/" title="Autoloading" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-autoloading/">
+    Autoloading
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-configuration/" title="Configuration" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-configuration/">
+    Configuration
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-conventions/" title="Conventions" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-conventions/">
+    Conventions
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-elements-form/" title="Elements form" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-elements-form/">
+    Elements form
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-exemples/" title="exemples" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-exemples/">
+    exemples
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-fixtures/" title="Fixtures" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-fixtures/">
+    Fixtures
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-isolation/" title="Isolation" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-isolation/">
+    Isolation
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-symfony/" title="Symfony" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-symfony/">
+    Symfony
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-tips/" title="Tips" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-tips/">
+    Tips
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/functional/functional/" title="Tests fonctionnel avec PHPUnit" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/functional/functional/">
+    Tests fonctionnel avec PHPUnit
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/javascript/javascript/" title="Tests unitaire en Javascript" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/javascript/javascript/">
+    Tests unitaire en Javascript
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/creer-une-application-frontend-sur-oroplatform/" title="Créer une application frontend sur OroPlatform" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/creer-une-application-frontend-sur-oroplatform/">
+    Créer une application frontend sur OroPlatform
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/block-types/" title="Les types de blocks dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/block-types/">
+    Les types de blocks dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/commandes-utiles/" title="Commandes utiles" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/commandes-utiles/">
+    Commandes utiles
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/sql/" title="" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/sql/">
+    
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Elements form
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">01/12/2020</p>
+          
+          
+          <div class="content"><p>Les elements sont le mapping entre des elements du dom utilisé par le test.
+Prenez une minute pour lire la base des <a href="https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php">NodeElement Mink</a></p>
+<p>Tous les éléments doivent être décrits dans {BundleName} {BundleName}/Tests/Behat/behat.yml de la manière suivante:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span> <span style="color:#f92672">oro_behat_extension</span>:
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">elements</span>:
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">Login</span>:
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">selector</span>: <span style="color:#e6db74">&#39;#login-form&#39;</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\TestFrameworkBundle\Behat\Element\Form</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">options</span>:
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">mapping</span>:
+</span></span><span style="display:flex;"><span>           <span style="color:#f92672">Username</span>: <span style="color:#e6db74">&#39;_username&#39;</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#f92672">Password</span>: <span style="color:#e6db74">&#39;_password&#39;</span>
+</span></span></code></pre></div><ol>
+<li><code>Login</code> est un nom d&rsquo;élément qui DOIT être unique. L&rsquo;élément peut être créé manuellement dans un contexte par OroElementFactory par son nom:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">elementFactory</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;Login&#39;</span>);
+</span></span></code></pre></div><ol start="2">
+<li>Le <code>selector</code> définit comment le driver Web doit trouver l&rsquo;élément dans le DOM.
+Par défaut, lorsque le type de sélecteur n&rsquo;est pas spécifié, le type <code>css</code> est utilisé.
+Le sélecteur XPath est également pris en charge et peut être fourni avec la configuration suivante:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span> <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">type</span>: <span style="color:#ae81ff">xpath</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">locator</span>: <span style="color:#ae81ff">//span[id=&#39;mySpan&#39;]/ancestor::form/</span>
+</span></span></code></pre></div><ol start="3">
+<li><code>options</code> est un tableau d&rsquo;options supplémentaires stockées dans la propriété options de la classe Element.
+Il est fortement recommandé de fournir une classe avec des options de mappage pour les éléments de formulaire,
+car cela augmente la vitesse de test et garantit un mappage de champ plus précis.</li>
+</ol>
+<h2 id="mappage-des-champs-de-formulaire">Mappage des champs de formulaire</h2>
+<p>Par défaut, les tests utilisent le <a href="http://mink.behat.org/en/latest/guides/traversing-pages.html#named-selectors">sélecteur de champ nommé</a>  pour mapper les champs du formulaire.
+Le sélecteur de nom de champ peut rechercher le champ par son identifiant, son nom, son label ou son placeholder.
+Vous êtes libre d&rsquo;utiliser n&rsquo;importe quel sélecteur pour mapper des champs de formulaire ou encapsuler un élément dans l&rsquo;élément behat particulier.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span> <span style="color:#f92672">oro_behat_extension</span>:
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">elements</span>:
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">Payment Method Config Type Field</span>:
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\PaymentBundle\Tests\Behat\Element\PaymentMethodConfigType</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">PaymentRuleForm</span>:
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">selector</span>: <span style="color:#e6db74">&#34;form[id^=&#39;oro_payment_methods_configs_rule&#39;]&#34;</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\TestFrameworkBundle\Behat\Element\Form</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">options</span>:
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">mapping</span>:
+</span></span><span style="display:flex;"><span>           <span style="color:#f92672">Method</span>:
+</span></span><span style="display:flex;"><span>             <span style="color:#f92672">type</span>: <span style="color:#e6db74">&#39;xpath&#39;</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#f92672">locator</span>: <span style="color:#e6db74">&#39;//div[@id[starts-with(.,&#34;uniform-oro_payment_methods_configs_rule_method&#34;)]]&#39;</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#f92672">element</span>: <span style="color:#ae81ff">Payment Method Config Type Field</span>
+</span></span></code></pre></div><p>Vous devez maintenant créer et implémenter la méthode <code>setValue</code> de l&rsquo;Element:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\PaymentBundle\Tests\Behat\Element</span>;
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Behat\Element\Element</span>;
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PaymentMethodConfigType</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Element</span>
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      * {@inheritdoc}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      */</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setValue</span>($value)
+</span></span><span style="display:flex;"><span>     {
+</span></span><span style="display:flex;"><span>         $values <span style="color:#f92672">=</span> <span style="color:#a6e22e">is_array</span>($value) <span style="color:#f92672">?</span> $value <span style="color:#f92672">:</span> [$value];
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">foreach</span> ($values <span style="color:#66d9ef">as</span> $item) {
+</span></span><span style="display:flex;"><span>             $parentField <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getParent</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getParent</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getParent</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getParent</span>();
+</span></span><span style="display:flex;"><span>             $field <span style="color:#f92672">=</span> $parentField<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;css&#39;</span>, <span style="color:#e6db74">&#39;select&#39;</span>);
+</span></span><span style="display:flex;"><span>             <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">assertNotNull</span>($field, <span style="color:#e6db74">&#39;Select payment method field not found&#39;</span>);
+</span></span><span style="display:flex;"><span>             $field<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setValue</span>($item);
+</span></span><span style="display:flex;"><span>             $parentField<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">clickLink</span>(<span style="color:#e6db74">&#39;Add&#39;</span>);
+</span></span><span style="display:flex;"><span>             $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getDriver</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">waitForAjax</span>();
+</span></span><span style="display:flex;"><span>         }
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><p>Vous pouvez maintenant l&rsquo;utiliser dans une étape standard:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span> <span style="color:#f92672">Feature</span>: <span style="color:#ae81ff">Payment Rules CRUD</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">Scenario</span>: <span style="color:#ae81ff">Creating Payment Rule</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">Given I login as administrator</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">And I go to System/ Payment Rules</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">And I click &#34;Create Payment Rule&#34;</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">When I fill &#34;Payment Rule Form&#34; with:</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#ae81ff">| Method | PayPal |</span>
+</span></span></code></pre></div><h3 id="mappages-de-formulaires-intégrés-">Mappages de formulaires intégrés :</h3>
+<p>Parfois, un formulaire apparaît dans l&rsquo;iframe. Behat peut passer à l&rsquo;iframe par son identifiant.
+Pour remplir correctement le formulaire dans l&rsquo;iframe, spécifiez l&rsquo;id iframe dans les options du formulaire:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>   <span style="color:#f92672">oro_behat_extension</span>:
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">elements</span>:
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">MagentoContactUsForm</span>:
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">selector</span>: <span style="color:#e6db74">&#39;div#page&#39;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\TestFrameworkBundle\Behat\Element\Form</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">options</span>:
+</span></span><span style="display:flex;"><span>           <span style="color:#f92672">embedded-id</span>: <span style="color:#ae81ff">embedded-form</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#f92672">mapping</span>:
+</span></span><span style="display:flex;"><span>             <span style="color:#f92672">First name</span>: <span style="color:#e6db74">&#39;oro_magento_contactus_contact_request[firstName]&#39;</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#f92672">Last name</span>: <span style="color:#e6db74">&#39;oro_magento_contactus_contact_request[lastName]&#39;</span>
+</span></span></code></pre></div><h2 id="element-de-page">ELement de page</h2>
+<p>L&rsquo;élément Page encapsule la page Web entière avec son URL et son chemin d&rsquo;accès à la page. Chaque élément Page doit étendre <code>Oro\Bundle\TestFrameworkBundle\Behat\Element\Page</code>.</p>
+<p>Exemple de Configuration de Page :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span> <span style="color:#f92672">oro_behat_extension</span>:
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">pages</span>:
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">UserProfileView</span>:
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">class</span>: <span style="color:#ae81ff">Oro\Bundle\UserBundle\Tests\Behat\Page\UserProfileView</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">route</span>: <span style="color:#e6db74">&#39;oro_user_profile_view&#39;</span>
+</span></span></code></pre></div><p>Exemple de classe de page:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span> <span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\UserBundle\Tests\Behat\Page</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Behat\Element\Page</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserProfileView</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Page</span>
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      * {@inheritdoc}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      */</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">open</span>(<span style="color:#66d9ef">array</span> $parameters <span style="color:#f92672">=</span> [])
+</span></span><span style="display:flex;"><span>     {
+</span></span><span style="display:flex;"><span>         $userMenu <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">elementFactory</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;UserMenu&#39;</span>);
+</span></span><span style="display:flex;"><span>         $userMenu<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;css&#39;</span>, <span style="color:#e6db74">&#39;[data-toggle=&#34;dropdown&#34;]&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">click</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>         $userMenu<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">clickLink</span>(<span style="color:#e6db74">&#39;My User&#39;</span>);
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><p>Vous pouvez maintenant utiliser plusieurs étapes significatives:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span> <span style="color:#ae81ff">And I open User Profile View page</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">And I should be on User Profile View page</span>
+</span></span></code></pre></div></div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/oro/test/behat/behat-conventions/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Conventions</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/oro/test/behat/behat-exemples/"> <span class="d-none d-md-block">exemples</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

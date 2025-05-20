@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Installer et configurer Xdebug</title>
+
+  <meta name="generator" content="Hugo 0.147.3">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/"></a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+            <a class="dropdown-item" href="/composer">Composer</a>
+            
+            <a class="dropdown-item" href="/env-local">Environnement local</a>
+            
+            <a class="dropdown-item" href="/kubernetes">Kubernetes</a>
+            
+            <a class="dropdown-item" href="/sql">SQL</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+            
+              
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/env-local/" title="Environnement local" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/env-local/">
+    Environnement local
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/env-local/install-xdebug/" title="Installer et configurer Xdebug" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/env-local/install-xdebug/">
+    Installer et configurer Xdebug
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Installer et configurer Xdebug
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">19/05/2020</p>
+          
+          
+          <div class="content"><h1 id="1--installation-sur-le-systeme">1 : Installation sur le systeme</h1>
+<p>XDebug est une extension de PHP, qui permet le débogage de scripts.</p>
+<p>Pour installer xdebug, sur mac ou sur linux, il suffit que l&rsquo;extension Xdebug soit chargée.
+Quand vous faites un `php -v vous pouvez voir si XDebug est activé.</p>
+<p>Pour l&rsquo;installer vous pouvez suivre l&rsquo;installation par OS : <a href="https://xdebug.org/docs/install">https://xdebug.org/docs/install</a>
+Ou sinon suivre le wizard (<a href="https://xdebug.org/wizard">https://xdebug.org/wizard</a>) pour réaliser une installation a la main.</p>
+<p>L&rsquo;installation automatique va surement vous rajouter une ligne dans la config de php (fichier php.ini) dont vous pouvez
+aller checker l&rsquo;emplacement grâce à un <code>php --ini</code>.
+À vous de déplacer cette ligne dans un fichier tel que <code>ext-xdebug.ini</code> pour que ça soit plus propre.
+Pourquoi ça ? Parce que les extensions de base et même php lui meme séparent souvent la config des extensions dans des fichiers
+dédiés.
+Il faudra aller les mettre dans un dossier <code>conf.d</code> dans le repertoire de php comme ceci : <code>/usr/local/etc/php/7.3/conf.d/ext-xdebug.ini</code></p>
+<p>Bon, une fois cela fait, vous devriez voir xdebug quand vous faites un <code>php -v</code> , sinon, revérifier les étapes précédentes.</p>
+<h1 id="2--configuration-de-base-">2 : Configuration de base :</h1>
+<p>Je vous invite à utiliser cette config de base (à mettre dans le fichier de config spécifique a Xdebug) :</p>
+<pre tabindex="0"><code>zend_extension = xdebug
+xdebug.mode=debug
+xdebug.client_port=9003
+xdebug.start_with_request=yes
+xdebug.idekey=PHPSTORM
+</code></pre><h1 id="3--activation-automatique">3 : Activation automatique</h1>
+<p>Si vous avez déjà utilisé Xdebug vous savez surement qu&rsquo;elle ralentit énormément de temps d&rsquo;exécution des scripts.
+C&rsquo;est pourquoi il est nécessaire de pouvoir activer/désactiver l&rsquo;extension à la demande pour l&rsquo;utiliser uniquement au moment utile.
+Par exemple ne le lancez surtout pas durant la génération du cache, pendant un <code>composer install</code>&hellip;</p>
+<p>Là, il existe 2 solutions:</p>
+<h2 id="désactivation-par-la-config-de-php">Désactivation par la config de php</h2>
+<p>Avec cette méthode, en soi , comme pour toute extension, il suffit de commenter la fameuse ligne : <code>;zend_extension = xdebug</code></p>
+<p>Pour ça, utiliser un éditeur de texte, ou plutôt un script:</p>
+<p>Voici un exemple, à adapter selon votre OS ( surtout le sed et le dossier de php)</p>
+<h3 id="version-mac">Version Mac</h3>
+<pre tabindex="0"><code>function changexdebugscript() {
+
+alias xdebug=changexdebugscript
+
+  cat &lt;&lt; &#34;EOF&#34;
+                           _      _
+                          | |    | |
+                  __  ____| | ___| |__  _   _  __ _
+                  \ \/ / _` |/ _ \ &#39;_ \| | | |/ _` |
+                   &gt;  &lt; (_| |  __/ |_) | |_| | (_| |
+                  /_/\_\__,_|\___|_.__/ \__,_|\__, |
+                                               __/ |
+                                              |___/
+EOF
+    php=$(php -v | tail -r | tail -n 1 | cut -d &#34; &#34; -f 2 | cut -c 1-3)
+    if grep -R &#34;;\+zend_extension&#34; /usr/local/etc/php/&#34;$php&#34;/conf.d/ext-xdebug.ini
+        then
+            echo &#34;Activation de xDebug pour PHP &#34;$php
+            sed -i -e &#34;s/;zend_extension/zend_extension/g&#34; /usr/local/etc/php/&#34;$php&#34;/conf.d/ext-xdebug.ini
+        else
+            echo &#34;Désactivation de xDebug pour PHP &#34;$php
+            sed -i -e &#34;s/zend_extension/;zend_extension/g&#34; /usr/local/etc/php/&#34;$php&#34;/conf.d/ext-xdebug.ini
+    fi
+}
+</code></pre><h3 id="version-linux">Version Linux</h3>
+<pre tabindex="0"><code>function changexdebugscript() {
+
+alias xdebug=changexdebugscript
+
+cat &lt;&lt; &#34;EOF&#34;
+                           _      _
+                          | |    | |
+                  __  ____| | ___| |__  _   _  __ _
+                  \ \/ / _` |/ _ \ &#39;_ \| | | |/ _` |
+                   &gt;  &lt; (_| |  __/ |_) | |_| | (_| |
+                  /_/\_\__,_|\___|_.__/ \__,_|\__, |
+                                               __/ |
+                                              |___/
+EOF
+   php=$(php -v | tail -n 5 | cut -d &#34; &#34; -f 2 | cut -c 1-3 | head -n 1)
+    if grep -R &#34;;\+zend_extension&#34; /etc/php/&#34;$php&#34;/cli/conf.d/20-xdebug.ini
+        then
+            echo &#34;Activation de xDebug pour PHP &#34;$php
+            sed  -e &#34;s/;zend_extension/zend_extension/g&#34; /etc/php/&#34;$php&#34;/cli/conf.d/20-xdebug.ini | sudo tee  /etc/php/&#34;$php&#34;/cli/conf.d/20-xdebug.ini
+        else
+            echo &#34;Désactivation de xDebug pour PHP &#34;$php
+            sed  -e &#34;s/zend_extension/;zend_extension/g&#34; /etc/php/&#34;$php&#34;/cli/conf.d/20-xdebug.ini | sudo tee  /etc/php/&#34;$php&#34;/cli/conf.d/20-xdebug.ini
+    fi
+}
+</code></pre><p>De cette manière, peu importe la version de php en cours, la commande xdebug vas s&rsquo;occuper de désactiver/ activer xdebug</p>
+<h2 id="désactivation-par-lide">Désactivation par l&rsquo;IDE</h2>
+<p>Si votre IDE, le permet, vous pouvez désactiver le fait qu&rsquo;il écoute sur le port de xdebug à la volée :
+<img src="/env-local/install-xdebug/phpstorm-listening-for-php-debug-connections.jpg" alt="40% center"></p>
+<p>Normalement, vous étes censés obtenir des perfs normales si vous désactivez xdebug de cette façon, mais de ma propre expérience.
+Il arrive que sur de très gros script, xdebug ralentisse quand même PHP. À vous d&rsquo;utiliser la méthode que vous préférez.</p>
+<h1 id="utilisation">Utilisation</h1>
+<p>Et bien là ça dépend de votre IDE, avec Phpstorm vous devez configurer le port dans la config &lsquo;Xdebug&rsquo; dans les paramètres.
+Puis lancer le script, page web, ou utilisez les <code>run configurations</code>.</p>
+<p><a href="https://www.jetbrains.com/help/phpstorm/debugging-with-phpstorm-ultimate-guide.html#debugging-a-php-cli-script">https://www.jetbrains.com/help/phpstorm/debugging-with-phpstorm-ultimate-guide.html#debugging-a-php-cli-script</a>
+<img src="/env-local/install-xdebug/config-phpstorm.png" alt="40% center"></p>
+<h2 id="avec-un-navigateur-web">Avec un navigateur web</h2>
+<p>Si vous vous débugger du code dans le navigateur, installer l&rsquo;extension Xdebug helper puis configurer la avec votre IDEKEY :
+<img src="/env-local/install-xdebug/xdebug-helper.png" alt="40% center"></p>
+<h1 id="faq-">FAQ :</h1>
+<ul>
+<li>
+<p>Q : J&rsquo;ai désactivé xdebug mais mon appli est tres lente</p>
+</li>
+<li>
+<p>R : Il faut redémarrer le serveur pour que PHP prenne en compte le changement de config.</p>
+</li>
+<li>
+<p>Q : Je ne sais pas ou est situé la config php pour mettre Xdebug</p>
+</li>
+<li>
+<p>R : Utilisez la commande php &ndash;ini pour localiser la config ou utilisez l&rsquo;outil en ligne (<a href="https://xdebug.org/wizard">https://xdebug.org/wizard</a>)</p>
+</li>
+<li>
+<p>Q : Mon IDE ne s&rsquo;arrête pas sur les points d&rsquo;arret.</p>
+</li>
+<li>
+<p>R : Vérifier la config de php, vérifier le port utilisé par l&rsquo;ide ( le meme que la config).Aussi que votre IDE écoute Xdebug.
+Vérifiez aussi le comportement le fonctionnement en CLI ou en WEB.</p>
+</li>
+</ul>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/env-local/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Environnement local</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/oro/"> <span class="d-none d-md-block">Oro</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

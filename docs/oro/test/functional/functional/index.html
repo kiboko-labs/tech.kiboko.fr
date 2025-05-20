@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+  <meta charset="utf-8">
+  <title>Tests fonctionnel avec PHPUnit</title>
+
+  <meta name="generator" content="Hugo 0.147.3">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color: #222;
+    --body-color:#ddd;
+    --text-color:#000;
+    --text-color-dark:#333;
+    --white-color:#eee;
+    --light-color:#ddd;
+    --font-family:Libre Franklin, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <div class="navbar-brand">
+          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <span class="title">Tech.Kiboko.fr</span>
+      </div>
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/"></a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/kibokast">Kibokast</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/oro">Oro</a>
+            
+            <a class="dropdown-item" href="/docker">Docker</a>
+            
+            <a class="dropdown-item" href="/autre">Autre</a>
+            
+            <a class="dropdown-item" href="/composer">Composer</a>
+            
+            <a class="dropdown-item" href="/env-local">Environnement local</a>
+            
+            <a class="dropdown-item" href="/kubernetes">Kubernetes</a>
+            
+            <a class="dropdown-item" href="/sql">SQL</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="http://kiboko.fr/fr/contactez-nous/">Contactez-nous</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="list-styled">
+            
+            <a class="back-btn" href="/"></a>
+            
+              
+            
+              
+            
+              
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/" title="Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/">
+    Oro
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/" title="Back" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/back/">
+    Back
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/order-field-in-migration/" title="Changer l&#39;ordre d&#39;affichage des champs dans les migrations" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/back/order-field-in-migration/">
+    Changer l&#39;ordre d&#39;affichage des champs dans les migrations
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/back/extend-entity/" title="Etendre une entité" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/back/extend-entity/">
+    Etendre une entité
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/" title="Datagrid" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/">
+    Datagrid
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/afficher-dynamiquement-une-action/" title="Afficher dynamiquement une action de datagrid" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/afficher-dynamiquement-une-action/">
+    Afficher dynamiquement une action de datagrid
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/datagrid/mass-actions-product-grid/" title="Ajouter une mass action dans la grille produit" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/datagrid/mass-actions-product-grid/">
+    Ajouter une mass action dans la grille produit
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/" title="Front" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/">
+    Front
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/add-consent-on-registration/" title="Ajouter  un Consent sur la page d&#39;inscription" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/add-consent-on-registration/">
+    Ajouter  un Consent sur la page d&#39;inscription
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/front/create-form-frontend/" title="Creer un formulaite en front" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/front/create-form-frontend/">
+    Creer un formulaite en front
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/select-type-in-oro-config/" title="Utiliser un champ select d&#39;entité dans la config Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/select-type-in-oro-config/">
+    Utiliser un champ select d&#39;entité dans la config Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/" title="Tester avec Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/">
+    Tester avec Oro
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/" title="Tests Behat" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/">
+    Tests Behat
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-autoloading/" title="Autoloading" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-autoloading/">
+    Autoloading
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-configuration/" title="Configuration" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-configuration/">
+    Configuration
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-conventions/" title="Conventions" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-conventions/">
+    Conventions
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-elements-form/" title="Elements form" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-elements-form/">
+    Elements form
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-exemples/" title="exemples" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-exemples/">
+    exemples
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-fixtures/" title="Fixtures" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-fixtures/">
+    Fixtures
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-isolation/" title="Isolation" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-isolation/">
+    Isolation
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-symfony/" title="Symfony" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-symfony/">
+    Symfony
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/behat/behat-tips/" title="Tips" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/behat/behat-tips/">
+    Tips
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/functional/functional/" title="Tests fonctionnel avec PHPUnit" class="sidelist
+  active">
+  <a href="http://tech.kiboko.fr/oro/test/functional/functional/">
+    Tests fonctionnel avec PHPUnit
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/test/javascript/javascript/" title="Tests unitaire en Javascript" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/test/javascript/javascript/">
+    Tests unitaire en Javascript
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/creer-une-application-frontend-sur-oroplatform/" title="Créer une application frontend sur OroPlatform" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/creer-une-application-frontend-sur-oroplatform/">
+    Créer une application frontend sur OroPlatform
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/block-types/" title="Les types de blocks dans Oro" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/block-types/">
+    Les types de blocks dans Oro
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/commandes-utiles/" title="Commandes utiles" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/commandes-utiles/">
+    Commandes utiles
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://tech.kiboko.fr/oro/sql/" title="" class="sidelist
+  ">
+  <a href="http://tech.kiboko.fr/oro/sql/">
+    
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5 category-title">
+              
+              Tests fonctionnel avec PHPUnit
+          </h2>
+          <p></p>
+          
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">01/12/2020</p>
+          
+          
+          <div class="content"><h1 id="tests-fonctionnels">Tests fonctionnels</h1>
+<p>Les tests fonctionnels permettent de vérifier l’intégration des différentes couches d’une application.</p>
+<p>Dans cet article, vous apprendrez comment vous pouvez améliorer l’expérience de la rédaction de tests fonctionnels avec
+Oroplatform. Il est recommandé de lire la <a href="https://symfony.com/doc/4.4/testing.html#functional-tests">Doc Symfony</a>
+concernant les tests avant de continuer. Vous devriez également connaître <a href="https://phpunit.de/getting-started/phpunit-9.html">PhpUnit</a></p>
+<h2 id="quand-rédiger-les-tests-fonctionnels">Quand rédiger les tests fonctionnels</h2>
+<p>Les tests fonctionnels sont généralement rédigés pour les :</p>
+<p>Contrôleurs
+Commandes
+Dépôts
+Autres services</p>
+<p>L’objectif des tests fonctionnels n’est pas de tester des classes séparées (tests unitaires), mais de tester
+l’intégration des différentes parties d’une application.</p>
+<p>Ajouter des tests fonctionnels pour compléter les tests unitaires pour les raisons suivantes :</p>
+<ul>
+<li>Vous pouvez tester le système multi-composants et vous assurer qu’il fonctionne comme un tout.</li>
+<li>Vous pouvez éviter la simulation(mocking) de l’interface compliquée ou de la couche de manipulation de données
+(comme les classes de doctrine pour construire une requête).
+Les tests unitaires peuvent réussir même si les fonctionnalités ne fonctionnent pas correctement.</li>
+</ul>
+<h2 id="environnement-de-test">Environnement de test</h2>
+<h3 id="initialisation-du-client-et-avertissement-quand-aux-chargement-des-fixtures">Initialisation du client et avertissement quand aux chargement des fixtures</h3>
+<p>Pour améliorer la performance de l’exécution du test, l’initialisation d’un client n’est effectuée qu’une seule fois par
+cas de test par défaut. Cela signifie que le noyau de l’application Symfony sera démarré une fois par cas de test.
+Les fixtures sont également chargés une seule fois par cas de test par défaut. D’une part, initialiser et charger
+des fixtures une fois par cas de test augmente la performance de l’exécution de test mais peut aussi causer des bugs
+car  l’état des fixtures et du noyau (et par conséquent, le conteneur de service) sera partagé par défaut entre les
+méthodes de test de cas de test séparés. Assurez-vous de réinitialiser cet état si nécessaire.</p>
+<h3 id="configuration-dun-environnement-de-test">Configuration d&rsquo;un environnement de test</h3>
+<p>Vous devez configurer les paramètres suivants pour l’environnement de test :</p>
+<ol>
+<li>
+<p>Créer une base de données distincte pour les tests (p. ex., ajouter le suffixe « _test ») :</p>
+</li>
+<li>
+<p>Configurez les paramètres hôte, port et authentification pour la base de données, le serveur de messagerie et le
+serveur de socket web dans le fichier parameters_test.yml :</p>
+</li>
+</ol>
+<p>Par exemple :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># config/parameters_test.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">parameters</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">database_host</span>: <span style="color:#ae81ff">127.0.0.1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">database_port</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">database_name</span>: <span style="color:#ae81ff">crm_test</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">database_user</span>: <span style="color:#ae81ff">root</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">database_password</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mailer_transport</span>: <span style="color:#ae81ff">smtp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mailer_host</span>: <span style="color:#ae81ff">127.0.0.1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mailer_port</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mailer_encryption</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mailer_user</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mailer_password</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">session_handler</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">locale</span>: <span style="color:#ae81ff">en</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">secret</span>: <span style="color:#ae81ff">ThisTokenIsNotSoSecretChangeIt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">installed</span>: <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><ol start="3">
+<li>Installez l&rsquo;application dans un environnement de test</li>
+</ol>
+<pre tabindex="0"><code>bin/console oro:install \
+ --env=test  \
+ --organization-name=Oro \
+ --user-name=admin \
+ --user-email=admin@example.com \
+ --user-firstname=John \
+ --user-lastname=Doe \
+ --user-password=admin \
+ --sample-data=n \
+ --application-url=http://localhost
+</code></pre><p>Lors de l’installation, la structure de la base de données est configurée et les fixtures standard sont chargés.</p>
+<ol start="4">
+<li>Exécuter les tests en utilisant phpunit avec l’option –testsuite appropriée (unit ou functionnal).</li>
+</ol>
+<p>ATTENTION
+Actuellement, l’exécution de différents types de tests automatisés ensemble n’est pas prise en charge.
+Il est donc fortement déconseillé d’exécuter des tests unitaires et des tests fonctionnels côte à côte en une seule exécution, car cela produit des erreurs.
+Les tests unitaires créent des objets fictifs qui interfèrent ultérieurement avec l’exécution des tests fonctionnels
+et créent une ambiguïté inutile. Il est possible de désactiver les tests unitaires au démarrage du test à l’aide de l’option testsuite :</p>
+<p>$ php bin/phpunit -c . / &ndash;testsuite=functional
+$ php bin/phpunit -c . / &ndash;testsuite=unit</p>
+<h2 id="database-isolation">Database Isolation</h2>
+<p>L&rsquo;annotation @dbIsolationPerTest ajoute une transaction qui sera effectuée avant le début d’un test et qui est annulée lorsqu’un test se termine.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBundle\Tests\Functional</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @dbIsolationPerTest
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FooBarTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="chargement-des-data-fixtures-">Chargement des data fixtures :</h2>
+<p>Utilisez la méthode loadFixtures() pour charger des données dans un test :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBundle\Tests\Functional</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FooBarTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>(); <span style="color:#75715e">// must be called before!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// loading fixtures will be executed once, use the second parameter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// $force = true to force the loading
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">loadFixtures</span>([
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadFooData&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;@OroFooBarBundle/Tests/Functional/DataFixtures/bar_data.yml&#39;</span>,
+</span></span><span style="display:flex;"><span>        ]);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Un fixture doit être soit un nom de classe qui implémente Doctrine\Common\DataFixtures\FixtureInterface , soit un chemin vers le fichier nelmio/alice.</p>
+<p>Un exemple de fixture :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\DataFixtures\AbstractFixture</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\Persistence\ObjectManager</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\FooBarBundle\Entity\FooEntity</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LoadFooData</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractFixture</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">load</span>(<span style="color:#a6e22e">ObjectManager</span> $manager)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $entity <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FooEntity</span>();
+</span></span><span style="display:flex;"><span>        $manager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>($entity);
+</span></span><span style="display:flex;"><span>        $manager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    <span style="color:#75715e"># src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/bar_data.yml</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">Oro\Bundle\FooBarBundle\Entity\BarEntity</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">bar</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">name</span>: <span style="color:#ae81ff">test</span>
+</span></span></code></pre></div><p>Vous pouvez également implémenter l’interfaceDoctrine\Common\DataFixtures\DependentFixtureInterface qui permet de charger des fixtures en fonction des autres fixtures déjà chargées :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\DataFixtures\DependentFixtureInterface</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\DataFixtures\AbstractFixture</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\Persistence\ObjectManager</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LoadFooData</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractFixture</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">DependentFixtureInterface</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">load</span>(<span style="color:#a6e22e">ObjectManager</span> $manager)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// load fixtures
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDependencies</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [<span style="color:#e6db74">&#39;Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData&#39;</span>];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>De plus, vous pouvez utiliser des entités spécifiques aux références à partir de fixtures, par exemple :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\Persistence\ObjectManager</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\DataFixtures\DependentFixtureInterface</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\DataFixtures\AbstractFixture</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\FooBarBundle\Entity\FooEntity</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LoadFooData</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractFixture</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">DependentFixtureInterface</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">load</span>(<span style="color:#a6e22e">ObjectManager</span> $manager)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $entity <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FooEntity</span>();
+</span></span><span style="display:flex;"><span>        $manager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>($entity);
+</span></span><span style="display:flex;"><span>        $manager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addReference</span>(<span style="color:#e6db74">&#39;my_entity&#39;</span>, $entity);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDependencies</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [<span style="color:#e6db74">&#39;Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData&#39;</span>];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Maintenant, vous pouvez référencer le fixture par le nom configuré dans votre test :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBundle\Tests\Functional</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FooBarTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> $entity;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>();
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">loadFixtures</span>(<span style="color:#e6db74">&#39;Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadFooData&#39;</span>);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">entity</span> <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getReference</span>(<span style="color:#e6db74">&#39;my_entity&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h3 id="notes-">NOTES :</h3>
+<ol>
+<li>Par défaut, le gestionnaire d’entités est effacé après le chargement de chaque fixture. Pour éviter le nettoyage une fixture peut implémenterOro\Bundle\TestFrameworkBundle\Test\DataFixtures\InitialFixtureInterface.</li>
+<li>Parfois, vous avez besoin d’une référence à l’Organization, d&rsquo;un User ou d&rsquo;une BusinessUnit. Les fixtures suivants peuvent être utilisés pour les charger :</li>
+</ol>
+<ul>
+<li>Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadOrganization</li>
+<li>Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadUser</li>
+<li>Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadBusinessUnit</li>
+</ul>
+<h2 id="ecrire-des-test-fonctionnel-">Ecrire des test fonctionnel :</h2>
+<p>Pour créer un test fonctionel :</p>
+<ol>
+<li>Etendez la classe WebTestCase</li>
+<li>Préparez une instance de la classe Client</li>
+<li>Préparez vos fixtures ( Optionnel)</li>
+<li>Préparez le container</li>
+<li>Appelez les fonctionnalitées du test
+6 Vérifiez le résultat</li>
+</ol>
+<h3 id="tests-fonctionnel-pour-les-controlleurs-">Tests fonctionnel pour les controlleurs :</h3>
+<p>Un test fonctionnel pour un contrôleur se compose de quelques étapes:</p>
+<ol>
+<li>Faire une requete</li>
+<li>Tester la réponse</li>
+<li>Cliquez sur un lien ou soumettez un formulaire</li>
+<li>Test the response</li>
+<li>Nettoyer et répéter</li>
+</ol>
+<h3 id="exemples-de-prépraration-du-client-">Exemples de prépraration du client :</h3>
+<p>L’initialisation simple fonctionne pour tester les commandes et les services lorsque l’authentification n’est pas nécessaire.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBundle\Tests\Functional</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FooBarTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>(); <span style="color:#75715e">// initialization occurres only once per test class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// now varialbe $this-&gt;client is available
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Initialisation avec les options Appkernel personnalisées :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBundle\Tests\Functional</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FooBarTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// first array is Kernel options
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>([<span style="color:#e6db74">&#39;debug&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>]);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Initialisation avec authentification :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBundle\Tests\Functional</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FooBarTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// second array is service options
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// this example will create client with server options [&#39;PHP_AUTH_USER&#39; =&gt; &#39;admin@example.com&#39;, &#39;PHP_AUTH_PW&#39; =&gt; &#39;admin&#39;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// make sure you loaded fixture with test user
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// bin/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures src/Oro/src/Oro/Bundle/TestFrameworkBundle/Fixtures
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>([], $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">generateBasicAuthHeader</span>());
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// init client with custom username and password
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>([], $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">generateBasicAuthHeader</span>(<span style="color:#e6db74">&#39;custom_username&#39;</span>, <span style="color:#e6db74">&#39;custom_password&#39;</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="types-de-tests-fonctionnels">Types de tests fonctionnels</h2>
+<h3 id="tester-les-controllers">Tester les controllers</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\TaskBundle\Tests\Functional\Controller</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @outputBuffering enabled
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TaskControllersTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>([], $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">generateBasicAuthHeader</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testCreate</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $crawler <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">request</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getUrl</span>(<span style="color:#e6db74">&#39;orocrm_task_create&#39;</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $form <span style="color:#f92672">=</span> $crawler<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">selectButton</span>(<span style="color:#e6db74">&#39;Save and Close&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">form</span>();
+</span></span><span style="display:flex;"><span>        $form[<span style="color:#e6db74">&#39;orocrm_task[subject]&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;New task&#39;</span>;
+</span></span><span style="display:flex;"><span>        $form[<span style="color:#e6db74">&#39;orocrm_task[description]&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;New description&#39;</span>;
+</span></span><span style="display:flex;"><span>        $form[<span style="color:#e6db74">&#39;orocrm_task[dueDate]&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2014-03-04T20:00:00+0000&#39;</span>;
+</span></span><span style="display:flex;"><span>        $form[<span style="color:#e6db74">&#39;orocrm_task[owner]&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1&#39;</span>;
+</span></span><span style="display:flex;"><span>        $form[<span style="color:#e6db74">&#39;orocrm_task[reporter]&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">followRedirects</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>        $crawler <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">submit</span>($form);
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getResponse</span>();
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertHtmlResponseStatusCodeEquals</span>($result, <span style="color:#ae81ff">200</span>);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertContains</span>(<span style="color:#e6db74">&#39;Task saved&#39;</span>, $crawler<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">html</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @depends testCreate
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testUpdate</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $response <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">requestGrid</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;tasks-grid&#39;</span>,
+</span></span><span style="display:flex;"><span>            [<span style="color:#e6db74">&#39;tasks-grid[_filter][reporterName][value]&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;John Doe&#39;</span>]
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getJsonResponseContent</span>($response, <span style="color:#ae81ff">200</span>);
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> <span style="color:#a6e22e">reset</span>($result[<span style="color:#e6db74">&#39;data&#39;</span>]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $crawler <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">request</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;GET&#39;</span>,
+</span></span><span style="display:flex;"><span>            $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getUrl</span>(<span style="color:#e6db74">&#39;orocrm_task_update&#39;</span>, [<span style="color:#e6db74">&#39;id&#39;</span> <span style="color:#f92672">=&gt;</span> $result[<span style="color:#e6db74">&#39;id&#39;</span>]])
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $form <span style="color:#f92672">=</span> $crawler<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">selectButton</span>(<span style="color:#e6db74">&#39;Save and Close&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">form</span>();
+</span></span><span style="display:flex;"><span>        $form[<span style="color:#e6db74">&#39;orocrm_task[subject]&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Task updated&#39;</span>;
+</span></span><span style="display:flex;"><span>        $form[<span style="color:#e6db74">&#39;orocrm_task[description]&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Description updated&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">followRedirects</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>        $crawler <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">submit</span>($form);
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getResponse</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertHtmlResponseStatusCodeEquals</span>($result, <span style="color:#ae81ff">200</span>);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertContains</span>(<span style="color:#e6db74">&#39;Task saved&#39;</span>, $crawler<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">html</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @depends testUpdate
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testView</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $response <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">requestGrid</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;tasks-grid&#39;</span>,
+</span></span><span style="display:flex;"><span>            [<span style="color:#e6db74">&#39;tasks-grid[_filter][reporterName][value]&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;John Doe&#39;</span>]
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getJsonResponseContent</span>($response, <span style="color:#ae81ff">200</span>);
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> <span style="color:#a6e22e">reset</span>($result[<span style="color:#e6db74">&#39;data&#39;</span>]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">request</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;GET&#39;</span>,
+</span></span><span style="display:flex;"><span>            $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getUrl</span>(<span style="color:#e6db74">&#39;orocrm_task_view&#39;</span>, [<span style="color:#e6db74">&#39;id&#39;</span> <span style="color:#f92672">=&gt;</span> $result[<span style="color:#e6db74">&#39;id&#39;</span>]])
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getResponse</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertHtmlResponseStatusCodeEquals</span>($result, <span style="color:#ae81ff">200</span>);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertContains</span>(<span style="color:#e6db74">&#39;Task updated - Tasks - Activities&#39;</span>, $result<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getContent</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @depends testUpdate
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testIndex</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">request</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getUrl</span>(<span style="color:#e6db74">&#39;orocrm_task_index&#39;</span>));
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getResponse</span>();
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertHtmlResponseStatusCodeEquals</span>($result, <span style="color:#ae81ff">200</span>);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertContains</span>(<span style="color:#e6db74">&#39;Task updated&#39;</span>, $result<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getContent</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="tester-les-acls-dans-les-controlleurs-">Tester les ACLs dans les controlleurs :</h3>
+<p>Dans cet exemple, un utilisateur sans autorisations suffisantes essaie d’accéder à une action du contrôleur. La méthode assertHtmlResponseStatusCodeEquals()
+est utilisée pour s’assurer que l’accès à la ressource demandée est refusé à l’utilisateur :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\UserBundle\Tests\Functional</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\UserBundle\Tests\Functional\DataFixtures\LoadUserData</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @outputBuffering enabled
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UsersTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>();
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">loadFixtures</span>([<span style="color:#e6db74">&#39;Oro\Bundle\UserBundle\Tests\Functional\API\DataFixtures\LoadUserData&#39;</span>]);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testUsersIndex</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">request</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;GET&#39;</span>,
+</span></span><span style="display:flex;"><span>            $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getUrl</span>(<span style="color:#e6db74">&#39;oro_user_index&#39;</span>),
+</span></span><span style="display:flex;"><span>            [],
+</span></span><span style="display:flex;"><span>            [],
+</span></span><span style="display:flex;"><span>            $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">generateBasicAuthHeader</span>(<span style="color:#a6e22e">LoadUserData</span><span style="color:#f92672">::</span><span style="color:#a6e22e">USER_NAME</span>, <span style="color:#a6e22e">LoadUserData</span><span style="color:#f92672">::</span><span style="color:#a6e22e">USER_PASSWORD</span>)
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getResponse</span>();
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertHtmlResponseStatusCodeEquals</span>($result, <span style="color:#ae81ff">403</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testGetUsersAPI</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">request</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;GET&#39;</span>,
+</span></span><span style="display:flex;"><span>            $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getUrl</span>(<span style="color:#e6db74">&#39;oro_api_get_users&#39;</span>),
+</span></span><span style="display:flex;"><span>            [<span style="color:#e6db74">&#39;limit&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">100</span>],
+</span></span><span style="display:flex;"><span>            [],
+</span></span><span style="display:flex;"><span>            $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">generateWsseAuthHeader</span>(<span style="color:#a6e22e">LoadUserData</span><span style="color:#f92672">::</span><span style="color:#a6e22e">USER_NAME</span>, <span style="color:#a6e22e">LoadUserData</span><span style="color:#f92672">::</span><span style="color:#a6e22e">USER_API_KEY</span>)
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">client</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getResponse</span>();
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertJsonResponseStatusCodeEquals</span>($result, <span style="color:#ae81ff">403</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Voici un exemple de fixture qui ajoute un utilisateur sans permission :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">/</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">/</span><span style="color:#a6e22e">Oro</span><span style="color:#f92672">/</span><span style="color:#a6e22e">Bundle</span><span style="color:#f92672">/</span><span style="color:#a6e22e">UserBundle</span><span style="color:#f92672">/</span><span style="color:#a6e22e">Tests</span><span style="color:#f92672">/</span><span style="color:#a6e22e">Functional</span><span style="color:#f92672">/</span><span style="color:#a6e22e">DataFixtures</span><span style="color:#f92672">/</span><span style="color:#a6e22e">LoadUserData</span><span style="color:#f92672">.</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\UserBundle\Tests\Functional\DataFixtures</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\DataFixtures\AbstractFixture</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\Common\Persistence\ObjectManager</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Symfony\Component\DependencyInjection\ContainerAwareInterface</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Symfony\Component\DependencyInjection\ContainerInterface</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\UserBundle\Entity\Role</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\UserBundle\Entity\UserApi</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LoadUserData</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractFixture</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">ContainerAwareInterface</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">USER_NAME</span>     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;user_wo_permissions&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">USER_API_KEY</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;user_api_key&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">USER_PASSWORD</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;user_password&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> $container;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setContainer</span>(<span style="color:#a6e22e">ContainerInterface</span> $container <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">container</span> <span style="color:#f92672">=</span> $container;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">load</span>(<span style="color:#a6e22e">ObjectManager</span> $manager)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">/** @var \Oro\Bundle\UserBundle\Entity\UserManager $userManager */</span>
+</span></span><span style="display:flex;"><span>        $userManager <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">container</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;oro_user.manager&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Find role for user to able to authenticate in test.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// You can use any available role that you want dependently on test logic.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $role <span style="color:#f92672">=</span> $manager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getRepository</span>(<span style="color:#a6e22e">Role</span><span style="color:#f92672">::</span><span style="color:#a6e22e">class</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">findOneBy</span>([<span style="color:#e6db74">&#39;role&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;IS_AUTHENTICATED_ANONYMOUSLY&#39;</span>]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Creating new user
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $user <span style="color:#f92672">=</span> $userManager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">createUser</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Creating API entity for user, we will reference it in testGetUsersAPI method,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// if you are not going to test API you can skip it
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $api <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">UserApi</span>();
+</span></span><span style="display:flex;"><span>        $api<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setApiKey</span>(<span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">USER_API_KEY</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setUser</span>($user);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Creating user
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $user
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setUsername</span>(<span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">USER_NAME</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setPlainPassword</span>(<span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">USER_PASSWORD</span>) <span style="color:#75715e">// This value is referenced in testUsersIndex method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setFirstName</span>(<span style="color:#e6db74">&#39;Simple&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setLastName</span>(<span style="color:#e6db74">&#39;User&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addRole</span>($role)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setEmail</span>(<span style="color:#e6db74">&#39;test@example.com&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setApi</span>($api)
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setSalt</span>(<span style="color:#e6db74">&#39;&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Handle password encoding
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $userManager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">updatePassword</span>($user);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $manager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>($user);
+</span></span><span style="display:flex;"><span>        $manager<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="tester-les-commandes-">Tester les commandes :</h3>
+<p>Lorsque Oroplatform est installé, vous pouvez tester les commandes en utilisant la méthode runCommand()
+de la classe WebTestCase. Cette méthode exécute une commande avec des paramètres donnés et retourne sa sortie
+sous forme de chaîne. Par exemple, voyez à quoi ressemble le test pour la classe UpdateSchemaDoctrineListener du SearchBundle :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\SearchBundle\Tests\Functional\EventListener</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UpdateSchemaListenerTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @dataProvider commandOptionsProvider
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testCommand</span>($commandName, <span style="color:#66d9ef">array</span> $params, $expectedContent)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">runCommand</span>($commandName, $params);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertContains</span>($expectedContent, $result);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">commandOptionsProvider</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;otherCommand&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;commandName&#39;</span>     <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;doctrine:mapping:info&#39;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;params&#39;</span>          <span style="color:#f92672">=&gt;</span> [],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;expectedContent&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;OK&#39;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;commandWithoutOption&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;commandName&#39;</span>     <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;doctrine:schema:update&#39;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;params&#39;</span>          <span style="color:#f92672">=&gt;</span> [],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;expectedContent&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Please run the operation by passing one - or both - of the following options:&#39;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;commandWithAnotherOption&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;commandName&#39;</span>     <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;doctrine:schema:update&#39;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;params&#39;</span>          <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;--dump-sql&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">true</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;expectedContent&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;ALTER TABLE&#39;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;commandWithForceOption&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;commandName&#39;</span>     <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;doctrine:schema:update&#39;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;params&#39;</span>          <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;--force&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">true</span>],
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;expectedContent&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Schema update and create index completed&#39;</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        ];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="voir-aussi">VOIR AUSSI</h3>
+<p>Lisez les <a href="https://symfony.com/doc/master/components/console/introduction.html#testing-commands">Test des commandes</a>
+dans la documentation officielle pour plus d’informations sur la façon de tester les commandes dans une application Symfony.</p>
+<h3 id="tester-les-services-ou-les-repositories">Tester les services ou les Repositories</h3>
+<p>Pour tester des services ou des dépôts, vous pouvez accéder au conteneur de service via la méthode getContainer() :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// src/Oro/Bundle/FooBarBundle/Tests/Functional/FooBarTest.php
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\FooBarBundle\Tests\Functional</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FooBarTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> $repositoryOrService;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setUp</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">initClient</span>();
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">loadFixtures</span>([<span style="color:#e6db74">&#39;Oro\Bundle\FooBarBundle\Tests\Functional\API\DataFixtures\LoadFooBarData&#39;</span>]);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">repositoryOrService</span> <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getContainer</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;repository_or_service_id&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testMethod</span>($commandName, <span style="color:#66d9ef">array</span> $params, $expectedContent)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $expected <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;test&#39;</span>;
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertEquals</span>($expected, $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">repositoryOrService</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">callTestMethod</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h2 id="example-de-test-fonctionnel-">Example de test fonctionnel :</h2>
+<p>Ceci est un exemple de la façon dont vous pouvez écrire un test d’intégration pour une classe qui utilise l’ORM de doctrine
+sans moquer ses classes et en utilisant de vrais services de Doctrine :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">Oro\Bundle\BatchBundle\Tests\Functional\ORM\QueryBuilder</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\ORM\Query\Expr\Join</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\ORM\QueryBuilder</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Doctrine\ORM\EntityManager</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\BatchBundle\ORM\QueryBuilder\CountQueryBuilderOptimizer</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Oro\Bundle\TestFrameworkBundle\Test\WebTestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CountQueryBuilderOptimizerTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">WebTestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @dataProvider getCountQueryBuilderDataProvider
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param QueryBuilder $queryBuilder
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param string $expectedDql
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testGetCountQueryBuilder</span>(<span style="color:#a6e22e">QueryBuilder</span> $queryBuilder, $expectedDql)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $optimizer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">CountQueryBuilderOptimizer</span>();
+</span></span><span style="display:flex;"><span>        $countQb <span style="color:#f92672">=</span> $optimizer<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getCountQueryBuilder</span>($queryBuilder);
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertInstanceOf</span>(<span style="color:#e6db74">&#39;Doctrine\ORM\QueryBuilder&#39;</span>, $countQb);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Check for expected DQL
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertEquals</span>($expectedDql, $countQb<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getQuery</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getDQL</span>());
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Check that Optimized DQL can be converted to SQL
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertNotEmpty</span>($countQb<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getQuery</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getSQL</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @return array
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getCountQueryBuilderDataProvider</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">initClient</span>();
+</span></span><span style="display:flex;"><span>        $em <span style="color:#f92672">=</span> <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">getContainer</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;doctrine.orm.entity_manager&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;simple&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;queryBuilder&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createQueryBuilder</span>($em)
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">from</span>(<span style="color:#e6db74">&#39;OroUserBundle:User&#39;</span>, <span style="color:#e6db74">&#39;u&#39;</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">select</span>([<span style="color:#e6db74">&#39;u.id&#39;</span>, <span style="color:#e6db74">&#39;u.username&#39;</span>]),
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;expectedDQL&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;SELECT u.id FROM OroUserBundle:User u&#39;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;group_test&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;queryBuilder&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createQueryBuilder</span>($em)
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">from</span>(<span style="color:#e6db74">&#39;OroUserBundle:User&#39;</span>, <span style="color:#e6db74">&#39;u&#39;</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">select</span>([<span style="color:#e6db74">&#39;u.id&#39;</span>, <span style="color:#e6db74">&#39;u.username as uName&#39;</span>])
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">groupBy</span>(<span style="color:#e6db74">&#39;uName&#39;</span>),
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;expectedDQL&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;SELECT u.id, u.username as uName FROM OroUserBundle:User u GROUP BY uName&#39;</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @param EntityManager $entityManager
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @return QueryBuilder
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createQueryBuilder</span>(<span style="color:#a6e22e">EntityManager</span> $entityManager)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">QueryBuilder</span>($entityManager);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="attention">Attention</h3>
+<p>Si votre classe est responsable de la récupération des données, il est préférable de charger les fixtures et de les récupérer
+en utilisant une classe de test, puis d’affirmer que les résultats sont valides. Vérifier le DQL suffit dans ce cas car c’est la seule responsabilité de cette classe de modifier la requête.</p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://tech.kiboko.fr/oro/test/behat/behat-tips/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Tips</span></a>
+            
+            
+            <a class="nav nav-next" href="http://tech.kiboko.fr/oro/test/javascript/javascript/"> <span class="d-none d-md-block">Tests unitaire en Javascript</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <!-- legal notice -->
+          <a href="/legal-notice">
+            <p class="mb-md-0 mb-4">Mentions légales</p>
+          </a>
+        <!-- /legal notice -->
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline list-social">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/kibokolabs"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/kiboko-labs"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.linkedin.com/company/kiboko-sas"><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="http://kiboko.fr/fr/"><i class="ti-wordpress"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Environnement local on Tech.Kiboko.fr</title>
+    <link>http://tech.kiboko.fr/env-local/</link>
+    <description>Recent content in Environnement local on Tech.Kiboko.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://tech.kiboko.fr/env-local/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

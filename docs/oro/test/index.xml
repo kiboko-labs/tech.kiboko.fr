@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tester avec Oro on Tech.Kiboko.fr</title>
+    <link>http://tech.kiboko.fr/oro/test/</link>
+    <description>Recent content in Tester avec Oro on Tech.Kiboko.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://tech.kiboko.fr/oro/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tests fonctionnel avec PHPUnit</title>
+      <link>http://tech.kiboko.fr/oro/test/functional/functional/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://tech.kiboko.fr/oro/test/functional/functional/</guid>
+      <description>&lt;h1 id=&#34;tests-fonctionnels&#34;&gt;Tests fonctionnels&lt;/h1&gt;&#xA;&lt;p&gt;Les tests fonctionnels permettent de vérifier l’intégration des différentes couches d’une application.&lt;/p&gt;&#xA;&lt;p&gt;Dans cet article, vous apprendrez comment vous pouvez améliorer l’expérience de la rédaction de tests fonctionnels avec&#xA;Oroplatform. Il est recommandé de lire la &lt;a href=&#34;https://symfony.com/doc/4.4/testing.html#functional-tests&#34;&gt;Doc Symfony&lt;/a&gt;&#xA;concernant les tests avant de continuer. Vous devriez également connaître &lt;a href=&#34;https://phpunit.de/getting-started/phpunit-9.html&#34;&gt;PhpUnit&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;quand-rédiger-les-tests-fonctionnels&#34;&gt;Quand rédiger les tests fonctionnels&lt;/h2&gt;&#xA;&lt;p&gt;Les tests fonctionnels sont généralement rédigés pour les :&lt;/p&gt;&#xA;&lt;p&gt;Contrôleurs&#xA;Commandes&#xA;Dépôts&#xA;Autres services&lt;/p&gt;&#xA;&lt;p&gt;L’objectif des tests fonctionnels n’est pas de tester des classes séparées (tests unitaires), mais de tester&#xA;l’intégration des différentes parties d’une application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tests unitaire en Javascript</title>
+      <link>http://tech.kiboko.fr/oro/test/javascript/javascript/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://tech.kiboko.fr/oro/test/javascript/javascript/</guid>
+      <description>&lt;h1 id=&#34;test-unitaire-javascript&#34;&gt;Test unitaire Javascript&lt;/h1&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Les logiciel suivant sont nécessaire pour exécuter les tests JS :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Node.js (Moteur JavaScript)&lt;/li&gt;&#xA;&lt;li&gt;Karma (Lanceur de test Javascript)&lt;/li&gt;&#xA;&lt;li&gt;Jasmine 3.5 (Framework BDD)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;note&#34;&gt;NOTE&lt;/h3&gt;&#xA;&lt;p&gt;Pour obtenir des instructions sur la façon d’installer Node.js, accédez au &lt;a href=&#34;https://nodejs.org/en/download/&#34;&gt;site officiel&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Une fois Node installé, installez plusieurs modules en utilisant &lt;a href=&#34;https://npmjs.org/&#34;&gt;Node Packaged Modules&lt;/a&gt; en exécutant la commande suivante à partir du dossier racine de votre application&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;npm install --prefix=vendor/oro/platform/build&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Où le paramètre –prefix spécifie le chemin relatif au répertoire platform/build.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
