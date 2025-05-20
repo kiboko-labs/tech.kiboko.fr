@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https//tech.kiboko.fr/"
+baseURL = "https://tech.kiboko.fr/"
 publishDir = "docs"
 languageCode = "fr-fr"
 DefaultContentLanguage = "fr"
