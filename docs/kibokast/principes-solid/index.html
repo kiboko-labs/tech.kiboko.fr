@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <title>Principes SOLID</title>
 
-  <meta name="generator" content="Hugo 0.79.0" />
+  <meta name="generator" content="Hugo 0.147.3">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/bootstrap.min.css">
 
   <!-- themefy-icon -->
-  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/themify-icons/themify-icons.css">
 
   <!-- highlight -->
-  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/highlight/hybrid.css">
 
   <!--Favicon-->
-  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon">
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
@@ -39,22 +39,22 @@
 
 <!-- Main Stylesheet -->
 
-<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+<link href="http://localhost:1313/css/style.min.css" rel="stylesheet" media="screen"/>
 
 <!-- jquiry -->
-<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+<script src="http://localhost:1313/plugins/jquery/jquery-1.12.4.js"></script>
 
 <!-- jquary ui -->
-<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+<script src="http://localhost:1313/plugins/jquery/jquery-ui.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="http://localhost:1313/plugins/bootstrap/bootstrap.min.js"></script>
 
 <!-- match-height JS -->
-<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+<script src="http://localhost:1313/plugins/match-height/jquery.matchHeight-min.js"></script>
 
 <!-- highlight -->
-<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script src="http://localhost:1313/plugins/highlight/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 
@@ -73,7 +73,7 @@
       
       
       <div class="navbar-brand">
-          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <img class="img-fluid" src="http://localhost:1313/images/logo.png" alt="Tech.Kiboko.fr">
           <span class="title">Tech.Kiboko.fr</span>
       </div>
       
@@ -87,7 +87,7 @@
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-dark" href="/">Accueil</a>
+          <a class="nav-link text-dark" href="/"></a>
         </li>
         
         
@@ -109,6 +109,14 @@
             <a class="dropdown-item" href="/docker">Docker</a>
             
             <a class="dropdown-item" href="/autre">Autre</a>
+            
+            <a class="dropdown-item" href="/composer">Composer</a>
+            
+            <a class="dropdown-item" href="/env-local">Environnement local</a>
+            
+            <a class="dropdown-item" href="/kubernetes">Kubernetes</a>
+            
+            <a class="dropdown-item" href="/sql">SQL</a>
             
           </div>
         </li>
@@ -151,9 +159,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/" title="Kibokast" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/" title="Kibokast" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/">
+  <a href="http://localhost:1313/kibokast/">
     Kibokast
   </a>
   
@@ -170,9 +178,53 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/scss-dans-oro/" title="SCSS dans Oro" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/symfony-proxy/" title="Proxy Symfony" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/scss-dans-oro/">
+  <a href="http://localhost:1313/kibokast/symfony-proxy/">
+    Proxy Symfony
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://localhost:1313/kibokast/commandes-symfony-oro/" title="Commandes Symfony, Oro et Doctrine" class="sidelist
+  ">
+  <a href="http://localhost:1313/kibokast/commandes-symfony-oro/">
+    Commandes Symfony, Oro et Doctrine
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://localhost:1313/kibokast/scss-dans-oro/" title="SCSS dans Oro" class="sidelist
+  ">
+  <a href="http://localhost:1313/kibokast/scss-dans-oro/">
     SCSS dans Oro
   </a>
   
@@ -192,9 +244,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/processus/" title="Les processus dans Oro" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/processus/" title="Les processus dans Oro" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/processus/">
+  <a href="http://localhost:1313/kibokast/processus/">
     Les processus dans Oro
   </a>
   
@@ -214,9 +266,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/monolog/" title="Monolog" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/monolog/" title="Monolog" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/monolog/">
+  <a href="http://localhost:1313/kibokast/monolog/">
     Monolog
   </a>
   
@@ -236,9 +288,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/exceptions/" title="Exceptions" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/exceptions/" title="Exceptions" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/exceptions/">
+  <a href="http://localhost:1313/kibokast/exceptions/">
     Exceptions
   </a>
   
@@ -258,9 +310,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/doctrine-type/" title="Doctrine type" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/doctrine-type/" title="Doctrine type" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/doctrine-type/">
+  <a href="http://localhost:1313/kibokast/doctrine-type/">
     Doctrine type
   </a>
   
@@ -280,9 +332,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/code-review/" title="Code review" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/code-review/" title="Code review" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/code-review/">
+  <a href="http://localhost:1313/kibokast/code-review/">
     Code review
   </a>
   
@@ -302,9 +354,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/commandes-debug/" title="Commandes Debug" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/commandes-debug/">
+  <a href="http://localhost:1313/kibokast/commandes-debug/">
     Commandes Debug
   </a>
   
@@ -324,9 +376,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/collections-doctrine/" title="Collections Doctrine" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/collections-doctrine/">
+  <a href="http://localhost:1313/kibokast/collections-doctrine/">
     Collections Doctrine
   </a>
   
@@ -346,9 +398,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/principes-solid/" title="Principes SOLID" class="sidelist
   active">
-  <a href="http://tech.kiboko.fr/kibokast/principes-solid/">
+  <a href="http://localhost:1313/kibokast/principes-solid/">
     Principes SOLID
   </a>
   
@@ -368,9 +420,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/utilisation-des-commandes-kloud/" title="Utilisation des commandes Kloud" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/">
+  <a href="http://localhost:1313/kibokast/utilisation-des-commandes-kloud/">
     Utilisation des commandes Kloud
   </a>
   
@@ -390,9 +442,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/utilisation-tmetric/" title="Utilisation Tmetric" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/utilisation-tmetric/">
+  <a href="http://localhost:1313/kibokast/utilisation-tmetric/">
     Utilisation Tmetric
   </a>
   
@@ -412,9 +464,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/migrations-oro/" title="Migrations Oro" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/migrations-oro/">
+  <a href="http://localhost:1313/kibokast/migrations-oro/">
     Migrations Oro
   </a>
   
@@ -434,9 +486,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/usage-github/" title="Usage Github" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/usage-github/" title="Usage Github" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/usage-github/">
+  <a href="http://localhost:1313/kibokast/usage-github/">
     Usage Github
   </a>
   
@@ -456,9 +508,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
+<li data-nav-id="http://localhost:1313/kibokast/utilisation-stack-docker-kiboko/" title="Utilisation stack Docker Kiboko" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/">
+  <a href="http://localhost:1313/kibokast/utilisation-stack-docker-kiboko/">
     Utilisation stack Docker Kiboko
   </a>
   
@@ -473,6 +525,12 @@
 </li>
 
 
+              
+            
+              
+            
+              
+            
               
             
               
@@ -505,123 +563,122 @@
 <li>Dependency inversion principle</li>
 </ul>
 <h2 id="single-responsibility-principle">Single responsibility principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Product</span>
-{
-<span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getURL</span>(<span style="color:#a6e22e">ObjectManager</span> $om)<span style="color:#f92672">:</span> <span style="color:#a6e22e">URL</span>
-    {
-        $url <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URL</span>();
-        $url<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setProduct</span>($this);
-        $url<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setPath</span>(<span style="color:#f92672">...</span>);
-        $om<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>($url);
-        $om<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
-    }
-<span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>}
-</code></pre></div><h2 id="openclosed-principle">Open/closed principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-
-<span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
-{
-<span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>(<span style="color:#a6e22e">ObjectManager</span> $om, <span style="color:#f92672">?</span><span style="color:#a6e22e">string</span> $name <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>)<span style="color:#f92672">:</span> <span style="color:#a6e22e">URL</span>
-    {
-    }
-<span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>}
-</code></pre></div><h2 id="liskov-substitution-principle">Liskov substitution principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
-{
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>()
-    {
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">42</span>;
-    }
-}
-
-<span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bar</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Foo</span>
-{
-    <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">Registry</span> $doctrine;
-    <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">Repository</span> $repository;
-
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>(<span style="color:#a6e22e">string</span> $path)
-    {
-        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">repository</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">load</span>(<span style="color:#ae81ff">72</span>)
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URL</span>($path);
-    }
-}
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
-{
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>()
-    {
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">42</span>;
-    }
-}
-
-<span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bar</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Foo</span>
-{
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>()
-    {
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">64</span>;
-    }
-    
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ipsum</span>(<span style="color:#a6e22e">string</span> $path)
-    {
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URL</span>($path);
-    }
-}
-</code></pre></div><h2 id="interface-segregation-principle">Interface segregation principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-
-<span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">LoremInterface</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">\Countable</span>, <span style="color:#a6e22e">\Traversable</span> {}
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Lorem</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">LoremInterface</span>, <span style="color:#a6e22e">\Stringable</span>, <span style="color:#a6e22e">\IteratorAggregate</span> {}
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Ipsum</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">LoremInterface</span>, <span style="color:#a6e22e">\Stringable</span>, <span style="color:#a6e22e">\Iterator</span> {}
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Product</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getURL</span>(<span style="color:#a6e22e">ObjectManager</span> $om)<span style="color:#f92672">:</span> <span style="color:#a6e22e">URL</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $url <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URL</span>();
+</span></span><span style="display:flex;"><span>        $url<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setProduct</span>($this);
+</span></span><span style="display:flex;"><span>        $url<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setPath</span>(<span style="color:#f92672">...</span>);
+</span></span><span style="display:flex;"><span>        $om<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>($url);
+</span></span><span style="display:flex;"><span>        $om<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="openclosed-principle">Open/closed principle</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>(<span style="color:#a6e22e">ObjectManager</span> $om, <span style="color:#f92672">?</span><span style="color:#a6e22e">string</span> $name <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>)<span style="color:#f92672">:</span> <span style="color:#a6e22e">URL</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="liskov-substitution-principle">Liskov substitution principle</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">42</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bar</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Foo</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">Registry</span> $doctrine;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">Repository</span> $repository;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>(<span style="color:#a6e22e">string</span> $path)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">repository</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">load</span>(<span style="color:#ae81ff">72</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URL</span>($path);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">42</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bar</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Foo</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">64</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ipsum</span>(<span style="color:#a6e22e">string</span> $path)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URL</span>($path);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="interface-segregation-principle">Interface segregation principle</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">LoremInterface</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">\Countable</span>, <span style="color:#a6e22e">\Traversable</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Lorem</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">LoremInterface</span>, <span style="color:#a6e22e">\Stringable</span>, <span style="color:#a6e22e">\IteratorAggregate</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Ipsum</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">LoremInterface</span>, <span style="color:#a6e22e">\Stringable</span>, <span style="color:#a6e22e">\Iterator</span> {}
+</span></span></code></pre></div><ul>
 <li><a href="https://www.php.net/manual/fr/class.traversable.php">Traversable</a></li>
 <li><a href="https://www.php.net/manual/fr/class.iterator.php">Iterator</a></li>
 <li><a href="https://www.php.net/manual/fr/class.iteratoraggregate.php">IteratorAggregate</a></li>
 <li><a href="https://www.php.net/manual/fr/class.countable.php">Countable</a></li>
 </ul>
 <h2 id="dependency-inversion-principle">Dependency inversion principle</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-
-<span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Incorrect</span>
-{
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>(<span style="color:#a6e22e">EntityManager</span> $em)
-    {
-        $em<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>(<span style="color:#f92672">...</span>);
-        $em<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
-    }
-    
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ipsum</span>(<span style="color:#a6e22e">ArrayCollection</span> $list)
-    {
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">count</span>($list) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>;
-    }
-}
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-
-<span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Correct</span>
-{
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>(<span style="color:#a6e22e">ObjectManager</span> $om)
-    {
-        $om<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>(<span style="color:#f92672">...</span>);
-        $om<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
-    }
-    
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ipsum</span>(<span style="color:#a6e22e">\Countable</span> $list)
-    {
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">count</span>($list) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>;
-    }
-}
-</code></pre></div></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Incorrect</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>(<span style="color:#a6e22e">EntityManager</span> $em)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $em<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>(<span style="color:#f92672">...</span>);
+</span></span><span style="display:flex;"><span>        $em<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ipsum</span>(<span style="color:#a6e22e">ArrayCollection</span> $list)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">count</span>($list) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Correct</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">lorem</span>(<span style="color:#a6e22e">ObjectManager</span> $om)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        $om<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">persist</span>(<span style="color:#f92672">...</span>);
+</span></span><span style="display:flex;"><span>        $om<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">flush</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ipsum</span>(<span style="color:#a6e22e">\Countable</span> $list)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">count</span>($list) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
           
           <nav class="pagination mt-3">
             
@@ -796,74 +853,6 @@
             
             
             
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
 
             
             
@@ -897,23 +886,6 @@
             
             
             
-            
-            
-
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
 
             
             
@@ -922,196 +894,6 @@
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
             
             
             
@@ -1226,6 +1008,170 @@
             
             
             
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
 
             
             
@@ -1269,12 +1215,455 @@
             
             
             
+            
+            
+            
+            
 
             
-            <a class="nav nav-prev" href="http://tech.kiboko.fr/kibokast/collections-doctrine/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Collections Doctrine</span></a>
             
             
-            <a class="nav nav-next" href="http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/"> <span class="d-none d-md-block">Utilisation des commandes Kloud</span><i class="ti-arrow-right ml-2"></i></a>
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://localhost:1313/kibokast/collections-doctrine/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Collections Doctrine</span></a>
+            
+            
+            <a class="nav nav-next" href="http://localhost:1313/kibokast/utilisation-des-commandes-kloud/"> <span class="d-none d-md-block">Utilisation des commandes Kloud</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>
@@ -1323,7 +1712,7 @@
 
 <!-- Main Script -->
 
-<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+<script src="http://localhost:1313/js/script.min.js"></script>
 
   </body>
 

@@ -1,212 +1,186 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>http://tech.kiboko.fr/kibokast/scss-dans-oro/</loc>
+    <loc>http://localhost:1313/oro/datagrid/afficher-dynamiquement-une-action/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/front/add-consent-on-registration/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/datagrid/mass-actions-product-grid/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/back/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/front/create-form-frontend/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/datagrid/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/front/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/select-type-in-oro-config/</loc>
+    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/symfony-proxy/</loc>
+    <lastmod>2022-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/commandes-symfony-oro/</loc>
+    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/scss-dans-oro/</loc>
     <lastmod>2020-12-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/</loc>
-    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/processus/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/processus/</loc>
     <lastmod>2020-12-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-autoloading/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-autoloading/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-configuration/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-configuration/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-conventions/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-conventions/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-elements-form/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-elements-form/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-exemples/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-exemples/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-fixtures/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-fixtures/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-isolation/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/functional/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-symfony/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/intro/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-isolation/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-symfony/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/functional/functional/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/javascript/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/javascript/javascript/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/behat/behat-tips/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/test/behat/behat-tips/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/monolog/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/monolog/</loc>
     <lastmod>2020-11-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/exceptions/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/exceptions/</loc>
     <lastmod>2020-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/doctrine-type/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/doctrine-type/</loc>
     <lastmod>2020-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/stack-faq/</loc>
+  </url><url>
+    <loc>http://localhost:1313/autre/stack-faq/</loc>
     <lastmod>2020-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/oro/creer-une-application-frontend-sur-oroplatform/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/creer-une-application-frontend-sur-oroplatform/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/git-flow/</loc>
+  </url><url>
+    <loc>http://localhost:1313/autre/git-flow/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/regex/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/block-types/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/oro/commandes-utiles/</loc>
+  </url><url>
+    <loc>http://localhost:1313/autre/regex/</loc>
+    <lastmod>2020-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/back/order-field-in-migration/</loc>
     <lastmod>2020-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/code-review/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/commandes-utiles/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/back/extend-entity/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/env-local/install-xdebug/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/code-review/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/commandes-debug/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/commandes-debug/</loc>
     <lastmod>2020-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/collections-doctrine/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/collections-doctrine/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/principes-solid/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/principes-solid/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/utilisation-des-commandes-kloud/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/utilisation-des-commandes-kloud/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/docker/importer-un-dump-sql-avec-docker/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docker/importer-un-dump-sql-avec-docker/</loc>
     <lastmod>2020-03-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/utilisation-tmetric/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docker/clean-docker-env/</loc>
     <lastmod>2020-03-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/migrations-oro/</loc>
+  </url><url>
+    <loc>http://localhost:1313/sql/big-tables/</loc>
+    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/utilisation-tmetric/</loc>
+    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/migrations-oro/</loc>
     <lastmod>2020-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/usage-github/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/usage-github/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/oro/</loc>
+  </url><url>
+    <loc>http://localhost:1313/composer/</loc>
     <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/docker/</loc>
+  </url><url>
+    <loc>http://localhost:1313/env-local/</loc>
+    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/oro/</loc>
+    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sql/</loc>
+    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docker/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/autre/</loc>
+  </url><url>
+    <loc>http://localhost:1313/autre/</loc>
     <lastmod>2020-01-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kibokast/utilisation-stack-docker-kiboko/</loc>
+  </url><url>
+    <loc>http://localhost:1313/kibokast/utilisation-stack-docker-kiboko/</loc>
     <lastmod>2020-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kubernetes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/oro/sql/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/legal-notice/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/kubernetes/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/legal-notice/</loc>
-  </url>
-  
-  <url>
-    <loc>http://tech.kiboko.fr/tags/</loc>
-  </url>
-  
 </urlset>

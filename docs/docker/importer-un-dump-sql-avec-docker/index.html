@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <title>Importer un dump SQL avec Docker</title>
 
-  <meta name="generator" content="Hugo 0.79.0" />
+  <meta name="generator" content="Hugo 0.147.3">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/bootstrap.min.css">
 
   <!-- themefy-icon -->
-  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/themify-icons/themify-icons.css">
 
   <!-- highlight -->
-  <link rel="stylesheet" href="http://tech.kiboko.fr/plugins/highlight/hybrid.css">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/highlight/hybrid.css">
 
   <!--Favicon-->
-  <link rel="icon" href="http://tech.kiboko.fr/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon">
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Libre%20Franklin%2c%20Helvetica%20Neue%2c%20Helvetica%2c%20Arial%2c%20Sans-Serif:300,400,700&display=swap" rel="stylesheet">
@@ -39,22 +39,22 @@
 
 <!-- Main Stylesheet -->
 
-<link href="http://tech.kiboko.fr/css/style.min.css" rel="stylesheet" media="screen"/>
+<link href="http://localhost:1313/css/style.min.css" rel="stylesheet" media="screen"/>
 
 <!-- jquiry -->
-<script src="http://tech.kiboko.fr/plugins/jquery/jquery-1.12.4.js"></script>
+<script src="http://localhost:1313/plugins/jquery/jquery-1.12.4.js"></script>
 
 <!-- jquary ui -->
-<script src="http://tech.kiboko.fr/plugins/jquery/jquery-ui.js"></script>
+<script src="http://localhost:1313/plugins/jquery/jquery-ui.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="http://tech.kiboko.fr/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="http://localhost:1313/plugins/bootstrap/bootstrap.min.js"></script>
 
 <!-- match-height JS -->
-<script src="http://tech.kiboko.fr/plugins/match-height/jquery.matchHeight-min.js"></script>
+<script src="http://localhost:1313/plugins/match-height/jquery.matchHeight-min.js"></script>
 
 <!-- highlight -->
-<script src="http://tech.kiboko.fr/plugins/highlight/highlight.pack.js"></script>
+<script src="http://localhost:1313/plugins/highlight/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 
@@ -73,7 +73,7 @@
       
       
       <div class="navbar-brand">
-          <img class="img-fluid" src="http://tech.kiboko.fr/images/logo.png" alt="Tech.Kiboko.fr">
+          <img class="img-fluid" src="http://localhost:1313/images/logo.png" alt="Tech.Kiboko.fr">
           <span class="title">Tech.Kiboko.fr</span>
       </div>
       
@@ -87,7 +87,7 @@
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-dark" href="/">Accueil</a>
+          <a class="nav-link text-dark" href="/"></a>
         </li>
         
         
@@ -109,6 +109,14 @@
             <a class="dropdown-item" href="/docker">Docker</a>
             
             <a class="dropdown-item" href="/autre">Autre</a>
+            
+            <a class="dropdown-item" href="/composer">Composer</a>
+            
+            <a class="dropdown-item" href="/env-local">Environnement local</a>
+            
+            <a class="dropdown-item" href="/kubernetes">Kubernetes</a>
+            
+            <a class="dropdown-item" href="/sql">SQL</a>
             
           </div>
         </li>
@@ -146,6 +154,12 @@
               
             
               
+            
+              
+            
+              
+            
+              
               
 
 
@@ -155,9 +169,9 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/docker/" title="Docker" class="sidelist
+<li data-nav-id="http://localhost:1313/docker/" title="Docker" class="sidelist
   ">
-  <a href="http://tech.kiboko.fr/docker/">
+  <a href="http://localhost:1313/docker/">
     Docker
   </a>
   
@@ -174,10 +188,32 @@
 
 
 
-<li data-nav-id="http://tech.kiboko.fr/docker/importer-un-dump-sql-avec-docker/" title="Importer un dump SQL avec Docker" class="sidelist
+<li data-nav-id="http://localhost:1313/docker/importer-un-dump-sql-avec-docker/" title="Importer un dump SQL avec Docker" class="sidelist
   active">
-  <a href="http://tech.kiboko.fr/docker/importer-un-dump-sql-avec-docker/">
+  <a href="http://localhost:1313/docker/importer-un-dump-sql-avec-docker/">
     Importer un dump SQL avec Docker
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="http://localhost:1313/docker/clean-docker-env/" title="Nettoyer son environnement docker" class="sidelist
+  ">
+  <a href="http://localhost:1313/docker/clean-docker-env/">
+    Nettoyer son environnement docker
   </a>
   
   
@@ -213,22 +249,22 @@
           
           <div class="content"><p>Scénario : Nous avons un dump que nous voulons importer sur une base vierge pour avoir une appli qui tourne avec de la donnée.</p>
 <p>On peut copier un fichier du local au container Docker dans le dossier <code>/tmp/</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker cp dump.sql mycontainer:/tmp/dump.sql
-</code></pre></div><p>L&rsquo;inverse est possible aussi (copier du container Docker au host) :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker cp mycontainer:/tmp/dump.sql /chemin/dump.sql
-</code></pre></div><p>On se connecte au container SQL de docker :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker exec -ti le-container_mysql bash
-</code></pre></div><p>On lance la commande avec l&rsquo;option -v ( pour voir le dump avec du &ldquo;verbose&rdquo; ) depuis le container SQL :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker cp dump.sql mycontainer:/tmp/dump.sql
+</span></span></code></pre></div><p>L&rsquo;inverse est possible aussi (copier du container Docker au host) :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker cp mycontainer:/tmp/dump.sql /chemin/dump.sql
+</span></span></code></pre></div><p>On se connecte au container SQL de docker :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -ti le-container_mysql bash
+</span></span></code></pre></div><p>On lance la commande avec l&rsquo;option -v ( pour voir le dump avec du &ldquo;verbose&rdquo; ) depuis le container SQL :</p>
 <p><code>mysql</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql -v —batch -h<span style="color:#f92672">{</span>host<span style="color:#f92672">}</span> -u<span style="color:#f92672">{</span>user<span style="color:#f92672">}</span> -p nom-de-la-base-de-donnée &lt; /tmp/bdd.sql
-</code></pre></div><p><code>postgresql</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">psql -U <span style="color:#f92672">{</span>user<span style="color:#f92672">}</span> -d <span style="color:#f92672">{</span>database<span style="color:#f92672">}</span> -f tmp/dump.sql
-</code></pre></div><p>Short one :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -v —batch -h<span style="color:#f92672">{</span>host<span style="color:#f92672">}</span> -u<span style="color:#f92672">{</span>user<span style="color:#f92672">}</span> -p nom-de-la-base-de-donnée &lt; /tmp/bdd.sql
+</span></span></code></pre></div><p><code>postgresql</code> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>psql -U <span style="color:#f92672">{</span>user<span style="color:#f92672">}</span> -d <span style="color:#f92672">{</span>database<span style="color:#f92672">}</span> -f tmp/dump.sql
+</span></span></code></pre></div><p>Short one :)</p>
 <h2 id="backup">Backup</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker exec CONTAINER /usr/bin/mysqldump -u root --password<span style="color:#f92672">=</span>root DATABASE &gt; backup.sql
-</code></pre></div><h2 id="restore">Restore</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password<span style="color:#f92672">=</span>root DATABASE
-</code></pre></div></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec CONTAINER /usr/bin/mysqldump -u root --password<span style="color:#f92672">=</span>root DATABASE &gt; backup.sql
+</span></span></code></pre></div><h2 id="restore">Restore</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password<span style="color:#f92672">=</span>root DATABASE
+</span></span></code></pre></div></div>
           
           <nav class="pagination mt-3">
             
@@ -498,6 +534,153 @@
             
             
             
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             
             
@@ -551,7 +734,6 @@
             
             
             
-            
 
             
             
@@ -559,217 +741,6 @@
             
             
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
             
             
             
@@ -833,6 +804,146 @@
             
             
             
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
 
             
             
@@ -876,12 +987,269 @@
             
             
             
+            
+            
+            
+            
 
             
-            <a class="nav nav-prev" href="http://tech.kiboko.fr/docker/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Docker</span></a>
             
             
-            <a class="nav nav-next" href="http://tech.kiboko.fr/autre/"> <span class="d-none d-md-block">Autre</span><i class="ti-arrow-right ml-2"></i></a>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://localhost:1313/docker/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Docker</span></a>
+            
+            
+            <a class="nav nav-next" href="http://localhost:1313/docker/clean-docker-env/"> <span class="d-none d-md-block">Nettoyer son environnement docker</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>
@@ -930,7 +1298,7 @@
 
 <!-- Main Script -->
 
-<script src="http://tech.kiboko.fr/js/script.min.js"></script>
+<script src="http://localhost:1313/js/script.min.js"></script>
 
   </body>
 

@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Autre on Tech.Kiboko.fr</title>
-    <link>http://tech.kiboko.fr/autre/</link>
+    <link>http://localhost:1313/autre/</link>
     <description>Recent content in Autre on Tech.Kiboko.fr</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 28 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://tech.kiboko.fr/autre/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/autre/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
